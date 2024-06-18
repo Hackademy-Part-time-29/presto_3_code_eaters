@@ -11,9 +11,10 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('macro_categories', function (Blueprint $table) {
+        Schema::create('categories', function (Blueprint $table) {
             $table->UnsignedTinyInteger('id')->autoincrement()->primary();
-            $table->string('name',100);
+            $table->UnsignedTinyInteger('macroCategory_id');
+            $table->foreign('macroCategory_id')->references('id')->on('macroCategories');
             $table->timestamps();
         });
     }
@@ -23,6 +24,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('macro_categories');
+        Schema::dropIfExists('categories');
     }
 };
