@@ -12,9 +12,8 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('macro_categories', function (Blueprint $table) {
-            $table->unsignedTinyInteger('id')->autoincrement()->primary();
+            $table->unsignedTinyInteger('id')->autoIncrement()->primary();
             $table->string('name',100);
-            
             $table->timestamps();
         });
     }
