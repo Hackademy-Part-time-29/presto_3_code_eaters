@@ -6,6 +6,7 @@
             <label for="exampleInputPassword1" class="form-label">Nome</label>
             <input name="name" type="text" class="form-control" >
         </div>
+        
         @error('name')
         <div class="alert alert-danger" role="alert">
           {{$message}}

@@ -35,15 +35,23 @@
         </li>
       </ul>
       <!-- Left links -->
-
+   
       <div class="d-flex align-items-center">
-        <button data-mdb-ripple-init type="button" class="btn btn-link px-3 me-2">
-          Login
-        </button>
-        <a href="{{route('register')}}" class="btn btn-primary me-3">
-             Sign up for free
-        </a>
-       
+        @auth
+            <form action="{{route('logout')}}" method="POST">
+              @csrf
+                <button data-mdb-ripple-init type="submit" class="btn btn-link px-3 me-2">
+                  Logout
+                </button>
+            </form>
+        @else
+            <a href="{{route('login')}}" class="btn btn-link me-3">
+                Login
+            </a>
+            <a href="{{route('register')}}" class="btn btn-primary me-3">
+                Sign up for free
+            </a>
+        @endauth
         <a
           data-mdb-ripple-init
           class="btn btn-dark px-3"
