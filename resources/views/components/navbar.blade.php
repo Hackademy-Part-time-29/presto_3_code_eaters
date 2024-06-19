@@ -47,6 +47,7 @@
                   <i class="bi bi-door-open"></i> Logout
                 </button>
             </form>
+              <a class="btn btn-primary me-1" href="{{route('create.article')}}"> Crea un nuovo annuncio</a>
         @else
             <a href="{{route('login')}}" class="btn btn-primary me-3">
               <i class="bi bi-box-arrow-in-right"></i> Login

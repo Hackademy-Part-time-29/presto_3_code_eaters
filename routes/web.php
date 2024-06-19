@@ -7,7 +7,7 @@ use App\Http\Controllers\ArticleController;
 Route::get('/',[PageController::class, 'welcomeView'])->name('welcome');
 Route::get('articles',[ArticleController::class, 'articleView'])->name('articles');
 
-Route::get('create/article',[ArticleController::class, 'create'])->name('create.article');
+Route::get('create/article',[ArticleController::class, 'create'])->middleware('auth')->name('create.article');
 
 
 
