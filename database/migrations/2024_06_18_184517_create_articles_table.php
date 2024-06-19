@@ -16,9 +16,9 @@ return new class extends Migration
             $table->string('title',255);
             $table->unsignedInteger('price');
             $table->text('description');
-            $table->unsignedTinyInteger('category_id');
+            $table->unsignedTinyInteger('category_id')->nullable();
             $table->foreign('category_id')->references('id')->on('categories');
-            $table->unsignedBigInteger('user_id');
+            $table->unsignedBigInteger('user_id')->nullable();
             $table->foreign('user_id')->references('id')->on('users');
             $table->timestamps();
         });

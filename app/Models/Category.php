@@ -2,8 +2,10 @@
 
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Factories\HasFactory;
+use App\Models\MacroCategory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 class Category extends Model
 {
@@ -12,4 +14,9 @@ class Category extends Model
     protected $fillable = [
         'macroCategory_id',
     ];
+
+
+    public function macroCategory(): BelongsTo{
+        return $this->belongsTo(MacroCategory::class);
+    }
 }
