@@ -31,7 +31,10 @@
       <!-- Left links -->
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link" href="#">Dashboard</a>
+          <a class="nav-link fs-4" href="{{route('welcome')}}"><i class="bi bi-house"></i>Homepage</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fs-4" href="{{route('articles')}}"><i class="bi bi-bag"></i> Articoli</a>
         </li>
       </ul>
       <!-- Left links -->
@@ -41,21 +44,21 @@
             <form action="{{route('logout')}}" method="POST">
               @csrf
                 <button data-mdb-ripple-init type="submit" class="btn btn-link px-3 me-2">
-                  Logout
+                  <i class="bi bi-door-open"></i> Logout
                 </button>
             </form>
         @else
-            <a href="{{route('login')}}" class="btn btn-link me-3">
-                Login
+            <a href="{{route('login')}}" class="btn btn-primary me-3">
+              <i class="bi bi-box-arrow-in-right"></i> Login
             </a>
             <a href="{{route('register')}}" class="btn btn-primary me-3">
-                Sign up for free
+              <i class="bi bi-person-add"></i> Registrati
             </a>
         @endauth
         <a
           data-mdb-ripple-init
           class="btn btn-dark px-3"
-          href="https://github.com/mdbootstrap/mdb-ui-kit"
+          href="https://github.com/Hackademy-Part-time-29/presto_3_code_eaters"
           role="button"
           ><i class="bi bi-github"></i></a>
       </div>
