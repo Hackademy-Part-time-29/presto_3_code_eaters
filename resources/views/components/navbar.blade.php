@@ -40,9 +40,10 @@
         <button data-mdb-ripple-init type="button" class="btn btn-link px-3 me-2">
           Login
         </button>
-        <button data-mdb-ripple-init type="button" class="btn btn-primary me-3">
-          Sign up for free
-        </button>
+        <a href="{{route('register')}}" class="btn btn-primary me-3">
+             Sign up for free
+        </a>
+       
         <a
           data-mdb-ripple-init
           class="btn btn-dark px-3"
