@@ -6,7 +6,7 @@
                 {{$article->title}}
             </h4>
             <h6 class="card-subtitle text-body-secondary">
-                {{$article->price}} €
+                @formatPrice($article->price) €
             </h6>
             <div class="d-flex justify-content-evenly align-items-center mt-5">
                 <a href="#" class="btn btn-primary">Dettaglio</a>

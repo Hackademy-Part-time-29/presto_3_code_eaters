@@ -34,7 +34,7 @@
           <a class="nav-link fs-4" href="{{route('welcome')}}"><i class="bi bi-house"></i>Homepage</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link fs-4" href="{{route('articles')}}"><i class="bi bi-bag"></i> Articoli</a>
+          <a class="nav-link fs-4" href="{{route('article.index')}}"><i class="bi bi-bag"></i> Articoli</a>
         </li>
       </ul>
       <!-- Left links -->
