@@ -6,6 +6,13 @@
                 {{session('success')}}
             </div>
         @endsession
+
+        @auth
+        
+    
+        <a class="btn btn-primary m-3 d-flex justify-content-center align-items-center" href="{{route('create.article')}}"> Crea un nuovo annuncio</a>
+
+        @endauth
         <div class="container">
             {{ $slot }}
         </div>
