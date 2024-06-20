@@ -4,25 +4,11 @@
   <div class="container">
     <!-- Navbar brand -->
     <a class="navbar-brand me-2" href="https://mdbgo.com/">
-      <img
-        src="https://mdbcdn.b-cdn.net/img/logo/mdb-transaprent-noshadows.webp"
-        height="16"
-        alt="MDB Logo"
-        loading="lazy"
-        style="margin-top: -1px;"
-      />
+      <img src="https://mdbcdn.b-cdn.net/img/logo/mdb-transaprent-noshadows.webp" height="16" alt="MDB Logo" loading="lazy" style="margin-top: -1px;" />
     </a>
 
     <!-- Toggle button -->
-    <button
-      data-mdb-collapse-init
-      class="navbar-toggler"
-      type="button"
-      data-mdb-target="#navbarButtonsExample"
-      aria-controls="navbarButtonsExample"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-    >
+    <button data-mdb-collapse-init class="navbar-toggler" type="button" data-mdb-target="#navbarButtonsExample" aria-controls="navbarButtonsExample" aria-expanded="false"aria-label="Toggle navigation">
       <i class="fas fa-bars"></i>
     </button>
 
@@ -30,11 +16,35 @@
     <div class="collapse navbar-collapse" id="navbarButtonsExample">
       <!-- Left links -->
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link fs-4" href="{{route('welcome')}}"><i class="bi bi-house"></i>Homepage</a>
+        <li class="nav-item ms-3 me-3">
+          <a class="nav-link fs-5" href="{{route('welcome')}}">
+            <i class="bi bi-house"></i>
+            Homepage
+          </a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link fs-4" href="{{route('article.index')}}"><i class="bi bi-bag"></i> Articoli</a>
+        <li class="nav-item ms-3 me-3">
+          <a class="nav-link fs-5" href="{{route('article.index')}}">
+            <i class="bi bi-bag"></i>
+            Articoli</a>
+        </li>
+        <li class="nav-item dropdown ms-3 me-3">
+          <a href="#" role="button" data-bs-toggle="dropdown" class="nav-link dropdown-toggle fs-5" aria-expanded="false">
+            <i class="bi bi-tags">
+              Categorie
+            </i>            
+          </a>
+          <ul class="dropdown-menu">
+            @foreach ($categories as $category)
+                <li>
+                  <a href="{{route('byCategory',['category'=>$category])}}" class="dropdown-item text-capitalize">
+                    {{$category->name}}
+                  </a>
+                </li>
+                @if (!$loop->last)
+                    <hr class="dropdown-divider">
+                @endif
+            @endforeach
+          </ul>
         </li>
       </ul>
       <!-- Left links -->

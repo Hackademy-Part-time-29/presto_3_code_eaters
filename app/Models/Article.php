@@ -26,5 +26,9 @@ class Article extends Model
     public function category(): BelongsTo{
         return $this->belongsTo(Category::class);
     }
+
+    public function show(Article $article){
+        return view('article.show',compact('article'));
+    }
 }
 

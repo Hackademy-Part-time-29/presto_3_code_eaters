@@ -9,7 +9,7 @@
     </div>
     <div class="row height-custom justify-content-center align-items-center py-5">
         @forelse ($articles as $article)
-            <div class="col-12 col-md-3">
+            <div class="col-12 col-md-4">
                 <x-card :article="$article" />
             </div>
         @empty

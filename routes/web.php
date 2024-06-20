@@ -10,5 +10,6 @@ Route::get('/articles',[ArticleController::class, 'articleView'])->name('article
 Route::get('/create/article',[ArticleController::class, 'create'])->middleware('auth')->name('create.article');
 Route::get('/article/index',[ArticleController::class, 'index'])->name('article.index');
 Route::get('/show/article/{article}',[ArticleController::class, 'show'])->name('article.show');
+Route::get('/category/{category}',[ArticleController::class, 'byCategory'])->name('byCategory');
 
 
