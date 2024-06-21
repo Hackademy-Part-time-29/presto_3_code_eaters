@@ -2,8 +2,8 @@
         <!-- Hero Section -->
         <header class="bg-primary text-white text-center py-5">
             <div class="container">
-                <h1 class="display-4">Benvenuti</h1>
-                <p class="lead">benvenuti benvenuti</p>
+                <h1 class="display-4">Claim.it</h1>
+                <p class="lead"> Acquisti compulsivi senza senso</p>
             </div>
         </header>
         <div class="row height-custom justify-content-center align-items-center py-5">

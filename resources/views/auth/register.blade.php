@@ -70,7 +70,7 @@
                               <input name="password_confirmation" type="password" class="form-control" id="password_confirmation" required>
                           </div>
 
-                          <button type="submit" class="btn btn-primary w-100">+Registrati</button>
+                          <button type="submit" class="btn btn-primary w-100">Registrati</button>
                       </form>
                   </div>
               </div>

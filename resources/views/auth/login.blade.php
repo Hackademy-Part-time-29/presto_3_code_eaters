@@ -4,7 +4,7 @@
           <div class="col-md-6 mx-auto">
               <div class="card">
                   <div class="card-header bg-primary text-white">
-                      <h3 class="mb-0">Effetua il Login</h3>
+                      <h3 class="mb-0">Effettua il Login</h3>
                   </div>
                   <div class="card-body">
                       <form action="{{route('login')}}" method="POST">
