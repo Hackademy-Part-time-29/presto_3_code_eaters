@@ -4,7 +4,7 @@
   <div class="container">
     <!-- Navbar brand -->
     <a class="navbar-brand me-2" href="https://mdbgo.com/">
-      <img src="https://mdbcdn.b-cdn.net/img/logo/mdb-transaprent-noshadows.webp" height="16" alt="MDB Logo" loading="lazy" style="margin-top: -1px;" />
+      <img src="/storage/logo60px.png" alt="logo">
     </a>
 
     <!-- Toggle button -->
