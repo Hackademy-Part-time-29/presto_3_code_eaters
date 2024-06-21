@@ -1,6 +1,6 @@
 <x-h-t-m-l>
     <body>
-        <x-navbar></x-navbar>
+        <x-navbar/>
         @session('success')
             <div class="alert alert-success" rule="alert">
                 {{session('success')}}
@@ -16,7 +16,8 @@
         <div class="container">
             {{ $slot }}
         </div>
-    <x-footer></x-footer>
+    <x-footer/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
     </body>
 </x-h-t-m-l>
 
