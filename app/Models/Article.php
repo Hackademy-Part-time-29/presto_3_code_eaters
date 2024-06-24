@@ -30,5 +30,10 @@ class Article extends Model
     public function show(Article $article){
         return view('article.show',compact('article'));
     }
+    public function setAccepted($value){
+        $this->is_accepted = $value;
+        $this->save();
+        return true;
+    }
 }
 
