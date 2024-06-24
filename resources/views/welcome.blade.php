@@ -1,4 +1,11 @@
 <x-layout>
+    @if (session()->has('errorMessage'))
+    <div class="alert alert-danger text-center shadow rounded w-50">
+        {{session('errorMessage')}}
+    </div>
+    @endif
+
+    
         <!-- Hero Section -->
         <header class="bg-primary text-white text-center py-5">
             <div class="container">
