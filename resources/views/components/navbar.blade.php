@@ -61,6 +61,7 @@
             <a class="btn btn-primary me-1" href="{{route('create.article')}}"> Crea un nuovo annuncio</a>
             @if (Auth::user()->is_revisor)
             
+            
               <li class="nav-item">
                 <a href="{{route('revisor.index')}}" class="nav-link btn btn-outline-success btn-sm position-relative w-sm-25">
                   Zona revisore
