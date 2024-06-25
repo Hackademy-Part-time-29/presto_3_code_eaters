@@ -9,7 +9,7 @@
 
     <!-- Toggle button -->
     <button data-mdb-collapse-init class="navbar-toggler" type="button" data-mdb-target="#navbarButtonsExample" aria-controls="navbarButtonsExample" aria-expanded="false"aria-label="Toggle navigation">
-      <i class="fas fa-bars"></i>
+      <span class="navbar-toggler-icon"></span>
     </button>
 
     <!-- Collapsible wrapper -->
@@ -17,11 +17,11 @@
       <!-- Left links -->
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item ms-3 me-3 custom-dropdown">
-          <a href="#" role="button" class="nav-link fs-5">
+          <span class="nav-link fs-5">
             <i class="bi bi-tags">
               Categorie
             </i>            
-          </a>
+          </span>
           <div class="custom-dropdown-content">
             <div class="triangle"></div>
             <div class="menu">
@@ -34,7 +34,7 @@
                   </div>
                 @endforeach            
               </div>
-              {{-- <div class="vertical-divider"></div> --}}
+              <div class="vertical-divider"></div>
               <div class="menu-column column-dettagli">
                 <div class="menu-item-2"></div>
               </div>
