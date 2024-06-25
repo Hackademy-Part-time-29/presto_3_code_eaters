@@ -21,4 +21,6 @@ Route::get('/make/revisor/{user}',[RevisorController::class, 'makeRevisor'])->na
 Route::patch('/accept/{article}',[RevisorController::class, 'accept'])->name('accept');
 Route::patch('/reject/{article}',[RevisorController::class, 'reject'])->name('reject');
 
+Route::get('/search/article',[PageController::class,'searchArticles'])->name('article.search');
+
 
