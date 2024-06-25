@@ -74,12 +74,12 @@
               <i class="bi bi-person-add"></i> Registrati
             </a>
         @endauth
-        <a
+        {{-- <a
           data-mdb-ripple-init
           class="btn btn-dark px-3"
           href="https://github.com/Hackademy-Part-time-29/presto_3_code_eaters"
           role="button"
-          ><i class="bi bi-github"></i></a>
+          ><i class="bi bi-github"></i></a> --}}
       </div>
     </div>
     <!-- Collapsible wrapper -->
