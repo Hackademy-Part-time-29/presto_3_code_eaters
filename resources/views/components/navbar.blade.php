@@ -27,24 +27,30 @@
             <i class="bi bi-bag"></i>
             Articoli</a>
         </li>
-        <li class="nav-item dropdown ms-3 me-3">
-          <a href="#" role="button" data-bs-toggle="dropdown" class="nav-link dropdown-toggle fs-5" aria-expanded="false">
+        <li class="nav-item ms-3 me-3 custom-dropdown">
+          <a href="#" role="button" class="nav-link fs-5">
             <i class="bi bi-tags">
               Categorie
             </i>            
           </a>
-          <ul class="dropdown-menu">
-            @foreach ($categories as $category)
-                <li>
-                  <a href="{{route('byCategory',['category'=>$category])}}" class="dropdown-item text-capitalize">
-                    {{$category->name}}
-                  </a>
-                </li>
-                @if (!$loop->last)
-                    <hr class="dropdown-divider">
-                @endif
-            @endforeach
-          </ul>
+          <div class="custom-dropdown-content">
+            <div class="triangle"></div>
+            <div class="menu">
+              <div class="menu-column">
+                @foreach ($categories->unique('macroCategory_id') as $category)
+                  <div class="menu-item" data-category-id="{{ $category->macroCategory->id }}">
+                    <a href="{{route('byCategory',['category'=>$category])}}" class="dropdown-item">
+                      <p class="nomeMacroCategoria">{{$category->macroCategory->name}}  </p>                    
+                    </a>                    
+                  </div>
+                @endforeach            
+              </div>
+              <div class="vertical-divider"></div>
+              <div class="menu-column column-dettagli">
+                <div class="menu-item-2"></div>
+              </div>
+            </div>
+          </div>
         </li>
       </ul>
       <!-- Left links -->
@@ -94,3 +100,7 @@
   <!-- Container wrapper -->
 </nav>
 <!-- Navbar -->
+
+<script>
+  let categoriesData = @json($categories);
+</script>

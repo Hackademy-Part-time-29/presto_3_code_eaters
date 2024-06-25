@@ -2,8 +2,9 @@
 
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\HasMany;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 class MacroCategory extends Model
 {
@@ -13,4 +14,7 @@ class MacroCategory extends Model
         'name',
     ];
 
+    public function category() : HasMany{
+        return $this->hasMany(Category::class);
+    }
 }

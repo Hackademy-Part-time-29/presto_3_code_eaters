@@ -18,7 +18,7 @@ class Category extends Model
 
 
     public function macroCategory(): BelongsTo{
-        return $this->belongsTo(MacroCategory::class);
+        return $this->belongsTo(MacroCategory::class, 'macroCategory_id', 'id');
     }
 
     public function articles() : HasMany{
