@@ -29,7 +29,7 @@
                 @foreach ($categories->unique('macroCategory_id') as $category)
                   <div class="menu-item" data-category-id="{{ $category->macroCategory->id }}">
                     <a href="{{route('byMacroCategory',['macroCategory' => $category->macroCategory])}}" class="dropdown-item">
-                      <p class="nomeMacroCategoria">{{$category->macroCategory->name}}  </p>                    
+                      <p class="nomeMacroCategoria">{{$category->macroCategory->name}}</p>                    
                     </a>                    
                   </div>
                 @endforeach            
@@ -56,23 +56,16 @@
                 <button data-mdb-ripple-init type="submit" class="btn btn-link px-3 me-2">
                   <i class="bi bi-door-open"></i> Logout
                 </button>
-            </form>
-            
+            </form>            
             <a class="btn btn-primary me-1" href="{{route('create.article')}}"> Crea un nuovo annuncio</a>
             @if (Auth::user()->is_revisor)
-            
-            
               <li class="nav-item">
                 <a href="{{route('revisor.index')}}" class="nav-link btn btn-outline-success btn-sm position-relative w-sm-25">
                   Zona revisore
                   <span class="position-absolute top-0 start-100 traslate-middle badge rounded-pill bg-danger">{{\App\Models\Article::toBeRevisoredCount()}}</span>
                 </a>
               </li>
-
-            @endif
-            
-
-                      
+            @endif                
         @else
             <a href="{{route('login')}}" class="btn btn-primary me-3">
               <i class="bi bi-box-arrow-in-right"></i> Login
@@ -96,5 +89,6 @@
 <!-- Navbar -->
 
 <script>
+  let baseUrl = "{{ url('/') }}";
   let categoriesData = @json($categories);
 </script>

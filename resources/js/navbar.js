@@ -14,7 +14,8 @@ document.addEventListener('DOMContentLoaded', () => {
         if (specificCategories.length > 0) {
             let htmlContent = '';
             specificCategories.forEach(category => {
-                htmlContent += `<div><a class="menu-item-2-element">${category.name}</a></div>`;
+                let link = `${baseUrl}/category/${category.id}`;
+                htmlContent += `<div><a href="${link}" class="menu-item-2-element">${category.name}</a></div>`;
             });
             menuItem2.innerHTML = htmlContent;
             // Aggiorna la lista di elementi interni di menu-item-2
