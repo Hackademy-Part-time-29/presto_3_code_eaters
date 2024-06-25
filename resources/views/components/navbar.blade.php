@@ -1,26 +1,16 @@
-<!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-light bg-body-tertiary">
-  <!-- Container wrapper -->
   <div class="container">
-    <!-- Navbar brand -->
     <a class="navbar-brand me-2" href="/">
       <img src="/storage/logo60px.png" alt="logo">
     </a>
-
-    <!-- Toggle button -->
     <button data-mdb-collapse-init class="navbar-toggler" type="button" data-mdb-target="#navbarButtonsExample" aria-controls="navbarButtonsExample" aria-expanded="false"aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-
-    <!-- Collapsible wrapper -->
     <div class="collapse navbar-collapse" id="navbarButtonsExample">
-      <!-- Left links -->
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item ms-3 me-3 custom-dropdown">
           <span class="nav-link fs-5">
-            <i class="bi bi-tags">
-              Categorie
-            </i>            
+            <i class="bi bi-tags">Categorie</i>            
           </span>
           <div class="custom-dropdown-content">
             <div class="triangle"></div>
@@ -47,7 +37,6 @@
             Articoli</a>
         </li>
       </ul>
-      <!-- Left links -->
    
       <div class="d-flex align-items-center">
         @auth
@@ -74,19 +63,10 @@
               <i class="bi bi-person-add"></i> Registrati
             </a>
         @endauth
-        {{-- <a
-          data-mdb-ripple-init
-          class="btn btn-dark px-3"
-          href="https://github.com/Hackademy-Part-time-29/presto_3_code_eaters"
-          role="button"
-          ><i class="bi bi-github"></i></a> --}}
       </div>
     </div>
-    <!-- Collapsible wrapper -->
   </div>
-  <!-- Container wrapper -->
 </nav>
-<!-- Navbar -->
 
 <script>
   let baseUrl = "{{ url('/') }}";

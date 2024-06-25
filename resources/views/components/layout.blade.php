@@ -9,8 +9,7 @@
 
         @auth
         
-    
-        <a class="btn btn-primary m-3 d-flex justify-content-center align-items-center" href="{{route('create.article')}}"> Crea un nuovo annuncio</a>
+ <a class="btn btn-primary m-3 {{-- d-flex justify-content-center align-items-center --}}" href="{{route('create.article')}}"> Crea un nuovo annuncio "Da spostare"</a> 
 
         @endauth
         <div class="container">
