@@ -44,17 +44,25 @@ document.addEventListener('DOMContentLoaded', () => {
     function handleMouseOut(event) {
         if (!event.relatedTarget ||
             (!event.relatedTarget.classList.contains('menu-item') &&
-             !columnDettagli.contains(event.relatedTarget) &&
-             !menuItem2.contains(event.relatedTarget))) {
-            if (!isHoveringMenuItem2) { // Verifica se il mouse non è su menu-item-2
+             !event.relatedTarget.classList.contains('menu-item-2') &&
+             !columnDettagli.contains(event.relatedTarget))) {
+    
+            if (!isHoveringMenuItem2) {
                 menuItem2.innerHTML = '';
             }
+    
             if (!menuItem2.contains(event.relatedTarget) && !columnDettagli.contains(event.relatedTarget)) {
-                event.currentTarget.classList.remove('hovered'); // Rimuovi la classe 'hovered' al menu-item corrente
+                event.currentTarget.classList.remove('hovered');
                 isHoveringMenuItem = false;
+    
+                if (event.relatedTarget && event.relatedTarget.classList.contains('menu-item-2')) {
+                    event.relatedTarget.classList.add('hovered');
+                    isHoveringMenuItem2 = true;
+                }
             }
         }
     }
+    
 
     function handleMouseOverMenuItem2() {
         isHoveringMenuItem2 = true; // Il mouse è sopra un .menu-item-2

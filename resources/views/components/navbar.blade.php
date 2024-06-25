@@ -34,7 +34,7 @@
                   </div>
                 @endforeach            
               </div>
-              <div class="vertical-divider"></div>
+              {{-- <div class="vertical-divider"></div> --}}
               <div class="menu-column column-dettagli">
                 <div class="menu-item-2"></div>
               </div>
