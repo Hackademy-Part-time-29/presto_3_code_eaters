@@ -27,7 +27,7 @@ class AppServiceProvider extends ServiceProvider
         Paginator::useBootstrap();
 
         if (Schema::hasTable('categories')){
-            View::share('categories', Category::orderBy('name')->get());
+            View::share('categories', Category::with('macroCategory')->orderBy('name')->get());
         }
 
         Blade::directive('formatPrice', function ($price) {

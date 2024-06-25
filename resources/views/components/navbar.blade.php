@@ -28,7 +28,7 @@
               <div class="menu-column">
                 @foreach ($categories->unique('macroCategory_id') as $category)
                   <div class="menu-item" data-category-id="{{ $category->macroCategory->id }}">
-                    <a href="{{route('byCategory',['category'=>$category])}}" class="dropdown-item">
+                    <a href="{{route('byMacroCategory',['macroCategory' => $category->macroCategory])}}" class="dropdown-item">
                       <p class="nomeMacroCategoria">{{$category->macroCategory->name}}  </p>                    
                     </a>                    
                   </div>
