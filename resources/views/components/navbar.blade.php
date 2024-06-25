@@ -16,17 +16,6 @@
     <div class="collapse navbar-collapse" id="navbarButtonsExample">
       <!-- Left links -->
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item ms-3 me-3">
-          <a class="nav-link fs-5" href="{{route('welcome')}}">
-            <i class="bi bi-house"></i>
-            Homepage
-          </a>
-        </li>
-        <li class="nav-item ms-3 me-3">
-          <a class="nav-link fs-5" href="{{route('article.index')}}">
-            <i class="bi bi-bag"></i>
-            Articoli</a>
-        </li>
         <li class="nav-item ms-3 me-3 custom-dropdown">
           <a href="#" role="button" class="nav-link fs-5">
             <i class="bi bi-tags">
@@ -51,6 +40,11 @@
               </div>
             </div>
           </div>
+        </li>
+        <li class="nav-item ms-3 me-3">
+          <a class="nav-link fs-5" href="{{route('article.index')}}">
+            <i class="bi bi-bag"></i>
+            Articoli</a>
         </li>
       </ul>
       <!-- Left links -->

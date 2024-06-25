@@ -16,7 +16,7 @@
           </div>
         <div class="mb-3">
           <label class="form-label">description</label>
-          <input type="text" class="form-control" wire:model.blur="description">
+          <textarea type="text" class="form-control" wire:model="description" id="autoResizeTextarea"></textarea>
           @error('description')
               <span class="small text-danger">{{$message}}</span>
           @enderror

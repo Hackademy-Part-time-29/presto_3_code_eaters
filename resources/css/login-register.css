@@ -1,0 +1,4 @@
+#autoResizeTextarea {
+    min-height: 100px; /* Altezza minima, puoi modificarla come necessario */
+    overflow-y: hidden; /* Nasconde la barra di scorrimento verticale */
+}
