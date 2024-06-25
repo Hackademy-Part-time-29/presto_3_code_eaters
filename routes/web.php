@@ -14,8 +14,8 @@ Route::get('/show/article/{article}',[ArticleController::class, 'show'])->name('
 Route::get('/category/{category}',[ArticleController::class, 'byCategory'])->name('byCategory');
 Route::get('/MacroCategory/{macroCategory}',[ArticleController::class, 'byMacroCategory'])->name('byMacroCategory');
 
-Route::get('revisor/index',[RevisorController::class, 'index'])->middleware('isRevisor')->name('revisor.index');
-Route::get('revisor/request',[RevisorController::class, 'becomeRevisor'])->middleware('auth')->name('become.revisor');
+Route::get('/revisor/index',[RevisorController::class, 'index'])->middleware('isRevisor')->name('revisor.index');
+Route::get('/revisor/request',[RevisorController::class, 'becomeRevisor'])->middleware('auth')->name('become.revisor');
 
 Route::get('/accept/{article}',[RevisorController::class, 'accept'])->name('accept');
 Route::get('/reject/{article}',[RevisorController::class, 'reject'])->name('reject');
