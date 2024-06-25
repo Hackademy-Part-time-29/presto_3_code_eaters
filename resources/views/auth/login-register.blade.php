@@ -1,52 +1,98 @@
 <x-layout>
-<div class="ilContenitoreDelLogin">
-    <div class="container-form" id="container">
-        <div class="form-container sign-up-container">
-            <form class="form-login" action="#">
-                <h1 class="form-h1">Create Account</h1>
-                <div class="social-container">
-                    <a href="#" class="social form-a"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" class="social form-a"><i class="fab fa-google-plus-g"></i></a>
-                    <a href="#" class="social form-a"><i class="fab fa-linkedin-in"></i></a>
-                </div>
-                <span>or use your email for registration</span>
-                <input class="form-input" type="text" placeholder="Name" />
-                <input class="form-input" type="email" placeholder="Email" />
-                <input class="form-input" type="password" placeholder="Password" />
-                <button class="button-form">Sign Up</button>
-            </form>
-        </div>
-        <div class="form-container sign-in-container">
-            <form class="form-login" action="#">
-                <h1 class="form-h1">Sign in</h1>
-                <div class="social-container">
-                    <a href="#" class="social form-a"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" class="social form-a"><i class="fab fa-google-plus-g"></i></a>
-                    <a href="#" class="social form-a"><i class="fab fa-linkedin-in"></i></a>
-                </div>
-                <span>or use your account</span>
-                <input class="form-input" type="email" placeholder="Email" />
-                <input class="form-input" type="password" placeholder="Password" />
-                <a href="#" class="form-a">Forgot your password?</a>
-                <button class="button-form">Sign In</button>
-            </form>
-        </div>
-        <div class="overlay-container">
-            <div class="overlay">
-                <div class="overlay-panel overlay-left">
-                    <h1 class="form-h1">Welcome Back!</h1>
-                    <p class="form-p">To keep connected with us please login with your personal info</p>
-                    <button class="ghost" id="signIn">Sign In</button>
-                </div>
-                <div class="overlay-panel overlay-right">
-                    <h1 class="form-h1">Hello, Friend!</h1>
-                    <p class="form-p">Enter your personal details and start journey with us</p>
-                    <button class="ghost button-form" id="signUp">Sign Up</button>
+    <div class="container d-flex justify-content-center align-items-center mt-5 mb-5">
+        <div class="auth-container " id="auth-container">
+            <div class="form-container sign-up-container">
+                <form class="form-auth" method="POST" action="/register" novalidate>
+                    @csrf
+                    <h1 class="auth-h1">Crea un account</h1>
+                    <div class="social-container">
+                        <a href="#" class="social auth-a bi bi-facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social auth-a bi bi-google"><i class="fab fa-google-plus-g"></i></a>
+                        <a href="#" class="social auth-a bi bi-linkedin"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <input class="auth-input" type="text" name="name" id="name" placeholder="Nome" value="{{ old('name') }}" required/>
+                        @error('name')
+                            <div class="alert alert-danger" role="alert">
+                                {{$message}}
+                            </div>
+                        @enderror
+    
+                    <input class="auth-input" type="text" name="surname" id="surname" placeholder="Cognome" value="{{ old('surname') }}" required/>
+                        @error('surname')
+                            <div class="alert alert-danger" role="alert">
+                                {{$message}}
+                            </div>
+                        @enderror
+    
+                    <input class="auth-input" type="number" name="age" id="surname" placeholder="Età" value="{{ old('age') }}" required/>
+                        @error('age')
+                            <div class="alert alert-danger" role="alert">
+                                {{$message}}
+                            </div>
+                        @enderror
+                    
+                    <input class="auth-input" type="email" name="email" id="email" placeholder="Email" value="{{ old('email') }}" required/>
+                        @error('email')
+                            <div class="alert alert-danger" role="alert">
+                                {{$message}}
+                            </div>
+                        @enderror
+    
+                    <input class="auth-input" type="password" name="password" id="password" placeholder="Password" required/>
+                        @error('password')
+                            <div class="alert alert-danger" role="alert">
+                                {{$message}}
+                            </div>
+                        @enderror
+    
+                    <input class="auth-input" type="password" name="password_confirmation" id="password_confirmation" placeholder="Conferma Password" required/>
+    
+                    <button class="auth-button">Registrati</button>
+                </form>
+            </div>
+            <div class="form-container sign-in-container">
+                <form class="form-auth" action="{{route('login')}}" method="POST">
+                    @csrf
+                    <h1 class="auth-h1">Login</h1>
+                    <div class="social-container">
+                        <a href="#" class="social auth-a bi bi-facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social auth-a bi bi-google"><i class="fab fa-google-plus-g"></i></a>
+                        <a href="#" class="social auth-a bi bi-linkedin"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+    
+                    <input class="auth-input" type="email" name="email" placeholder="Email" />
+                        @error('email')
+                                <div class="alert alert-danger" role="alert">
+                                    {{$message}}
+                                </div>
+                        @enderror
+    
+                    <input class="auth-input" type="password" name="password" placeholder="Password" />
+                        @error('password')
+                                <div class="alert alert-danger" role="alert">
+                                    {{$message}}
+                                </div>
+                        @enderror
+                    {{-- <a href="#" class="auth-a">Forgot your password?</a> --}}
+                    <button class="auth-button">Login</button>
+                </form>
+            </div>
+            <div class="overlay-container">
+                <div class="overlay">
+                    <div class="overlay-panel overlay-left">
+                        <h1 class="auth-h1">Bentornato!</h1>
+                        <p class="auth-p">Per continuare ad essere connessi con noi perfavore esegui il login con i tuoi dati personali</p>
+                        <button class="ghost auth-button" id="signIn">Login</button>
+                    </div>
+                    <div class="overlay-panel overlay-right">
+                        <h1 class="auth-h1">Ciao!</h1>
+                        <p class="auth-p">Inserisci i tuoi dati personali ed inizia l'avventura insieme a noi</p>
+                        <button class="ghost auth-button" id="signUp">Registrati</button>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-
-
-</x-layout>
+        
+    
+    </x-layout>
