@@ -26,20 +26,19 @@ class ArticleController extends Controller
     }
 
     public function byCategory(Category $category){
-        $article = $category->articles->where('is_accepted', true);
+        $articles = $category->articles->where('is_accepted', true);
         return view('article.byCategory', compact('articles', 'category'));
     }
 
     public function byMacroCategory($macroCategoryId){
         
         $macroCategory = MacroCategory::findOrFail($macroCategoryId);
-
         // Trova tutte le categorie che appartengono a questa macrocategoria
         $categories = Category::where('macroCategory_id', $macroCategoryId)->get();
         
         // Trova tutti gli articoli che appartengono a queste categorie
-        $articles = Article::whereIn('category_id', $categories->pluck('id'))->get();
-
+        $articles = Article::whereIn('category_id', $categories->pluck('id'))->where('is_accepted', true)->get();
+        
         return view('article.byMacroCategory', [
             'macroCategory' => $macroCategory,
             'articles' => $articles,
