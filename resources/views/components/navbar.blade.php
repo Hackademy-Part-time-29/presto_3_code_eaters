@@ -48,14 +48,15 @@
         @auth
             <form action="{{route('logout')}}" method="POST">
               @csrf
-                <button data-mdb-ripple-init type="submit" class="btn btn-link px-3 me-2">
+                <button data-mdb-ripple-init type="submit" class="buttonLog elemento1">
                   <i class="bi bi-door-open"></i> Logout
                 </button>
+
             </form>            
             <a class="btn btn-primary me-1" href="{{route('create.article')}}"> Crea un nuovo annuncio</a>
             @if (Auth::user()->is_revisor)
               <li class="nav-item">
-                <a href="{{route('revisor.index')}}" class="nav-link btn btn-outline-success btn-sm position-relative w-sm-25">
+                <a href="{{route('revisor.index')}}" class="nav-link btn btn-outline-success btn-sm position-relative w-sm-25 elemento2">
                   Zona revisore
 
                   <span class="position-absolute top-0 start-100 traslate-middle badge rounded-pill bg-danger">{{\App\Models\Article::toBeRevisedCount()}}</span>
