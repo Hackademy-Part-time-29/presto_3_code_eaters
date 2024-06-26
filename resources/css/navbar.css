@@ -82,3 +82,7 @@
 .menu-item-2-element:hover {
     color: #3c59fc; 
 }
+
+.filtroGenerale::placeholder {
+    color: gray;
+}

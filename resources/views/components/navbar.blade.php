@@ -41,7 +41,7 @@
       <div class="d-flex align-items-center">
         <form class="d-flex me-3" role="search" action="{{route('article.search')}}" method="GET">
           <div class="input-group">
-              <input class="form-control me-2" type="search" name="query" placeholder="Search" aria-label="Search">
+              <input class="form-control me-2 filtroGenerale" type="search" name="query" placeholder="Search" aria-label="Search">
               <button class="btn btn-outline-success" type="submit" id="basic-addon2">Search</button>
           </div>
         </form>
