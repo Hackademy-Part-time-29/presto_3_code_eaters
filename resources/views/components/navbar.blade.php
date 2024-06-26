@@ -33,7 +33,7 @@
         </li>
         <li class="nav-item ms-3 me-3">
           <a class="nav-link fs-5" href="{{route('article.index')}}">
-            <i class="bi bi-bag"></i>
+            <i class="bi bi-bag animate-bold"></i>
             Articoli</a>
         </li>
       </ul>
@@ -57,17 +57,26 @@
               <li class="nav-item">
                 <a href="{{route('revisor.index')}}" class="nav-link btn btn-outline-success btn-sm position-relative w-sm-25">
                   Zona revisore
+
                   <span class="position-absolute top-0 start-100 traslate-middle badge rounded-pill bg-danger">{{\App\Models\Article::toBeRevisedCount()}}</span>
                 </a>
               </li>
             @endif                
         @else
-            <a href="{{route('login')}}" class="btn btn-primary me-3">
-              <i class="bi bi-box-arrow-in-right"></i> Login
-            </a>
-            <a href="{{route('register')}}" class="btn btn-primary me-3">
-              <i class="bi bi-person-add"></i> Registrati
-            </a>
+        
+            <a href="{{ route('login') }}" class="cssbuttons-io-button">
+    Login
+    <div class="icon">
+       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M217.9 105.9L340.7 228.7c7.2 7.2 11.3 17.1 11.3 27.3s-4.1 20.1-11.3 27.3L217.9 406.1c-6.4 6.4-15 9.9-24 9.9c-18.7 0-33.9-15.2-33.9-33.9l0-62.1L32 320c-17.7 0-32-14.3-32-32l0-64c0-17.7 14.3-32 32-32l128 0 0-62.1c0-18.7 15.2-33.9 33.9-33.9c9 0 17.6 3.6 24 9.9zM352 416l64 0c17.7 0 32-14.3 32-32l0-256c0-17.7-14.3-32-32-32l-64 0c-17.7 0-32-14.3-32-32s14.3-32 32-32l64 0c53 0 96 43 96 96l0 256c0 53-43 96-96 96l-64 0c-17.7 0-32-14.3-32-32s14.3-32 32-32z"/></svg>
+    </div>
+</a>
+<a href="{{route('register')}}" class="cssbuttons-io-button">
+    Registrati
+    <div class="icon">
+       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z"/></svg>
+    </div>
+</a>
+
         @endauth
       </div>
     </div>

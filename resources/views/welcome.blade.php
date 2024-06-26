@@ -11,7 +11,7 @@
     </div>
     @endif
 
-    
+
         <!-- Hero Section -->
         <header class="bg-primary text-white text-center py-5">
             <div class="container">
@@ -37,7 +37,7 @@
         <section class="py-5">
             <div class="container">
                 <h2 class="mb-4">Chi Siamo</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus. Mauris iaculis porttitor posuere. Praesent id metus massa, ut blandit odio. Proin quis tortor orci. Etiam at risus et justo dignissim congue. Donec congue lacinia dui, a porttitor lectus condimentum laoreet. Nunc eu ullamcorper orci. Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque faucibus vestibulum. Nulla at nulla justo, eget luctus tortor. Nulla facilisi. Duis aliquet egestas purus in blandit.</p>
+                <p>In una calda giornata estiva, in un piccolo ufficio senza finestre, cinque programmatori si ritrovarono con molto tempo libero e poca ispirazione. Luca, Marzio, Andrei, Michele ed Emanuele erano abituati a risolvere complessi problemi di codice, ma quella settimana i progetti scarseggiavano. Così, tra una pausa caffè e l’altra, decisero che era tempo di fare qualcosa di diverso, qualcosa di innovativo e divertente.</p>
             </div>
         </section>
     
@@ -47,16 +47,21 @@
                 <h2 class="mb-4">I Nostri Servizi</h2>
                 <div class="row">
                     <div class="col-md-4">
-                        <h3>Servizio 1</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque.</p>
+                        <h3>Acquisti Personalizzati tramite AI </h3>
+                        <p>Raccomandazioni Personalizzate: Prodotti suggeriti in base agli acquisti precedenti e agli interessi dell'utente offrendoti
+                        Promozioni Mirate ed esperienze di acquisto curate
+                       </p>
                     </div>
                     <div class="col-md-4">
-                        <h3>Servizio 2</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque.</p>
+                        <h3>Programmi di Abbonamento e Servizi Continuativi</h3>
+                        <p>Consegne Regolari di Prodotti: Abbonamenti per prodotti di uso quotidiano, come caffè, articoli per la casa, o prodotti di bellezza, con consegne automatiche a intervalli prestabiliti.
+                        Accesso a Contenuti Esclusivi: Contenuti premium, come tutorial, guide, e webinar, riservati agli abbonati per migliorare l'esperienza del prodotto.
+                        Sconti e Offerte Esclusive: Promozioni speciali, sconti e accesso anticipato ai nuovi lanci di prodotto riservati ai membri del programma di abbonamento.</p>
                     </div>
                     <div class="col-md-4">
-                        <h3>Servizio 3</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque.</p>
+                        <h3>Assistenza Clienti 24/7 tramite Chatbot e Live Chat</h3>
+                        <p>Chatbot Avanzati: Utilizzo di chatbot alimentati dall'intelligenza artificiale per rispondere rapidamente alle domande frequenti, assistere nella navigazione del sito, e risolvere problemi comuni in qualsiasi momento del giorno o della notte.
+Live Chat con Operatori Umani: Accesso a rappresentanti del servizio clienti in tempo reale per risolvere problemi più complessi e fornire consigli personalizzati.</p>
                     </div>
                 </div>
             </div>
