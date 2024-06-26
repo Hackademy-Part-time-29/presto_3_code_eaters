@@ -1,12 +1,12 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-body-tertiary">
-  <div class="container">
-    <a class="navbar-brand me-2" href="/">
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/">
       <img src="/storage/logo60px.png" alt="logo">
     </a>
-    <button data-mdb-collapse-init class="navbar-toggler" type="button" data-mdb-target="#navbarButtonsExample" aria-controls="navbarButtonsExample" aria-expanded="false"aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarButtonsExample">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item ms-3 me-3 custom-dropdown">
           <span class="nav-link fs-5">
@@ -39,6 +39,12 @@
       </ul>
    
       <div class="d-flex align-items-center">
+        <form class="d-flex me-3" role="search" action="{{route('article.search')}}" method="GET">
+          <div class="input-group">
+              <input class="form-control me-2" type="search" name="query" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit" id="basic-addon2">Search</button>
+          </div>
+        </form>
         @auth
             <form action="{{route('logout')}}" method="POST">
               @csrf

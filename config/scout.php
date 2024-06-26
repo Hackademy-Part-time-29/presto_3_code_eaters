@@ -204,7 +204,7 @@ return [
     
     'tntsearch' => [
             'storage' => storage_path(), 
-            'fuzziness' => env('TNTSEARCH_FUZZINESS', true),
+            'fuzziness' => env('TNTSEARCH_FUZZINESS', false),
             'fuzzy' => [
                 'prefix_length',
                 'max_expansions' => 50,

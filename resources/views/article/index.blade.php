@@ -14,12 +14,6 @@
     <div class="row">
         <div class="col-3 contenitoreFiltri">
             <p>colonna per i filtri di ricerca</p> 
-            <form class="d-flex" role="search" action="{{route('article.search')}}" method="GET">
-                <div class="input-group">
-                    <input class="form-control me-2" type="search" name="query" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit" id="basic-addon2">Search</button>
-                </div>
-            </form>
             <div class="contenitoreOrdinamento">
                 <p>Ordinamento select</p>
             </div>     
