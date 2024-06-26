@@ -19,7 +19,7 @@
         @if ($article_to_check)
             <div class="row justify-content-center pt-5">
                 <div class="col-md-8">
-                    <div class="roe justify-content-center">
+                    <div class="row justify-content-center">
                         @for ($i = 0; $i < 6; $i++)
                             <div class="col-6 col-md-4 mb-4 text-center">
                                 <img src="https://picsum.photos/200/300" alt="" class="img-fluid rounded shadow">

@@ -13,11 +13,9 @@
                     </ul>
                 </div>
             </div>
-            <div class="row height-custom justify-content-center align-items-center">
+            <div class="card-container">
                 @forelse ($articles as $article)
-                    <div class="col-12 col-md-4">
                         <x-card :article="$article" />
-                    </div>
                 @empty
                     <div class="col-12">
                         <h3 class="text-center">

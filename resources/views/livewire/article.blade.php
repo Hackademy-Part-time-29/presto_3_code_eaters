@@ -1,5 +1,5 @@
 <div>    
-    <form wire:submit.prevent="store">
+    <form wire:submit.prevent="store" class="mb-5">
         <div class="mb-3">
             <label class="form-label">title</label>
             <input type="text" class="form-control" wire:model.blur="title">
@@ -27,6 +27,6 @@
                 <option value="{{ $Category->id }}">{{$Category->name}}</option>
             @endforeach           
         </select>
-        <button type="submit" class="btn btn-primary">Crea Articolo</button>
+        <button type="submit" class="btn btn-primary mt-5">Crea Articolo</button>
     </form>
 </div>
