@@ -37,7 +37,7 @@
             Articoli</a>
         </li>
       </ul>
-   
+  
       <div class="d-flex align-items-center">
         <form class="d-flex me-3" role="search" action="{{route('article.search')}}" method="GET">
           <div class="input-group">

@@ -1,6 +1,11 @@
 <x-h-t-m-l>
     <body>
         <x-navbar/>
+        @if(Route::is('welcome'))
+            
+        @else
+            <x-breadcrumb/>
+        @endif        
         @session('success')
             <div class="alert alert-success" rule="alert">
                 {{session('success')}}
