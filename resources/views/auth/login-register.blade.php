@@ -22,7 +22,7 @@
                                 {{$message}}
                             </div>
                         @enderror    
-                    <input class="auth-input" type="number" name="age" id="surname" placeholder="Età" value="{{ old('age') }}" required/>
+                    <input class="auth-input" type="number" name="age" id="age" placeholder="Età" value="{{ old('age') }}" required/>
                         @error('age')
                             <div class="messaggioDiErroreLogin_Register" role="alert">
                                 {{$message}}
