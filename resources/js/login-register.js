@@ -1,25 +1,39 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const textarea = document.getElementById('autoResizeTextarea');
+    let textarea = document.getElementById('autoResizeTextarea');
 
-    textarea.addEventListener('input', autoResize);
+    if (textarea) {
+      textarea.addEventListener('input', autoResize);
+      autoResize.call(textarea); // Inizializza l'altezza del textarea
 
-    function autoResize() {
-      this.style.height = 'auto'; // Resetta l'altezza
-      this.style.height = this.scrollHeight + 'px'; // Imposta l'altezza basata sul contenuto
+      function autoResize() {
+          this.style.height = 'auto'; // Resetta l'altezza
+          this.style.height = this.scrollHeight + 'px'; // Imposta l'altezza basata sul contenuto
+      }
+  }
+
+  let signUpButton = document.getElementById('signUp');
+  let signInButton = document.getElementById('signIn');
+  let authContainer = document.getElementById('auth-container');
+
+  if (signUpButton && signInButton && authContainer) {
+    signUpButton.addEventListener('click', () => {
+        authContainer.classList.add("right-panel-active");
+    });
+
+    signInButton.addEventListener('click', () => {
+        authContainer.classList.remove("right-panel-active");
+    });
+
+    // Check the current URL
+    if (window.location.pathname === '/register') {
+        authContainer.classList.add("right-panel-active");
+    } else {
+        authContainer.classList.remove("right-panel-active");
     }
+  }
 
-    // Inizializza l'altezza del textarea
-    autoResize.call(textarea);
-});
-
-let signUpButton = document.getElementById('signUp');
-let signInButton = document.getElementById('signIn');
-let authContainer = document.getElementById('auth-container');
-
-signUpButton.addEventListener('click', () => {
-	authContainer.classList.add("right-panel-active");
-});
-
-signInButton.addEventListener('click', () => {
-	authContainer.classList.remove("right-panel-active");
+  let popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+  let popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+      return new bootstrap.Popover(popoverTriggerEl)
+  });
 });

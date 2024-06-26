@@ -1,6 +1,6 @@
 <x-layout>
     <div class="container d-flex justify-content-center align-items-center mt-5 mb-5">
-        <div class="auth-container " id="auth-container">
+        <div class="auth-container {{ request()->is('register') ? 'right-panel-active' : '' }}" id="auth-container">
             <div class="form-container sign-up-container">
                 <form class="form-auth" method="POST" action="/register" novalidate>
                     @csrf
@@ -12,41 +12,35 @@
                     </div>
                     <input class="auth-input" type="text" name="name" id="name" placeholder="Nome" value="{{ old('name') }}" required/>
                         @error('name')
-                            <div class="alert alert-danger" role="alert">
+                            <div class="messaggioDiErroreLogin_Register" role="alert">
                                 {{$message}}
                             </div>
                         @enderror
-    
                     <input class="auth-input" type="text" name="surname" id="surname" placeholder="Cognome" value="{{ old('surname') }}" required/>
                         @error('surname')
-                            <div class="alert alert-danger" role="alert">
+                            <div class="messaggioDiErroreLogin_Register" role="alert">
                                 {{$message}}
                             </div>
-                        @enderror
-    
+                        @enderror    
                     <input class="auth-input" type="number" name="age" id="surname" placeholder="Età" value="{{ old('age') }}" required/>
                         @error('age')
-                            <div class="alert alert-danger" role="alert">
+                            <div class="messaggioDiErroreLogin_Register" role="alert">
                                 {{$message}}
                             </div>
-                        @enderror
-                    
+                        @enderror                    
                     <input class="auth-input" type="email" name="email" id="email" placeholder="Email" value="{{ old('email') }}" required/>
                         @error('email')
-                            <div class="alert alert-danger" role="alert">
+                            <div class="messaggioDiErroreLogin_Register" role="alert">
                                 {{$message}}
                             </div>
-                        @enderror
-    
+                        @enderror    
                     <input class="auth-input" type="password" name="password" id="password" placeholder="Password" required/>
                         @error('password')
-                            <div class="alert alert-danger" role="alert">
+                            <div class="messaggioDiErroreLogin_Register" role="alert">
                                 {{$message}}
                             </div>
-                        @enderror
-    
+                        @enderror    
                     <input class="auth-input" type="password" name="password_confirmation" id="password_confirmation" placeholder="Conferma Password" required/>
-    
                     <button class="auth-button">Registrati</button>
                 </form>
             </div>
@@ -58,22 +52,19 @@
                         <a href="#" class="social auth-a bi bi-facebook"><i class="fab fa-facebook-f"></i></a>
                         <a href="#" class="social auth-a bi bi-google"><i class="fab fa-google-plus-g"></i></a>
                         <a href="#" class="social auth-a bi bi-linkedin"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-    
-                    <input class="auth-input" type="email" name="email" placeholder="Email" />
+                    </div>    
+                    <input class="auth-input" type="email" name="email" value="{{ old('email') }}" placeholder="Email" />
                         @error('email')
-                                <div class="alert alert-danger" role="alert">
+                                <div class="messaggioDiErroreLogin_Register" role="alert">
                                     {{$message}}
                                 </div>
-                        @enderror
-    
+                        @enderror    
                     <input class="auth-input" type="password" name="password" placeholder="Password" />
                         @error('password')
-                                <div class="alert alert-danger" role="alert">
+                                <div class="messaggioDiErroreLogin_Register" role="alert">
                                     {{$message}}
                                 </div>
                         @enderror
-                    {{-- <a href="#" class="auth-a">Forgot your password?</a> --}}
                     <button class="auth-button">Login</button>
                 </form>
             </div>

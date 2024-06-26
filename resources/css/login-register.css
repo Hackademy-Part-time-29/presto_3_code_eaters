@@ -3,7 +3,6 @@
     overflow-y: hidden; /* Nasconde la barra di scorrimento verticale */
 }
 
-
 * {
 	box-sizing: border-box;
 }
@@ -217,4 +216,9 @@ body {
 	margin: 0 5px;
 	height: 40px;
 	width: 40px;
+}
+
+.messaggioDiErroreLogin_Register {
+	font-size: 14px;
+	color: red;
 }
