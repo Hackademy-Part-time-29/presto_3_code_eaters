@@ -56,10 +56,9 @@
             <a class="btn btn-primary me-1" href="{{route('create.article')}}"> Crea un nuovo annuncio</a>
             @if (Auth::user()->is_revisor)
               <li class="nav-item">
-                <a href="{{route('revisor.index')}}" class="nav-link btn btn-outline-success btn-sm position-relative w-sm-25 elemento2">
-                  Zona revisore
-
-                  <span class="position-absolute top-0 start-100 traslate-middle badge rounded-pill bg-danger">{{\App\Models\Article::toBeRevisedCount()}}</span>
+                <a href="{{route('revisor.index')}}" class="notification elemento2">
+                  <span>Zona revisore</span>
+                  <span class="badge">{{\App\Models\Article::toBeRevisedCount()}}</span>
                 </a>
               </li>
             @endif                

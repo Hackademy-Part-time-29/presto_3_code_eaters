@@ -221,3 +221,28 @@ a {
     transition-duration: 400ms;
     transition-property: width, left;
 }
+
+/* zona revisore */
+.notification {
+    background-color: #d7d7d7;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 8px 20px;
+    position: relative;
+    display: inline-block;
+    border-radius: 7px;
+}
+
+.notification:hover {
+    background: rgb(160, 157, 157);
+}
+
+.notification .badge {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    padding: 5px 10px;
+    border-radius: 50%;
+    background: rgb(255, 55, 55);
+    color: rgb(255, 255, 255);
+}
