@@ -1,0 +1,71 @@
+/* bottone per aggiungere annuncio una volta loggati */
+
+* {
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    box-sizing: border-box;
+};
+
+.prova {
+    padding-left: 25px;
+}
+
+.BtnLayoutAdd {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    
+    background-color: transparent;
+    position: relative;
+    /* overflow: hidden; */
+    border-radius: 7px;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.logoPlus{
+        width: 50%;
+        height: 50%;
+}
+
+.svgContainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    backdrop-filter: blur(8px);
+    letter-spacing: 0.8px;
+    border-radius: 50px;
+    transition: all .3s;
+    border: 1px solid rgba(235, 233, 233, 0.466);
+}
+
+.BG {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #f03333;
+    background: -moz-linear-gradient(45deg, #f90e0e 0%, #fd2424 25%, #dc2743 50%, #dc2743 75%, #dc2743 100%);
+    background: -webkit-linear-gradient(45deg, #dc2743 0%, #dc2743 25%, #dc2743 50%, #dc2743 75%, #dc2743 100%);
+    background: linear-gradient(45deg, #dc2743 0%, #dc2743 25%, #dc2743 50%, #dc2743 75%, #dc2743 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#dc2743', endColorstr='#dc2743', GradientType=1);
+    z-index: -1;
+    border-radius: 50px;
+    pointer-events: none;
+    transition: all .3s;
+}
+
+.BtnLayoutAdd:hover .BG {
+    transform: rotate(35deg);
+    transform-origin: bottom;
+}
+
+.BtnLayoutAdd:hover .svgContainer {
+    background-color: rgba(156, 156, 156, 0.466);
+}

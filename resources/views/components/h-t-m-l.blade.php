@@ -14,6 +14,11 @@
     <link rel='stylesheet' href='https://themify.me/wp-content/themes/themify-v32/themify-icons/themify-icons.css'>
     {{-- footer --}}
 
+    {{-- font --}}
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    {{-- font --}}
     
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     <title>Document</title>
