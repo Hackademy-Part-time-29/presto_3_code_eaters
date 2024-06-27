@@ -46,8 +46,9 @@
     
         .h1header {
             position: relative;
-            text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.9);
-                font-weight: 400;
+            text-shadow: 0px 10px 10px rgba(0, 0, 0, 0.9);
+                font-weight: 700;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
                 text-transform: uppercase;
             font-size: 3em;
             
@@ -56,8 +57,8 @@
         }
     
         .pheader {
-            text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.9);
-            font-weight: 400;
+            text-shadow: 0px 10px 10px rgba(0, 0, 0, 0.9);
+            font-weight: 300;
             text-transform: uppercase;
             position: relative;
             font-size: 1.2em;
