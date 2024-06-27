@@ -9,3 +9,9 @@
 @import 'card.css';
 @import 'FooterStyle.css';
 @import 'header.css';
+@import 'FormArticleCreate.css';
+
+* {
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+}

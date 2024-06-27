@@ -54,8 +54,6 @@
     outline: none;
 }
 
-
-
 .new_footer_top .f_widget.about-widget .f_list li a:hover {
     color: #5e2ced;
 }
@@ -78,32 +76,6 @@
     background: transparent;
     border: 1px solid #e2e2eb;
     font-size: 24px;
-}
-.f_social_icon a {
-    width: 46px;
-    height: 46px;
-    border-radius: 50%;
-    font-size: 14px;
-    line-height: 45px;
-    color: #858da8;
-    display: inline-block;
-    background: #ebeef5;
-    text-align: center;
-    -webkit-transition: all 0.2s linear;
-    -o-transition: all 0.2s linear;
-    transition: all 0.2s linear;
-}
-.ti-facebook:before {
-    content: "\e741";
-}
-.ti-twitter-alt:before {
-    content: "\e74b";
-}
-.ti-vimeo-alt:before {
-    content: "\e74a";
-}
-.ti-pinterest:before {
-    content: "\e731";
 }
 
 .btn_get_two {
@@ -131,9 +103,7 @@
     margin-bottom: 30px;
     color: #263b5e;
 }
-.f_600 {
-    font-weight: 600;
-}
+
 .f_size_18 {
     font-size: 18px;
 }
@@ -144,7 +114,6 @@
     color: #6a7695;
 }
 
-
 .new_footer_top .footer_bg {
     position: absolute;
     bottom: 0;
@@ -153,7 +122,6 @@
     height: 266px;
 }
 
-/* macchina */
 .new_footer_top .footer_bg .footer_bg_one {
 
     background: url('./img/logo60px.png') no-repeat center center;
@@ -207,5 +175,3 @@
     left: 100%;
   }
 }
-
-/*************footer End*****************/
