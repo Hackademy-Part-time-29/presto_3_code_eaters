@@ -22,8 +22,10 @@
                     @break
                 @endif
             @endforeach            
-        @else
-
+        @elseif (Route::is('create.article'))
+            <li class="breadcrumb-item"><a href="/">Home</a></li>
+            <li class="breadcrumb-item"><a href="{{route('article.index')}}">Articoli</a></li>
+            <li class="breadcrumb-item"><span>Crea Articolo</span></li>
         @endif
     </ol>    
 </nav>
