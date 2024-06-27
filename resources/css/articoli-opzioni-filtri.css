@@ -5,7 +5,7 @@
 .opzioneArticoli {
     position: absolute;
     display: flex;
-    width: 60%;
+    width: 100%;
     justify-content: end;
 }
 
@@ -16,7 +16,7 @@
 .opzioneArticoli .dropstart {
     position: relative;
     align-items: end;
-    right: -10%;
+    right: -5%;
 }
 
 .contenitorePercorso {
