@@ -1,10 +1,10 @@
 <x-layout>
     @if (session()->has('message'))
-    <div class="row justify-content-center">
-        <div class="col-5 alert alert-success text-center shadow rounded">
-            {{ session('message')}}
-        </div>
-    </div>       
+        <div class="row justify-content-center">
+            <div class="col-5 alert alert-success text-center shadow rounded">
+                {{ session('message')}}
+            </div>
+        </div>       
     @endif
     <div class="container-fluid pt-5">
         <div class="row">
