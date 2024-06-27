@@ -1,11 +1,14 @@
 /* bottone per aggiungere annuncio una volta loggati */
 
+* {
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    box-sizing: border-box;
+};
+
 .prova {
     padding-left: 25px;
 }
-
-
-
 
 .BtnLayoutAdd {
     width: 40px;
@@ -27,9 +30,6 @@
         width: 50%;
         height: 50%;
 }
-
-
-
 
 .svgContainer {
     width: 100%;
