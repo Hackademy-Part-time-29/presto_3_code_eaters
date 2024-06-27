@@ -13,10 +13,10 @@
 
 
         <!-- Hero Section -->
-        <header class="bg-danger text-white text-center py-5">
+        <header class="rounded-header py-5">
             <div class="container">
-                <h1 class="display-4">Claim.it</h1>
-                <p class="lead"> Acquisti compulsivi senza senso</p>
+                <h1 class="display-4 h1header">Claim.it</h1>
+                <p class="lead pheader"> Acquisti compulsivi senza senso</p>
             </div>
         </header>
         <div class="row height-custom justify-content-center align-items-center py-5">
