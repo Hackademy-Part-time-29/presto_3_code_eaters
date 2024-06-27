@@ -18,17 +18,20 @@ document.addEventListener('DOMContentLoaded', function() {
   if (signUpButton && signInButton && authContainer) {
     signUpButton.addEventListener('click', () => {
         authContainer.classList.add("right-panel-active");
+        window.location.pathname = `/register`
     });
 
     signInButton.addEventListener('click', () => {
         authContainer.classList.remove("right-panel-active");
+        window.location.pathname = `/login`
     });
+            // // Check the current URL
+            // if (window.location.pathname === '/register') {
+            //     authContainer.classList.add("right-panel-active");
+            // } else {
+            //     authContainer.classList.remove("right-panel-active");
+            // }
 
-    // Check the current URL
-    if (window.location.pathname === '/register') {
-        authContainer.classList.add("right-panel-active");
-    } else {
-        authContainer.classList.remove("right-panel-active");
-    }
+
   }
 });

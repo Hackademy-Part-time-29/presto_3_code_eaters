@@ -16,7 +16,8 @@
                 </div>
             </div>
         </div>
-        @if ($article_to_check)
+        @dd($article_to_recover)
+        @if ($article_to_check ?? '')
             <div class="row justify-content-center pt-5">
                 <div class="col-md-8">
                     <div class="row justify-content-center">
@@ -46,6 +47,11 @@
                             @method('PATCH')
                             <button class="btn btn-success py-2 px-5 fw-bold">Accetta</button>
                         </form>
+                        <form action="{{route('recover')}}" method="POST">
+                            @csrf
+                            @method('PATCH')
+                            <button class="btn btn-primary py-2 px-5 fw-bold">Recupera Articolo Precedente</button>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -55,7 +61,7 @@
                     <h1 class="fst-italic display-4">
                         Nessun articolo da revisionare
                     </h1>
-                    <a href="{{route('homepage')}}" class="mt-5-btn btn-success">Torna all'homepage</a>
+                    <a href="{{route('welcome')}}" class="mt-5-btn btn-success">Torna all'homepage</a>
                 </div>
             </div>
         @endif

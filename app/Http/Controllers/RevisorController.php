@@ -15,6 +15,7 @@ class RevisorController extends Controller
     public function index()
     {
         $article_to_check = Article::where('is_accepted', null)->first();
+       
         return view('revisor.index',compact('article_to_check'));
     } 
 
@@ -40,6 +41,17 @@ class RevisorController extends Controller
     public function makeRevisor(User $user){
         Artisan::call('app:make-user-revisor', ['email'=> $user->email]);
         return redirect()->back();
+    }
+
+    public function recover(){
+        $article_to_recover = Article::whereNotNull('is_accepted')->latest()->first();
+        if ($article_to_recover) {
+            $article_to_recover->update([
+                'is_accepted' => null,
+            ]);
+        };
+        
+        return view('revisor.index',compact('article_to_recover'));
     }
     
 }
