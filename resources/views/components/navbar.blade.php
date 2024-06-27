@@ -52,14 +52,18 @@
             <button data-mdb-ripple-init type="submit" class="buttonLog elemento1">
               <i class="bi bi-door-open"></i> Logout
             </button>
-          </form>            
-          <a class="cssbuttons-io-button elemento1" href="{{route('create.article')}}"> Crea un nuovo annuncio
-            <div class="icon">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                <path d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z"/>
-              </svg>
-            </div>
-          </a>
+          </form> 
+          @if (Route::is('create.article'))
+                
+          @else
+            <a class="cssbuttons-io-button elemento1" href="{{route('create.article')}}"> Crea un nuovo annuncio
+              <div class="icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                  <path d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z"/>
+                </svg>
+              </div>
+            </a>
+          @endif
           @if (Auth::user()->is_revisor)
             <a href="{{route('revisor.index')}}" class="notification elemento2 nav-item">
               <span>Zona revisore</span>
