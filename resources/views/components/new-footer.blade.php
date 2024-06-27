@@ -2,8 +2,7 @@
     <div class="new_footer_top">
         <div class="container">
             <div class="row">
-                @auth
-                    
+                @auth                    
                 <div class="col-lg-4 col-md-12 mb-5">
                     <div class="f_widget company_widget wow fadeInLeft" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInLeft;">
                         <h3 class="f-title f_600 t_color f_size_18">Vuoi diventare Revisore?</h3>
@@ -16,7 +15,7 @@
                 </div>
 
                 <div class="col-lg-4 col-md-12 mb-5">
-                    <img class="img_footer" src="{{asset('storage/images/footer.png')}}">
+                    <img class="img_footer" src="{{asset('storage/img/footer.png')}}">
                 </div>
 
                 <div class="col-lg-4 col-md-12 mb-5">
@@ -36,7 +35,7 @@
                 @else
 
                 <div class="col-lg-6 col-md-12 mb-5">
-                    <img class="img_footer" src="{{asset('storage/images/footer.png')}}">
+                    <img class="img_footer" src="{{asset('storage/img/footer.png')}}">
                 </div>
 
                 <div class="col-lg-6 col-md-12 mb-5">
