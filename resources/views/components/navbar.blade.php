@@ -1,7 +1,7 @@
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
+<div class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
     <a class="navbar-brand" href="/">
-      <img src="{{ asset('/storage/images/logo60px.png') }}" alt="logo">
+      <img src="{{ asset('/storage/logo60px.png') }}" alt="logo">
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -37,72 +37,50 @@
             Articoli</a>
         </li>
       </ul>
- 
-
-<form class="d-flex me-3" role="search" action="{{route('article.search')}}" method="GET">
-       <div class="search">
+    </div>  
+    <form class="d-flex me-3" role="search" action="{{route('article.search')}}" method="GET">
+      <div class="search">
         <input class="form-control me-2 filtroGenerale" type="text" name="query" placeholder="Cerca" aria-label="Search">
         <button type="submit" id="basic-addon2">
           &#128270;
         </button>
       </div>
-</form>
-
-{{--  
-      <div class="container-input">
-  <input type="text" placeholder="Search" name="text" class="input">
-  <svg fill="#000000" width="20px" height="20px" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg">
-    <path d="M790.588 1468.235c-373.722 0-677.647-303.924-677.647-677.647 0-373.722 303.925-677.647 677.647-677.647 373.723 0 677.647 303.925 677.647 677.647 0 373.723-303.924 677.647-677.647 677.647Zm596.781-160.715c120.396-138.692 193.807-319.285 193.807-516.932C1581.176 354.748 1226.428 0 790.588 0S0 354.748 0 790.588s354.748 790.588 790.588 790.588c197.647 0 378.24-73.411 516.932-193.807l516.028 516.142 79.963-79.963-516.142-516.028Z" fill-rule="evenodd"></path>
-</svg>
-</div> --}}
-
-
-
-
-{{-- 
-      <div class="d-flex align-items-center">
-        <form class="d-flex me-3" role="search" action="{{route('article.search')}}" method="GET">
-          <div class="input-group">
-              <input class="form-control me-2 filtroGenerale" type="search" name="query" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit" id="basic-addon2">Search</button>
-          </div>
-        </form> --}}
+    </form>
         @auth
-            <form action="{{route('logout')}}" method="POST">
-              @csrf
-                <button data-mdb-ripple-init type="submit" class="buttonLog elemento1">
-                  <i class="bi bi-door-open"></i> Logout
-                </button>
-
-            </form>            
-            <a class="cssbuttons-io-button elemento1" href="{{route('create.article')}}"> Crea un nuovo annuncio
-              <div class="icon">
-       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z"/></svg>
-    </div>
+          <form action="{{route('logout')}}" method="POST">
+            @csrf
+            <button data-mdb-ripple-init type="submit" class="buttonLog elemento1">
+              <i class="bi bi-door-open"></i> Logout
+            </button>
+          </form>            
+          <a class="cssbuttons-io-button elemento1" href="{{route('create.article')}}"> Crea un nuovo annuncio
+            <div class="icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                <path d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z"/>
+              </svg>
+            </div>
+          </a>
+          @if (Auth::user()->is_revisor)
+            <a href="{{route('revisor.index')}}" class="notification elemento2 nav-item">
+              <span>Zona revisore</span>
+              <span class="badge">{{\App\Models\Article::toBeRevisedCount()}}</span>
             </a>
-            
-            @if (Auth::user()->is_revisor)
-              
-                <a href="{{route('revisor.index')}}" class="notification elemento2 nav-item">
-                  <span>Zona revisore</span>
-                  <span class="badge">{{\App\Models\Article::toBeRevisedCount()}}</span>
-                </a>
-              
-            @endif                
+          @endif                
         @else
-        
-            <a href="{{ route('login') }}" class="cssbuttons-io-button elemento1">
-    Login
-    <div class="icon">
-       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M217.9 105.9L340.7 228.7c7.2 7.2 11.3 17.1 11.3 27.3s-4.1 20.1-11.3 27.3L217.9 406.1c-6.4 6.4-15 9.9-24 9.9c-18.7 0-33.9-15.2-33.9-33.9l0-62.1L32 320c-17.7 0-32-14.3-32-32l0-64c0-17.7 14.3-32 32-32l128 0 0-62.1c0-18.7 15.2-33.9 33.9-33.9c9 0 17.6 3.6 24 9.9zM352 416l64 0c17.7 0 32-14.3 32-32l0-256c0-17.7-14.3-32-32-32l-64 0c-17.7 0-32-14.3-32-32s14.3-32 32-32l64 0c53 0 96 43 96 96l0 256c0 53-43 96-96 96l-64 0c-17.7 0-32-14.3-32-32s14.3-32 32-32z"/></svg>
-    </div>
-</a>
-<a href="{{route('register')}}" class="cssbuttons-io-button">
-    Registrati
-    <div class="icon">
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M112 48a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm40 304V480c0 17.7-14.3 32-32 32s-32-14.3-32-32V256.9L59.4 304.5c-9.1 15.1-28.8 20-43.9 10.9s-20-28.8-10.9-43.9l58.3-97c17.4-28.9 48.6-46.6 82.3-46.6h29.7c33.7 0 64.9 17.7 82.3 46.6l44.9 74.7c-16.1 17.6-28.6 38.5-36.6 61.5c-1.9-1.8-3.5-3.9-4.9-6.3L232 256.9V480c0 17.7-14.3 32-32 32s-32-14.3-32-32V352H152zm136 16a144 144 0 1 1 288 0 144 144 0 1 1 -288 0zm211.3-43.3c-6.2-6.2-16.4-6.2-22.6 0L416 385.4l-28.7-28.7c-6.2-6.2-16.4-6.2-22.6 0s-6.2 16.4 0 22.6l40 40c6.2 6.2 16.4 6.2 22.6 0l72-72c6.2-6.2 6.2-16.4 0-22.6z"/></svg>    </div>
-</a>
-
+          <a href="{{ route('login') }}" class="cssbuttons-io-button elemento1">Login
+            <div class="icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                <path d="M217.9 105.9L340.7 228.7c7.2 7.2 11.3 17.1 11.3 27.3s-4.1 20.1-11.3 27.3L217.9 406.1c-6.4 6.4-15 9.9-24 9.9c-18.7 0-33.9-15.2-33.9-33.9l0-62.1L32 320c-17.7 0-32-14.3-32-32l0-64c0-17.7 14.3-32 32-32l128 0 0-62.1c0-18.7 15.2-33.9 33.9-33.9c9 0 17.6 3.6 24 9.9zM352 416l64 0c17.7 0 32-14.3 32-32l0-256c0-17.7-14.3-32-32-32l-64 0c-17.7 0-32-14.3-32-32s14.3-32 32-32l64 0c53 0 96 43 96 96l0 256c0 53-43 96-96 96l-64 0c-17.7 0-32-14.3-32-32s14.3-32 32-32z"/>
+              </svg>
+            </div>
+          </a>
+          <a href="{{route('register')}}" class="cssbuttons-io-button">Registrati
+            <div class="icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                <path d="M112 48a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm40 304V480c0 17.7-14.3 32-32 32s-32-14.3-32-32V256.9L59.4 304.5c-9.1 15.1-28.8 20-43.9 10.9s-20-28.8-10.9-43.9l58.3-97c17.4-28.9 48.6-46.6 82.3-46.6h29.7c33.7 0 64.9 17.7 82.3 46.6l44.9 74.7c-16.1 17.6-28.6 38.5-36.6 61.5c-1.9-1.8-3.5-3.9-4.9-6.3L232 256.9V480c0 17.7-14.3 32-32 32s-32-14.3-32-32V352H152zm136 16a144 144 0 1 1 288 0 144 144 0 1 1 -288 0zm211.3-43.3c-6.2-6.2-16.4-6.2-22.6 0L416 385.4l-28.7-28.7c-6.2-6.2-16.4-6.2-22.6 0s-6.2 16.4 0 22.6l40 40c6.2 6.2 16.4 6.2 22.6 0l72-72c6.2-6.2 6.2-16.4 0-22.6z"/>
+              </svg>
+            </div>
+          </a>
         @endauth
       </div>
     </div>
