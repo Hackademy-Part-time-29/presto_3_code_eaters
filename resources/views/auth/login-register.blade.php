@@ -6,9 +6,9 @@
                     @csrf
                     <h1 class="auth-h1">Crea un account</h1>
                     <div class="social-container">
-                        <a href="#" class="social auth-a bi bi-facebook"><i class="fab fa-facebook-f"></i></a>
+                        {{-- <a href="#" class="social auth-a bi bi-facebook"><i class="fab fa-facebook-f"></i></a>
                         <a href="#" class="social auth-a bi bi-google"><i class="fab fa-google-plus-g"></i></a>
-                        <a href="#" class="social auth-a bi bi-linkedin"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social auth-a bi bi-linkedin"><i class="fab fa-linkedin-in"></i></a> --}}
                     </div>
                     <input class="auth-input" type="text" name="name" id="name" placeholder="Nome" value="{{ old('name') }}" required/>
                         @error('name')
@@ -49,9 +49,9 @@
                     @csrf
                     <h1 class="auth-h1">Login</h1>
                     <div class="social-container">
-                        <a href="#" class="social auth-a bi bi-facebook"><i class="fab fa-facebook-f"></i></a>
+                        {{-- <a href="#" class="social auth-a bi bi-facebook"><i class="fab fa-facebook-f"></i></a>
                         <a href="#" class="social auth-a bi bi-google"><i class="fab fa-google-plus-g"></i></a>
-                        <a href="#" class="social auth-a bi bi-linkedin"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social auth-a bi bi-linkedin"><i class="fab fa-linkedin-in"></i></a> --}}
                     </div>    
                     <input class="auth-input" type="email" name="email" value="{{ old('email') }}" placeholder="Email" />
                         @error('email')
