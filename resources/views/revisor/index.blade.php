@@ -16,7 +16,6 @@
                 </div>
             </div>
         </div>
-        {{-- @dd($article_to_recover) --}}
         @if ($article_to_check ?? '')
             <div class="row justify-content-center pt-5">
                 <div class="col-md-8">
