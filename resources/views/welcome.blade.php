@@ -13,7 +13,7 @@
 
 
         <!-- Hero Section -->
-        <header class="bg-danger text-white text-center py-5">
+        <header class=" headerbg headerh1 py-5">
             <div class="container">
                 <h1 class="display-4">Claim.it</h1>
                 <p class="lead"> Acquisti compulsivi senza senso</p>
