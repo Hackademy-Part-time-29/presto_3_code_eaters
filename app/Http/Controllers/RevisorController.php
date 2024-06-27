@@ -44,14 +44,17 @@ class RevisorController extends Controller
     }
 
     public function recover(){
+        
         $article_to_recover = Article::whereNotNull('is_accepted')->latest()->first();
+        
         if ($article_to_recover) {
-            $article_to_recover->update([
-                'is_accepted' => null,
-            ]);
+            $article_to_recover->is_accepted = null;
+            $article_to_recover->save();
         };
         
-        return view('revisor.index',compact('article_to_recover'));
+        return redirect()
+            ->back()
+            ->with('message', "Hai annullato l'ultima modifica effettuata");
     }
     
 }
