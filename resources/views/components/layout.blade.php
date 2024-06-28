@@ -15,7 +15,7 @@
             @if (Route::is('create.article'))
                 
             @else
-                <div class="prova">
+                <div class="left">
                     <a class="BtnLayoutAdd"  href="{{route('create.article')}}">
                         <span class="svgContainer">
                         <svg class="logoPlus" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">

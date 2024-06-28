@@ -1,14 +1,19 @@
 /* bottone per aggiungere annuncio una volta loggati */
 
+
+
+.left {
+    margin-left: 22px;
+
+}
+
 * {
     font-family: "DM Sans", sans-serif;
     font-optical-sizing: auto;
     box-sizing: border-box;
-};
-
-.prova {
-    padding-left: 25px;
 }
+
+
 
 .BtnLayoutAdd {
     width: 40px;
