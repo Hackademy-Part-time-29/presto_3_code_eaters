@@ -16,7 +16,7 @@
                         @endif                            
                     </div>
                     <div class="col-lg-4 col-md-12 mb-5">
-                        <img class="img_footer" src="{{asset('storage/img/footer.png')}}">
+                        <img class="img_footer" src="{{ asset('/storage/img/errore404250px.png')}}">
                     </div>
                     <div class="col-lg-4 col-md-12 mb-5">
                         <div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.6s" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInLeft;">

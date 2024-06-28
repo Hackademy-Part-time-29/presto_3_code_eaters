@@ -15,5 +15,6 @@
         <p>Se vuoi accettare la sua richiesta clicca qui:</p>
         <a href="{{route('make.revisor', compact('user'))}}">Rendi Revisor</a>
     </div>
+    <img src="{{ asset('/storage/img/logo60px.png')}}" alt="claim.it">
 </body>
 </html>
