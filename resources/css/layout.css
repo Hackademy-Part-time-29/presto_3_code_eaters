@@ -1,9 +1,13 @@
 /* bottone per aggiungere annuncio una volta loggati */
 
-
+body{
+background: rgb(255, 255, 255);
+    background: radial-gradient(circle, rgba(255, 255, 255, 0) 44%, rgba(221, 0, 0, 0.07055322128851538) 100%);
+}
 
 .left {
     margin-left: 22px;
+    margin-top: 22px;
 
 }
 
