@@ -4,13 +4,17 @@ namespace App\Livewire;
 
 use App\Models\Article;
 use Livewire\Component;
+use Livewire\Attributes\On;
+use Livewire\WithPagination;
 
-class Order extends Component
+class Card extends Component
 {
+    use WithPagination;
+
     public $orderBy = 'createDESC';
 
     public function render()
-    {        
+    {
         $query = Article::where('is_accepted', true);
 
         switch ($this->orderBy) {
@@ -28,9 +32,12 @@ class Order extends Component
 
         $articles = $query->paginate(10);
 
-        $this->dispatch('orderByChanged', $this->orderBy);
-        return view('livewire.order', [
-            'articles' => $articles,
-        ]);
+        return view('livewire.card', compact('articles'));
+    }
+
+    #[On('orderByChanged')]
+    public function updateOrderBy($orderBy)
+    {
+        $this->orderBy = $orderBy;
     }
 }

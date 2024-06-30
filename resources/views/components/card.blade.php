@@ -1,4 +1,3 @@
-
 <div class="custom-card">
     <img src="https://picsum.photos/id/{{$article->id}}/200/200" alt="Immagine dell'articolo {{$article->title}}" class="custom-card-img">
     <div class="custom-card-body">
