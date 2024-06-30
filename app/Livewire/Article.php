@@ -30,7 +30,7 @@ class Article extends Component{
 
     public function render(){
         $this->Categories = Category::all();
-        return view('livewire.article');
+        return view('livewire.create.article');
     }
 
     public function store(){
@@ -53,7 +53,7 @@ class Article extends Component{
     }
 
     public function mount(){
-        return view('livewire.article',[
+        return view('livewire.create.article',[
             'Categories'=>$this->Categories,
         ]);
     }
