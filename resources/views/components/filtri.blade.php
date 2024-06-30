@@ -1,4 +1,4 @@
-{{-- <div class="col-3 contenitoreFiltri">
+<div class="col-3 contenitoreFiltri">
     <div class="contenitoreOrdinamento">
         <p>ORDINA PER</p> 
         <select class="form-select" aria-label="Default select example">
@@ -14,4 +14,4 @@
         <p>range sottostante</p>
         <p>select valuta</p>
     </div>    
-</div> --}}
+</div>
