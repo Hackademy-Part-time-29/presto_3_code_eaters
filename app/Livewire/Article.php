@@ -35,18 +35,6 @@ class Article extends Component{
 
     public function store(){
 
-        // dd('prova');
-        // $this->validate();
-        // dd('prova');
-        // $validateData = $this->validate([
-        //     'title'=>'required',
-        //     'Categories'=>'required',
-        //     'price'=>'required',
-        //     'description'=>'required',
-        //     'category'=>'required',
-        //     'user'=>'required',
-        // ]);
-
         ModelsArticle::create([
             'title'=>$this->title,
             'price'=>$this->price,
@@ -65,14 +53,8 @@ class Article extends Component{
     }
 
     public function mount(){
-        // $Categories = Category::all();
-        // dd($Categories);
         return view('livewire.article',[
             'Categories'=>$this->Categories,
         ]);
-    }
-
-    public function category(){
-
     }
 }
