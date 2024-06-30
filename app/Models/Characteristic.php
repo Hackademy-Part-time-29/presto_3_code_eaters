@@ -11,6 +11,6 @@ class Characteristic extends Model
 
     protected $fillable = [
         'name',
-        'value',
+        'category_id',
     ];
 }

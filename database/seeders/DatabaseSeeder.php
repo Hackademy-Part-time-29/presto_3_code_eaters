@@ -20,7 +20,7 @@ class DatabaseSeeder extends Seeder
         $this->call([
             MacroCategoriesSeeder::class,
             CategoriesSeeder::class,
-            Characteristic::class,
+            CharacteristicsSeeder::class,
         ]);
 
         Article::factory(400)->create();

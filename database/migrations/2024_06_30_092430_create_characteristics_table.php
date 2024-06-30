@@ -12,6 +12,7 @@ return new class extends Migration
             $table->unsignedSmallInteger('id')->autoIncrement()->primary();
             $table->string('name',150);
             $table->unsignedTinyInteger('category_id');
+            $table->foreign('category_id')->references('id')->on('categories');
             $table->timestamps();
         });
     }
