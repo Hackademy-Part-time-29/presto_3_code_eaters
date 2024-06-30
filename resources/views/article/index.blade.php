@@ -19,7 +19,7 @@
             </div>
             <div class="card-container">
                 @forelse ($articles as $article)
-                        <x-card :article="$article" />
+                    <x-card :article="$article" />
                 @empty
                     <div class="col-12">
                         <h3 class="text-center">

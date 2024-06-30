@@ -31,7 +31,7 @@
         </div>    
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
     </body>
-    <x-new-footer/>
+    <x-footer/>
 </x-h-t-m-l>
 
 
