@@ -37,6 +37,9 @@
             Articoli</a>
         </li>
       </ul>
+      <x-_locale lang="it"/>
+      <x-_locale lang="en"/>
+      <x-_locale lang="ro"/>
     </div>  
     <form class="d-flex me-3" role="search" action="{{route('article.search')}}" method="GET">
       <div class="search">
