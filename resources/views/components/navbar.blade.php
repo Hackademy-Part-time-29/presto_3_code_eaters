@@ -10,7 +10,7 @@
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item ms-3 me-3 custom-dropdown">
           <span class="nav-link fs-5">
-            <i class="bi bi-tags">Categorie</i>            
+            <i class="bi bi-tags">{{__('ui.categories')}}</i>            
           </span>
           <div class="custom-dropdown-content">
             <div class="triangle"></div>
