@@ -49,9 +49,16 @@ class Article extends Component{
             'user_id'=>Auth::id(),
         ]);
 
+
+        if (count($this->images) > 0) {
+            foreach ($this->images as $image) {
+                $this->article->images()->create(['path' => $image->store('images', 'public')]);
+            }
+        }
+
+
         session()->flash('success','User successfully created.');
         
-        $this->reset();
 
         return redirect('/')->with([
             'success'=>'articolo creato con successo',
@@ -63,7 +70,6 @@ class Article extends Component{
             'Categories'=>$this->Categories,
         ]);
     }
-
 
 
 
@@ -89,5 +95,17 @@ class Article extends Component{
             unset($this->images[$key]);
         }
     }
+
+
+    protected function cleanForm()
+    {
+        $this->title ='';
+        $this->description = '';
+        $this->category ='';
+        $this->price ='';
+        $this->images = [];
+    }
+
+
 
 }
