@@ -2,13 +2,19 @@
 
 namespace App\Livewire;
 
+
 use Livewire\Component;
 use App\Models\Category;
+use Livewire\WithFileUploads;
 use Livewire\Attributes\Validate;
 use Illuminate\Support\Facades\Auth;
 use App\Models\Article as ModelsArticle;
 
 class Article extends Component{
+    use WithFileUploads;
+
+    public $images = [];
+    public $temporary_images;
 
     #[Validate('required',message:"Il titolo è richiesto")]
     #[Validate('min:3',message:"Il titolo è troppo corto")]
