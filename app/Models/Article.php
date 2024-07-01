@@ -69,5 +69,12 @@ class Article extends Model
         }
     }
 
+    public function removeImage($key)
+    {
+        if (in_array($key, array_keys($this->images)))  {
+            unset($this->images[$key]);
+        }
+    }
+
 }
 
