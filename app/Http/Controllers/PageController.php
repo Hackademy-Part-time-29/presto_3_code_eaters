@@ -21,4 +21,10 @@ class PageController extends Controller
        $articles= Article::search($query)->where('is_accepted',true)->paginate(10);
        return view ('article.searched',['articles'=>$articles,'query'=>$query]);      
     }
+
+    public function setLanguage($lang)
+    {
+        session()->put('locale',$lang);
+        return redirect()->back();
+    }
 }

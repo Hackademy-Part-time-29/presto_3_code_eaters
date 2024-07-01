@@ -23,5 +23,6 @@ Route::patch('/reject/{article}',[RevisorController::class, 'reject'])->name('re
 Route::patch('/recover',[RevisorController::class, 'recover'])->name('recover');
 
 Route::get('/search/article',[PageController::class,'searchArticles'])->name('article.search');
+Route::post('/lingua/{lang}', [PageController::class, 'setLanguage'])->name('setLocale');
 
 
