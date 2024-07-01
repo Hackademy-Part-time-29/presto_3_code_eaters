@@ -58,23 +58,8 @@ class Article extends Model
         return $this->hasMany(Image::class);
     }
 
-    public function updetedTemporaryImages(){
-        if ($this->validate([
-            'temporary_images*' => 'image|max:1024',
-            'temporary_images' => 'max:6'
-        ])){
-            foreach($this->teporary_images as $image){
-                $this->images[] = $image;
-            }
-        }
-    }
 
-    public function removeImage($key)
-    {
-        if (in_array($key, array_keys($this->images)))  {
-            unset($this->images[$key]);
-        }
-    }
+
 
 }
 
