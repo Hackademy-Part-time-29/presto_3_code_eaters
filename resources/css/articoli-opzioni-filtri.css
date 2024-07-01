@@ -29,11 +29,11 @@
     align-items: center;
 }
 
-.contenitoreOrdinamento {
+.contenitoreOrdinamentoFiltri {
     width: 90%;
 }
 
-.contenitoreOrdinamento p {
+.contenitoreOrdinamentoFiltri p {
     font-size: 14px;
     font-weight: 700;
 }
