@@ -38,6 +38,8 @@
         'revisorbtn' =>'Become an Auditor',
         //nessuna presenza di articoli
         'noarticle'=> 'No items present',
+        //revisor dashboard
+        'revisordashboard' => 'Revisor Dashboard',
       
       ];
     

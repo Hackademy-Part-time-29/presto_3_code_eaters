@@ -37,6 +37,8 @@ return
         'revisorbtn' =>'Diventa Revisore',
         //nessuna presenza di articoli
         'noarticle'=> 'Nessun articolo presente',
+        //revisor dashboard
+        'revisordashboard' => 'Dashboard del Revisore',
         
 
         ];

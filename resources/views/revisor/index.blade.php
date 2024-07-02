@@ -11,7 +11,7 @@
             <div class="col-3">
                 <div class="rounded shodow bg-body-secondary">
                     <h1 class="display-5 text-center pb-2">
-                        Revisor Dashboard
+                        {{__('ui.revisordashboard')}}
                     </h1>
                 </div>
             </div>

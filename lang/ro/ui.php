@@ -39,6 +39,8 @@ return
         'revisorbtn' =>'Deveniți auditor',
          //nessuna presenza di articoli
         'noarticle'=> 'Nu există articole prezente',
+        //revisor dashboard
+        'revisordashboard' => 'Tabloul de bord al Revizorului',
        
         
 
