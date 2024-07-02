@@ -18,10 +18,13 @@
        'chisiamo' => 'Who we are:',
         'info' => 'On a hot summer day, in a small windowless office, five programmers found themselves with a lot of free time and little inspiration. Luca, Marzio, Andrei, Michele and Emanuele were used to solving complex coding problems, but that week there was a shortage of projects. So, between one coffee break and another, they decided it was time to do something different, something innovative and fun.',
        //zona i nostri servizi
-        'servizi' => 'Our services',
+        'servizi' => 'Our services:',
         'servizio1' =>'Personalized Purchases via AI',
         'servizio2' =>'Subscription Programs and Ongoing Services',
         'servizio3' =>'24/7 Customer Support via Chatbot and Live Chat',
+        'servizio1description' =>'Personalized Recommendations: Suggested products based on previous purchases and user interests, offering you targeted promotions and curated shopping experiences',
+        'servizio2description' =>'Regular Product Deliveries: Subscriptions for everyday products, such as coffee, household items, or beauty products, with automatic deliveries at set intervals. Access to Exclusive Content: Premium content, such as tutorials, guides, and webinars, reserved for subscribers to enhance the product experience. Discounts and Exclusive Offers: Special promotions, discounts and early access to new product launches reserved for membership program members.',
+        'servizio3description' =>'Advanced Chatbots: Using AI-powered chatbots to quickly answer frequently asked questions, assist with site navigation, and resolve common issues any time of day or night. Live Chat with Human Operators: Access real-time customer service representatives to resolve more complex issues and provide personalized advice.',
 
       ];
     
