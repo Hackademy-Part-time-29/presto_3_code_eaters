@@ -24,6 +24,12 @@ return
         'servizio1description' => "Raccomandazioni Personalizzate: Prodotti suggeriti in base agli acquisti precedenti e agli interessi dell'utente offrendoti Promozioni Mirate ed esperienze di acquisto curate",
         'servizio2description' => "Consegne Regolari di Prodotti: Abbonamenti per prodotti di uso quotidiano, come caffè, articoli per la casa, o prodotti di bellezza, con consegne automatiche a intervalli prestabiliti. Accesso a Contenuti Esclusivi: Contenuti premium, come tutorial, guide, e webinar, riservati agli abbonati per migliorare l'esperienza del prodotto. Sconti e Offerte Esclusive: Promozioni speciali, sconti e accesso anticipato ai nuovi lanci di prodotto riservati ai membri del programma di abbonamento.",
         'servizio3description' => "Chatbot Avanzati: Utilizzo di chatbot alimentati dall'intelligenza artificiale per rispondere rapidamente alle domande frequenti, assistere nella navigazione del sito, e risolvere problemi comuni in qualsiasi momento del giorno o della notte. Live Chat con Operatori Umani: Accesso a rappresentanti del servizio clienti in tempo reale per risolvere problemi più complessi e fornire consigli personalizzati.",
+        //form di creazione articolo subito dopo registrato
+        'creauntitolo' => '',
+        'title' => '',
+        'price' => '',
+        'description' => '',
+        'creauntitolobtn' => '',
 
         ];
 
