@@ -61,12 +61,13 @@ class Article extends Component{
             }
             File::deleteDirectory(storage_path());
 
-        // session()->flash('success','Articolo creato con successo');
-        $this->cleanForm();
+            // session()->flash('success','Articolo creato con successo');
+            $this->cleanForm();
 
-        return redirect('/')->with([
-            'success'=>'articolo creato con successo',
-        ]);
+            return redirect('/')->with([
+                'success'=>'articolo creato con successo',
+            ]);
+        };
     }
 
     public function mount(){
