@@ -19,8 +19,8 @@ return
         //zona i nostri servizi
         'servizi' => 'I nostri servizi',
         'servizio1' =>'Acquisti Personalizzati tramite AI',
-        'servizio2' =>'',
-        'servizio3' =>'',
+        'servizio2' =>'Programmi di Abbonamento e Servizi Continuativi',
+        'servizio3' =>'Assistenza Clienti 24/7 tramite Chatbot e Live Chat',
 
         ];
 

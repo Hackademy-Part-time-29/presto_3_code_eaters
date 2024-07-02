@@ -21,7 +21,7 @@
         'servizi' => 'Our services',
         'servizio1' =>'Personalized Purchases via AI',
         'servizio2' =>'Subscription Programs and Ongoing Services',
-        'servizio3' =>'',
+        'servizio3' =>'24/7 Customer Support via Chatbot and Live Chat',
 
       ];
     

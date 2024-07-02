@@ -22,7 +22,7 @@ return
         'servizi' => 'Serviciile noastre',
         'servizio1' =>'Achiziții personalizate prin AI',
         'servizio2' =>'Programe de abonament și servicii în curs',
-        'servizio3' =>'',
+        'servizio3' =>'Asistență clienți 24/7 prin Chatbot și Live Chat',
 
     ];
 
