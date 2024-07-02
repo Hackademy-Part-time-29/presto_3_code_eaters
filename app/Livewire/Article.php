@@ -9,6 +9,7 @@ use Livewire\WithFileUploads;
 use Livewire\Attributes\Validate;
 use Illuminate\Support\Facades\Auth;
 use App\Models\Article as ModelsArticle;
+use App\Jobs\ResizeImage;
 
 class Article extends Component{
 
