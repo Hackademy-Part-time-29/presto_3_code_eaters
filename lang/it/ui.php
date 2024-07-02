@@ -10,4 +10,11 @@ return
         'create' => 'crea nuovo annuncio',
         'search' => 'cerca',
         'revisor' => 'ZONA REVISORE',
+        //zona layout
+        
+        'headerp' => 'ACQUISTI COMPULSIVI SENZA SENSO',
     ];
+
+
+
+ 

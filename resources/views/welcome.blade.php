@@ -12,7 +12,7 @@
     <header class="rounded-header py-5">
         <div class="container">
             <h1 class="display-4 h1header">Claim.it</h1>
-            <p class="lead pheader"> Acquisti compulsivi senza senso</p>
+            <p class="lead pheader"> {{__('ui.headerp')}}</p>
         </div>
     </header>
     <div class="row height-custom justify-content-center align-items-center py-5">

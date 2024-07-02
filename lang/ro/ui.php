@@ -11,6 +11,8 @@ return
         'create' => 'creați un nou anunț',
         'search' => 'aproape',
         'revisor' => 'ZONA DE INSPECTIE',
+  //zona layout
+
+        'headerp' => 'ACHIZIȚII COMPULSIVE FĂRĂ NICIUN SENS'
     ];
 
-    

@@ -11,7 +11,11 @@
         'create' => 'create new ad',
         'search' => 'search',
         'revisor' => 'INSPECTION AREA',
-
+//zona layout
+       'headerp' => 'COMPULSIVE PURCHASES WITHOUT ANY SENSE'
 
     ];
+    
+    
+       
     
