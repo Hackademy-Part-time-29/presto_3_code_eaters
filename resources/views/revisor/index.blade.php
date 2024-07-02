@@ -64,9 +64,9 @@
             <div class="row justify-content-center align-items height-custum text-center">
                 <div class="col-12">
                     <h1 class="fst-italic display-4">
-                        Nessun articolo da revisionare
+                        {{__('ui.norevarticle')}}
                     </h1>
-                    <a href="{{route('welcome')}}" class="mt-5-btn btn-success">Torna all'homepage</a>
+                    <a href="{{route('welcome')}}" class="mt-5-btn btn-success">{{__('ui.homepage')}}</a>
                 </div>
             </div>
         @endif

@@ -44,6 +44,8 @@ return
         'reject' => 'Refuza',
         'accept' => 'Accept',
         'recover' => 'Recuperează elementul anterior',
+        'norevarticle' => 'Nu există articole prezente',
+        'homepage' => 'Înapoi la pagina de start',
        
         
 

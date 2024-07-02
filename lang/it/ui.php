@@ -42,6 +42,8 @@ return
         'reject' => 'Rifiuta',
         'accept' => 'Accetta',
         'recover' => 'Recupera articolo precedente',
+        'norevarticle' => 'Nessun articolo presente',
+        'homepage' => 'Torna alla Homepage',
         
 
         ];

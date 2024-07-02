@@ -43,6 +43,8 @@
         'reject' => 'Reject',
         'accept' => 'Accept',
         'recover' => 'Recovers previous item',
+        'norevarticle' => 'No items present',
+        'homepage' => 'Back to home Page',
 
       
       ];
