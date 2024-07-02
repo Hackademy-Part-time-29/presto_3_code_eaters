@@ -39,6 +39,9 @@ return
         'noarticle'=> 'Nessun articolo presente',
         //revisor dashboard
         'revisordashboard' => 'Dashboard del Revisore',
+        'reject' => 'Rifiuta',
+        'accept' => 'Accetta',
+        'recover' => 'Recupera articolo precedente',
         
 
         ];

@@ -41,6 +41,9 @@ return
         'noarticle'=> 'Nu există articole prezente',
         //revisor dashboard
         'revisordashboard' => 'Tabloul de bord al Revizorului',
+        'reject' => 'Refuza',
+        'accept' => 'Accept',
+        'recover' => 'Recuperează elementul anterior',
        
         
 

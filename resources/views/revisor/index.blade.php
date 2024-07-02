@@ -45,17 +45,17 @@
                         <form action="{{route('reject', ['article' => $article_to_check])}}" method="POST">
                             @csrf
                             @method('PATCH')
-                            <button class="btn btn-danger py-2 px-5 fw-bold">Rifiuta</button>
+                            <button class="btn btn-danger py-2 px-5 fw-bold">{{__('ui.reject')}}</button>
                         </form>
                         <form action="{{route('accept', ['article' => $article_to_check])}}" method="POST">
                             @csrf
                             @method('PATCH')
-                            <button class="btn btn-success py-2 px-5 fw-bold">Accetta</button>
+                            <button class="btn btn-success py-2 px-5 fw-bold">{{__('ui.accept')}}</button>
                         </form>
                         <form action="{{route('recover')}}" method="POST">
                             @csrf
                             @method('PATCH')
-                            <button class="btn btn-primary py-2 px-5 fw-bold">Recupera Articolo Precedente</button>
+                            <button class="btn btn-primary py-2 px-5 fw-bold">{{__('ui.recover')}}</button>
                         </form>
                     </div>
                 </div>

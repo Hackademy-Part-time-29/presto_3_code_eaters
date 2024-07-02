@@ -40,6 +40,10 @@
         'noarticle'=> 'No items present',
         //revisor dashboard
         'revisordashboard' => 'Revisor Dashboard',
+        'reject' => 'Reject',
+        'accept' => 'Accept',
+        'recover' => 'Recovers previous item',
+
       
       ];
     
