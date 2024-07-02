@@ -27,12 +27,18 @@ return
         'servizio2description' =>'Livrări regulate de produse: abonamente pentru produse de zi cu zi, cum ar fi cafea, articole de uz casnic sau produse de frumusețe, cu livrări automate la intervale stabilite. Acces la conținut exclusiv: conținut premium, cum ar fi tutoriale, ghiduri și seminarii web, rezervat abonaților pentru a îmbunătăți experiența produsului. Reduceri și oferte exclusive: promoții speciale, reduceri și acces anticipat la lansări de produse noi rezervate membrilor programului de membru.',
         'servizio3description' =>'Chatboți avansati: Folosind chatboți bazați pe inteligență artificială pentru a răspunde rapid la întrebările frecvente, pentru a ajuta la navigarea pe site și pentru a rezolva problemele comune la orice oră din zi sau din noapte. Chat live cu operatori umani: accesați în timp real reprezentanții serviciului pentru clienți pentru a rezolva probleme mai complexe și pentru a oferi sfaturi personalizate.',
                 //form di creazione articolo subito dopo registrato
-        'creauntitolo' => '',
-        'title' => '',
-        'price' => '',
-        'description' => '',
-        'creauntitolobtn' => '',
-        
+        'creaarticolo' => 'SCOASE LA VANZARE',
+        'title' => 'TITLU',
+        'price' => 'PREȚ',
+        'description' => 'DESCRIERE',
+        'creaarticolobtn' => 'CREATE AD',
+        'category' => 'Alege o categorie',
+        //pulsante diventa revisore
+       'revisor1' => '',
+        'revisorp' =>'',
+        'revisorbtn' =>'',
+
+
 
     ];
 

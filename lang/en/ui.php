@@ -26,11 +26,16 @@
         'servizio2description' =>'Regular Product Deliveries: Subscriptions for everyday products, such as coffee, household items, or beauty products, with automatic deliveries at set intervals. Access to Exclusive Content: Premium content, such as tutorials, guides, and webinars, reserved for subscribers to enhance the product experience. Discounts and Exclusive Offers: Special promotions, discounts and early access to new product launches reserved for membership program members.',
         'servizio3description' =>'Advanced Chatbots: Using AI-powered chatbots to quickly answer frequently asked questions, assist with site navigation, and resolve common issues any time of day or night. Live Chat with Human Operators: Access real-time customer service representatives to resolve more complex issues and provide personalized advice.',
               //form di creazione articolo subito dopo registrato
-        'creauntitolo' => '',
-        'title' => '',
-        'price' => '',
-        'description' => '',
-        'creauntitolobtn' => '',
+        'creaarticolo' => 'PUT UP FOR SALE',
+        'title' => 'TITLE',
+        'price' => 'PRICE',
+        'description' => 'DESCRIPTION',
+        'creaarticolobtn' => 'CREATE SECTION',
+        'category' => 'Select a category',
+         //pulsante diventa revisore
+       'revisor1' => '',
+        'revisorp' =>'',
+        'revisorbtn' =>'',
       ];
     
     
