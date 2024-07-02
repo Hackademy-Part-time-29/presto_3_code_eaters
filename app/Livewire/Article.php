@@ -59,7 +59,7 @@ class Article extends Component{
             }
         }
 
-        session()->flash('success','Articolo creato con successo');
+        // session()->flash('success','Articolo creato con successo');
         $this->cleanForm();
 
         return redirect('/')->with([
