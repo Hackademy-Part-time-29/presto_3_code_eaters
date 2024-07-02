@@ -32,9 +32,9 @@ return
         'creaarticolobtn' => 'CREA ARTICOLO',
         'category' => 'Scegli una categoria',
          //pulsante diventa revisore
-       'revisor1' => '',
-        'revisorp' =>'',
-        'revisorbtn' =>'',
+       'revisor1' => 'Vuoi diventare Revisore?',
+        'revisorp' =>'Cliccando il bottone sottostante farai richiesta al nostro admin',
+        'revisorbtn' =>'Diventa Revisore',
 
         ];
 

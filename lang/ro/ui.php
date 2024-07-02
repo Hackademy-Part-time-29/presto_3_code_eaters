@@ -34,9 +34,9 @@ return
         'creaarticolobtn' => 'CREATE AD',
         'category' => 'Alege o categorie',
         //pulsante diventa revisore
-       'revisor1' => '',
-        'revisorp' =>'',
-        'revisorbtn' =>'',
+       'revisor1' => 'Vrei să devii Auditor?',
+        'revisorp' =>'Făcând clic pe butonul de mai jos, veți face o cerere administratorului nostru',
+        'revisorbtn' =>'Deveniți auditor',
 
 
 

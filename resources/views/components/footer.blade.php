@@ -6,9 +6,9 @@
                     <div class="col-lg-4 col-md-12 mb-5">
                         @if (auth()->user()->is_revisor == false)
                             <div class="f_widget company_widget wow fadeInLeft" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInLeft;">
-                                <h3 class="f-title f_600 t_color f_size_18">Vuoi diventare Revisore?</h3>
-                                <p>Cliccando il bottone sottostante farai richiesta al nostro admin</p>
-                                    <a href="{{route('become.revisor')}}" class="btn btn_get btn_get_two button_form" type="submit">Diventa Revisore</a>
+                                <h3 class="f-title f_600 t_color f_size_18">{{__('ui.revisor1')}}</h3>
+                                <p>{{__('ui.revisorp')}}</p>
+                                    <a href="{{route('become.revisor')}}" class="btn btn_get btn_get_two button_form" type="submit">{{__('ui.revisorbtn')}}</a>
                                     <p class="mchimp-errmessage" style="display: none;"></p>
                                     <p class="mchimp-sucmessage" style="display: none;"></p>
                                 </form>

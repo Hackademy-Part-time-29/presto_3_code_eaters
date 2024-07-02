@@ -33,9 +33,9 @@
         'creaarticolobtn' => 'CREATE SECTION',
         'category' => 'Select a category',
          //pulsante diventa revisore
-       'revisor1' => '',
-        'revisorp' =>'',
-        'revisorbtn' =>'',
+       'revisor1' => 'Do you want to become an Auditor?',
+        'revisorp' =>'By clicking the button below you will make a request to our admin',
+        'revisorbtn' =>'Become an Auditor',
       ];
     
     
