@@ -10,9 +10,12 @@ return
         'create' => 'crea nuovo annuncio',
         'search' => 'cerca',
         'revisor' => 'ZONA REVISORE',
-        //zona layout
+        //zona welcome
         
         'headerp' => 'ACQUISTI COMPULSIVI SENZA SENSO',
+         //zona chi siamo
+        'chisiamo' => 'Chi siamo:',
+         'info' => 'In una calda giornata estiva, in un piccolo ufficio senza finestre, cinque programmatori si ritrovarono con molto tempo libero e poca ispirazione. Luca, Marzio, Andrei, Michele ed Emanuele erano abituati a risolvere complessi problemi di codice, ma quella settimana i progetti scarseggiavano. Così, tra una pausa caffè e l’altra, decisero che era tempo di fare qualcosa di diverso, qualcosa di innovativo e divertente.'
     ];
 
 
