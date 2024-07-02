@@ -35,6 +35,8 @@ class Article extends Component{
     #[Validate('required',message:"Il categoria è richiesta")]
     public $category;  
 
+    public $article;
+
     public function render(){
         $this->Categories = Category::all();
         return view('livewire.create.article');
@@ -43,7 +45,7 @@ class Article extends Component{
     public function store(){
 
         // $this->validate();
-        ModelsArticle::create([
+        $this->article = ModelsArticle::create([
             'title'=>$this->title,
             'price'=>$this->price,
             'description'=>$this->description,
@@ -74,7 +76,7 @@ class Article extends Component{
 
     public function updatedTemporaryImages(){
         if ($this->validate([
-            'temporary_images*' => 'image|max:1024',
+            'temporary_images.*' => 'image|max:1024',
             'temporary_images' => 'max:6'
         ])){
             foreach ($this->temporary_images as $image){
