@@ -23,10 +23,9 @@ class Article extends Component{
 
     public $Categories;
     
-    #[Validate('required',message:"Il prezzo è richiesto")]
-    #[Validate('max:6',message:"Il prezzo è troppo alto")]
-
+    #[Validate('required',message:"Il categoria è richiesta")]
     public $Categoria;
+
     public $price;
 
     #[Validate('required',message:"Il descrizione è richiesta")]
@@ -34,6 +33,8 @@ class Article extends Component{
 
     #[Validate('required',message:"Il categoria è richiesta")]
     public $category;  
+
+    public $article;
 
     public function render(){
         $this->Categories = Category::all();
@@ -43,7 +44,7 @@ class Article extends Component{
     public function store(){
 
         // $this->validate();
-        ModelsArticle::create([
+        $this->article = ModelsArticle::create([
             'title'=>$this->title,
             'price'=>$this->price,
             'description'=>$this->description,
@@ -74,7 +75,7 @@ class Article extends Component{
 
     public function updatedTemporaryImages(){
         if ($this->validate([
-            'temporary_images*' => 'image|max:1024',
+            'temporary_images.*' => 'image|max:1024',
             'temporary_images' => 'max:6'
         ])){
             foreach ($this->temporary_images as $image){
