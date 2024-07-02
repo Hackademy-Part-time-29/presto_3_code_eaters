@@ -33,18 +33,25 @@
         'creaarticolobtn' => 'CREATE SECTION',
         'category' => 'Select a category',
          //pulsante diventa revisore
-       'revisor1' => 'Do you want to become an Auditor?',
+       'revisor1' => 'Do you want to become a Reviewer?',
         'revisorp' =>'By clicking the button below you will make a request to our admin',
-        'revisorbtn' =>'Become an Auditor',
+        'revisorbtn' =>'Become a Reviewer',
         //nessuna presenza di articoli
         'noarticle'=> 'No items present',
         //revisor dashboard
-        'revisordashboard' => 'Revisor Dashboard',
+        'revisordashboard' => 'Reviewer Dashboard',
         'reject' => 'Reject',
         'accept' => 'Accept',
         'recover' => 'Recovers previous item',
         'norevarticle' => 'No items present',
         'homepage' => 'Back to home Page',
+        //email che viene mandata ad admin
+        'text' => 'A user asked to work with us',
+        'userinfo' => 'Here are his details:',
+        'name' => 'Name:',
+        'email' => 'Email:',
+        'ifreviewer' => 'If you want to accept your request click here:',
+        'clicklink' => 'Make Reviewer',
 
       
       ];

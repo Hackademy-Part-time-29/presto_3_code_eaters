@@ -44,6 +44,14 @@ return
         'recover' => 'Recupera articolo precedente',
         'norevarticle' => 'Nessun articolo presente',
         'homepage' => 'Torna alla Homepage',
+        //email che viene mandata ad admin
+        'text' => 'Un utente ha chiesto di lavorare con noi',
+        'userinfo' => 'Ecco i suoi dati:',
+        'name' => 'Nome:',
+        'email' => 'Email:',
+        'ifreviewer' => 'Se vuoi accettare la sua richiesta clicca qui:',
+        'clicklink' => 'Rendi Revisore',
+
         
 
         ];

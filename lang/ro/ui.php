@@ -34,9 +34,9 @@ return
         'creaarticolobtn' => 'CREATE AD',
         'category' => 'Alege o categorie',
         //pulsante diventa revisore
-       'revisor1' => 'Vrei să devii Auditor?',
+       'revisor1' => 'Vrei să devii recenzent?',
         'revisorp' =>'Făcând clic pe butonul de mai jos, veți face o cerere administratorului nostru',
-        'revisorbtn' =>'Deveniți auditor',
+        'revisorbtn' =>'Deveniți recenzent',
          //nessuna presenza di articoli
         'noarticle'=> 'Nu există articole prezente',
         //revisor dashboard
@@ -46,6 +46,13 @@ return
         'recover' => 'Recuperează elementul anterior',
         'norevarticle' => 'Nu există articole prezente',
         'homepage' => 'Înapoi la pagina de start',
+        //email che viene mandata ad admin
+        'text' => 'Un utilizator a cerut să lucreze cu noi',
+        'userinfo' => 'Iată detaliile lui:',
+        'name' => 'Nume:',
+        'email' => 'E-mail:',
+        'ifreviewer' => 'Dacă doriți să acceptați cererea dvs. faceți clic aici:',
+        'clicklink' => 'Faceți recenzent',
        
         
 
