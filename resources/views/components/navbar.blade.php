@@ -43,7 +43,7 @@
     </div>  
     <form class="d-flex me-3" role="search" action="{{route('article.search')}}" method="GET">
       <div class="search">
-        <input class="form-control me-2 filtroGenerale" type="text" name="query" placeholder="Cerca" aria-label="Search">
+        <input class="form-control me-2 filtroGenerale" type="text" name="query" placeholder="{{__('ui.search')}}" aria-label="Search">
         <button type="submit" id="basic-addon2">
           &#128270;
         </button>
@@ -69,7 +69,7 @@
           @endif
           @if (Auth::user()->is_revisor)
             <a href="{{route('revisor.index')}}" class="notification elemento2 nav-item">
-              <span>Zona revisore</span>
+              <span>{{__('ui.revisor')}}</span>
               <span class="badge">{{\App\Models\Article::toBeRevisedCount()}}</span>
             </a>
           @endif                
