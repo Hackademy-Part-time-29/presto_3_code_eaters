@@ -30,8 +30,8 @@
     </div>
     <section class="py-5">
         <div class="container">
-            <h2 class="mb-4">Chi Siamo</h2>
-            <p>In una calda giornata estiva, in un piccolo ufficio senza finestre, cinque programmatori si ritrovarono con molto tempo libero e poca ispirazione. Luca, Marzio, Andrei, Michele ed Emanuele erano abituati a risolvere complessi problemi di codice, ma quella settimana i progetti scarseggiavano. Così, tra una pausa caffè e l’altra, decisero che era tempo di fare qualcosa di diverso, qualcosa di innovativo e divertente.</p>
+            <h2 class="mb-4">{{__('ui.chisiamo')}}</h2>
+            <p>{{__('ui.info')}}</p>
         </div>
     </section>
     <section class="bg-light py-5">
