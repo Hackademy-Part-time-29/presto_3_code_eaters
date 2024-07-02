@@ -37,6 +37,11 @@ return
        'revisor1' => 'Vrei să devii Auditor?',
         'revisorp' =>'Făcând clic pe butonul de mai jos, veți face o cerere administratorului nostru',
         'revisorbtn' =>'Deveniți auditor',
+         //nessuna presenza di articoli
+        'noarticle'=> 'Nu există articole prezente',
+       
+        
+
 
 
 

@@ -23,7 +23,7 @@
         @empty
             <div class="col-12">
                 <h3 class="text-center">
-                    Non sono trovati articoli
+                    {{__('ui.noarticle')}}
                 </h3>
             </div>
         @endforelse

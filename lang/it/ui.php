@@ -35,6 +35,9 @@ return
        'revisor1' => 'Vuoi diventare Revisore?',
         'revisorp' =>'Cliccando il bottone sottostante farai richiesta al nostro admin',
         'revisorbtn' =>'Diventa Revisore',
+        //nessuna presenza di articoli
+        'noarticle'=> 'Nessun articolo presente',
+        
 
         ];
 

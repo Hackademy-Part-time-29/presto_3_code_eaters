@@ -36,6 +36,9 @@
        'revisor1' => 'Do you want to become an Auditor?',
         'revisorp' =>'By clicking the button below you will make a request to our admin',
         'revisorbtn' =>'Become an Auditor',
+        //nessuna presenza di articoli
+        'noarticle'=> 'No items present',
+      
       ];
     
     
