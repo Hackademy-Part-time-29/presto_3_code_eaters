@@ -34,7 +34,7 @@ return
         'creaarticolobtn' => 'CREATE AD',
         'category' => 'Alege o categorie',
         //pulsante diventa revisore
-       'revisor1' => 'Vrei să devii recenzent?',
+        'revisor1' => 'Vrei să devii recenzent?',
         'revisorp' =>'Făcând clic pe butonul de mai jos, veți face o cerere administratorului nostru',
         'revisorbtn' =>'Deveniți recenzent',
          //nessuna presenza di articoli
@@ -53,7 +53,6 @@ return
         'email' => 'E-mail:',
         'ifreviewer' => 'Dacă doriți să acceptați cererea dvs. faceți clic aici:',
         'clicklink' => 'Faceți recenzent',
-       
         
 
 
