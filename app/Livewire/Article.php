@@ -11,6 +11,7 @@ use Illuminate\Support\Facades\Auth;
 use App\Models\Article as ModelsArticle;
 
 class Article extends Component{
+
     use WithFileUploads;
 
     public $images = [];
@@ -41,6 +42,7 @@ class Article extends Component{
 
     public function store(){
 
+        // $this->validate();
         ModelsArticle::create([
             'title'=>$this->title,
             'price'=>$this->price,
@@ -56,9 +58,8 @@ class Article extends Component{
             }
         }
 
-
-        session()->flash('success','User successfully created.');
-        
+        session()->flash('success','Articolo creato con successo');
+        $this->cleanForm();
 
         return redirect('/')->with([
             'success'=>'articolo creato con successo',
@@ -71,41 +72,28 @@ class Article extends Component{
         ]);
     }
 
-
-
-
-        public function updetedTemporaryImages(){
+    public function updatedTemporaryImages(){
         if ($this->validate([
             'temporary_images*' => 'image|max:1024',
             'temporary_images' => 'max:6'
         ])){
-            foreach($this->teporary_images as $image){
+            foreach ($this->temporary_images as $image){
                 $this->images[] = $image;
             }
         }
     }
 
-
-
-
-
-        public function removeImage($key)
-    {
+    public function removeImage($key){
         if (in_array($key, array_keys($this->images)))  {
             unset($this->images[$key]);
         }
     }
 
-
-    protected function cleanForm()
-    {
+    protected function cleanForm(){
         $this->title ='';
         $this->description = '';
-        $this->category ='';
+        $this->Categoria ='';
         $this->price ='';
         $this->images = [];
     }
-
-
-
 }

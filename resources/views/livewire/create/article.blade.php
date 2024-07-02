@@ -33,17 +33,15 @@
         </select>
 
         <div class="mb-3">
-            <input type="file" wire:model.live="temporary_images" multiple class="form-controll shadow" @error('temporary_images.*') is-invalid @enderror") placeholder="Img/">
+            <input type="file" wire:model.live="temporary_images" multiple class="form-controll shadow @error('temporary_images.*') is-invalid @enderror" placeholder="Img/">
             @error('temporary_images.*')
-            <p class="fst-italic text-danger">{{$message}}</p>
+                <p class="fst-italic text-danger">{{$message}}</p>
             @enderror
-
             @error('temporary_images')
-            <p class="fst-italic text-danger">{{$message}}</p>
+                <p class="fst-italic text-danger">{{$message}}</p>
             @enderror
         </div>
-
-        @if(!empty($image))
+        @if(!empty($images))
             <div class="row">
                 <div class="col-12">
                     <p>Photo prewiew:</p>
@@ -51,17 +49,13 @@
                         @foreach ($images as $key => $image)
                             <div class="col d-flex flex-column align-items-center my-3">
                                 <div class="img-preview mx-auto shadow rounded" style="background-image: url({{$image->temporaryUrl()}});"></div>
+                                <button type="button" class="btn mt-1 btn-danger" wire:click="removeImage({{ $key }})"> X </button>
                             </div>
-
-                            <button type="button" class="btn mt-1 btn-danger" wire:click="removeImage({{ $key }})"> X </button>
-                            
                         @endforeach
                     </div>
                 </div>
             </div>
         @endif
-
-
         <div class="d-flex justify-content-center">
             <button type="submit" class="btn btn-primary form--submit mt-5 footer_bottom">Crea Articolo</button>
         </div>

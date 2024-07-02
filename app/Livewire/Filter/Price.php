@@ -12,6 +12,7 @@ class Price extends Component
     public function updatedPrice($value) {
         $this->price = $value;
     }
+    
     public function render()
     {
         $query = Article::where('is_accepted', true);
