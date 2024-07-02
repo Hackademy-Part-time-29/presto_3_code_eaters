@@ -31,7 +31,7 @@ class Article extends Component{
     #[Validate('required',message:"Il descrizione è richiesta")]
     public $description;
 
-    #[Validate('required',message:"Il categoria è richiesta")]
+    // #[Validate('required',message:"Il categoria è richiesta")]
     public $category;  
 
     public $article;
@@ -43,7 +43,7 @@ class Article extends Component{
 
     public function store(){
 
-        // $this->validate();
+        $this->validate();
         $this->article = ModelsArticle::create([
             'title'=>$this->title,
             'price'=>$this->price,
