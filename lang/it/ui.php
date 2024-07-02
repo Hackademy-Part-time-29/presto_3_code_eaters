@@ -18,7 +18,7 @@ return
          'info' => 'In una calda giornata estiva, in un piccolo ufficio senza finestre, cinque programmatori si ritrovarono con molto tempo libero e poca ispirazione. Luca, Marzio, Andrei, Michele ed Emanuele erano abituati a risolvere complessi problemi di codice, ma quella settimana i progetti scarseggiavano. Così, tra una pausa caffè e l’altra, decisero che era tempo di fare qualcosa di diverso, qualcosa di innovativo e divertente.',
         //zona i nostri servizi
         'servizi' => 'I nostri servizi',
-        'servizio1' =>'',
+        'servizio1' =>'Acquisti Personalizzati tramite AI',
         'servizio2' =>'',
         'servizio3' =>'',
 

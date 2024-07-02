@@ -19,8 +19,8 @@
         'info' => 'On a hot summer day, in a small windowless office, five programmers found themselves with a lot of free time and little inspiration. Luca, Marzio, Andrei, Michele and Emanuele were used to solving complex coding problems, but that week there was a shortage of projects. So, between one coffee break and another, they decided it was time to do something different, something innovative and fun.',
        //zona i nostri servizi
         'servizi' => 'Our services',
-        'servizio1' =>'',
-        'servizio2' =>'',
+        'servizio1' =>'Personalized Purchases via AI',
+        'servizio2' =>'Subscription Programs and Ongoing Services',
         'servizio3' =>'',
 
       ];
