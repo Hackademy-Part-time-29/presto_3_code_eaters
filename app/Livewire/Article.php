@@ -5,10 +5,13 @@ namespace App\Livewire;
 
 use Livewire\Component;
 use App\Models\Category;
+use App\Jobs\ResizeImage;
 use Livewire\WithFileUploads;
 use Livewire\Attributes\Validate;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\File;
 use App\Models\Article as ModelsArticle;
+
 
 class Article extends Component{
 
