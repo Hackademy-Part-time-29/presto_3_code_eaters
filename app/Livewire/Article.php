@@ -23,10 +23,9 @@ class Article extends Component{
 
     public $Categories;
     
-    #[Validate('required',message:"Il prezzo è richiesto")]
-    #[Validate('max:6',message:"Il prezzo è troppo alto")]
-
+    #[Validate('required',message:"Il categoria è richiesta")]
     public $Categoria;
+
     public $price;
 
     #[Validate('required',message:"Il descrizione è richiesta")]
