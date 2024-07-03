@@ -1,112 +1,201 @@
-:root {
-    --primary-color: #e93d3d;
-    --primary-color-hover: #c0392b;
-    --text-color: #757575;
-    --card-width: 15vw;
-    --card-height: 75vh;
-    --border-radius: 0.625rem;
-    --box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
-    --box-shadow-hover: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
-    --transition-duration: 0.3s;
-    --spacing: 1.25rem;
-    --btn-width: 70%;
-    --btn-padding: 0.625rem 1.25rem;
-    --btn-margin-bottom: 0.625rem;
-    --btn-height: 2.5rem;
-    --btn-large-height: 5rem;
+/* :root {
+--primary-color: #e93d3d;
+--primary-color-hover: #c0392b;
+--text-color: #757575;
+--card-width: 15vw;
+--card-height: 75vh;
+--border-radius: 0.625rem;
+--box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+--box-shadow-hover: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+--transition-duration: 0.3s;
+--spacing: 1.25rem;
+--btn-width: 70%;
+--btn-padding: 0.625rem 1.25rem;
+--btn-margin-bottom: 0.625rem;
+--btn-height: 2.5rem;
+--btn-large-height: 5rem;
 }
 
 .card-container {
-    display: flex;
-    flex-wrap: wrap;
+display: flex;
+flex-wrap: wrap;
 }
 
 .custom-card {
-    width: var(--card-width);
-    height: var(--card-height);
-    margin: var(--spacing) auto;
-    box-shadow: var(--box-shadow);
-    text-align: center;
-    border-radius: var(--border-radius);
-    overflow: hidden;
-    transition: transform var(--transition-duration) ease, box-shadow var(--transition-duration) ease;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+width: var(--card-width);
+height: var(--card-height);
+margin: var(--spacing) auto;
+box-shadow: var(--box-shadow);
+text-align: center;
+border-radius: var(--border-radius);
+overflow: hidden;
+transition: transform var(--transition-duration) ease, box-shadow var(--transition-duration) ease;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
 }
 
 .custom-card:hover {
-    transform: translateY(-1rem);
-    box-shadow: var(--box-shadow-hover);
+transform: translateY(-1rem);
+box-shadow: var(--box-shadow-hover);
 }
 
 .custom-card-img {
-    width: 100%;
-    height: 50%;
-    object-fit: cover;
+width: 100%;
+height: 50%;
+object-fit: cover;
 }
 
 .custom-card-body {
-    padding: var(--spacing);
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+padding: var(--spacing);
+flex-grow: 1;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
 }
 
 .custom-card-title {
-    font-size: 1.5rem;
-    margin: 0.625rem 0;
-    flex-grow: 1;
+font-size: 1.5rem;
+margin: 0.625rem 0;
+flex-grow: 1;
 }
 
 .custom-card-subtitle {
-    font-size: 1rem;
-    color: var(--text-color);
-    margin-bottom: var(--spacing);
+font-size: 1rem;
+color: var(--text-color);
+margin-bottom: var(--spacing);
 }
 
 .custom-card-actions {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: var(--spacing);
+display: flex;
+flex-direction: column;
+align-items: center;
+margin-top: var(--spacing);
 }
 
 .custom-card-btn {
-    width: var(--btn-width);
-    padding: var(--btn-padding);
-    margin-bottom: var(--btn-margin-bottom);
-    border: none;
-    border-radius: 0.3125rem;
-    text-decoration: none;
-    color: #fff;
-    transition: background-color var(--transition-duration) ease, transform var(--transition-duration) ease;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    height: var(--btn-height);
+width: var(--btn-width);
+padding: var(--btn-padding);
+margin-bottom: var(--btn-margin-bottom);
+border: none;
+border-radius: 0.3125rem;
+text-decoration: none;
+color: #fff;
+transition: background-color var(--transition-duration) ease, transform var(--transition-duration) ease;
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+height: var(--btn-height);
 }
 
 .custom-card-btn-primary {
-    background-color: var(--primary-color);
+background-color: var(--primary-color);
 }
 
 .custom-card-btn-primary:hover {
-    background-color: var(--primary-color-hover);
-    transform: scale(1.05);
+background-color: var(--primary-color-hover);
+transform: scale(1.05);
 }
 
 .custom-card-btn-outline-info {
-    background-color: transparent;
-    border: 0.125rem solid var(--primary-color);
-    color: var(--primary-color);
-    height: var(--btn-large-height);
+background-color: transparent;
+border: 0.125rem solid var(--primary-color);
+color: var(--primary-color);
+height: var(--btn-large-height);
 }
 
 .custom-card-btn-outline-info:hover {
-    background-color: var(--primary-color);
-    color: #fff;
-    transform: scale(1.05);
+background-color: var(--primary-color);
+color: #fff;
+transform: scale(1.05);
 }
+ */
+ .btnShop {
+    position: relative;
+    display: flex;
+    gap: 25px;
+  }
+  
+  .btnShop li {
+    position: relative;
+    list-style: none;
+    width: 30px;
+    height: 30px;
+    background: #fff;
+    border-radius: 60px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    transition: 0.5s;
+  }
+  
+  .btnShop li:hover {
+    width: 150px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0);
+  }
+  
+  .btnShop li::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 60px;
+    background:#e93d3d;
+    opacity: 0;
+    transition: 0.5s;
+  }
+  
+  .btnShop li:hover::before {
+    opacity: 1;
+  }
+  
+  .btnShop li::after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    width: 100%;
+    height: 100%;
+    border-radius: 60px;
+    transition: 0.5s;
+    filter: blur(15px);
+    z-index: -1;
+    opacity: 0;
+  }
+  
+  .btnShop li:hover::after {
+    opacity: 0.5;
+  }
+  
+  .btnShop li .icon {
+    color: #777;
+    font-size: 1.75em;
+    transition: 0.5s;
+    transition-delay: 0.25s;
+  }
+  
+  .btnShop li:hover .icon {
+    transform: scale(0);
+    color: #050404;
+    transition-delay: 0s;
+  }
+  
+  .btnShop li span {
+    position: absolute;
+  }
+  
+  .btnShop li .title {
+    color: #000000;
+    font-size: 0.7em;
+    letter-spacing: 0.1em;
+    transform: scale(0);
+    transition: 0.5s;
+    transition-delay: 0s;
+  }
+  
+  .btnShop li:hover .title {
+    transform: scale(1);
+    transition-delay: 0.25s;
+  }
+  
