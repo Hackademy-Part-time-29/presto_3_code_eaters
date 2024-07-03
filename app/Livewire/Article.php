@@ -45,7 +45,6 @@ class Article extends Component{
     }
 
     public function store(){
-
         $this->validate();
         $this->article = ModelsArticle::create([
             'title'=>$this->title,
