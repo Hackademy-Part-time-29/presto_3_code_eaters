@@ -66,8 +66,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             }
         }
-    }
-    
+    }    
 
     function handleMouseOverMenuItem2(event) {
         isHoveringMenuItem2 = true;
