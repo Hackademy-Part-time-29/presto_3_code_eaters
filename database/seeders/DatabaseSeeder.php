@@ -10,11 +10,13 @@ use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
 {
-    public function run(): void{
+    public function run(): void
+    {
 
         User::factory()->create([
             'email' => 'qwerty@mail.it',
             'password' => '1234abcd',
+            'is_admin' => true,
         ]);
 
         $this->call([
