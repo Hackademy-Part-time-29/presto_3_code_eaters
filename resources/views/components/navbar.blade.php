@@ -6,6 +6,7 @@
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
+    
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item ms-3 me-3 custom-dropdown">
@@ -36,20 +37,33 @@
             <i class="bi bi-bag animate-bold"></i>
             {{__('ui.article')}}</a>
         </li>
+        <div class="nav-item dropdown mr-3">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" >
+            <img src="{{ asset('/storage/img/lang.png') }}" height="32px" width="32px" alt="">
+          </a>
+          <ul class="dropdown-menu">
+            <div class="lang-container">
+              <li><x-_locale lang="it"/></li>
+              <li><x-_locale lang="en"/></li>
+              <li><x-_locale lang="ro"/></li>
+            </div>
+            
+          </ul>
+        </div>
       </ul>
-      <x-_locale lang="it"/>
-      <x-_locale lang="en"/>
-      <x-_locale lang="ro"/>
-    </div>  
-    <form class="d-flex me-3" role="search" action="{{route('article.search')}}" method="GET">
-      <div class="search">
-        <input class="form-control me-2 filtroGenerale" type="text" name="query" placeholder="{{__('ui.search')}}" aria-label="Search">
-        <button type="submit" id="basic-addon2">
-          &#128270;
-        </button>
-      </div>
-    </form>
-        @auth
+
+    
+
+      <form class="d-flex me-3" role="search" action="{{route('article.search')}}" method="GET">
+        <div class="search">
+          <input class="form-control me-2 filtroGenerale" type="text" name="query" placeholder="{{__('ui.search')}}" aria-label="Search">
+          <button type="submit" id="basic-addon2">
+            &#128270;
+          </button>
+        </div>
+      </form>
+        
+      @auth
           <form action="{{route('logout')}}" method="POST">
             @csrf
             <button data-mdb-ripple-init type="submit" class="buttonLog elemento1">
@@ -89,6 +103,9 @@
             </div>
           </a>
         @endauth
+    </div>  
+    
+        
       </div>
     </div>
   </div>
