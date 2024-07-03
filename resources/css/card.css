@@ -111,6 +111,10 @@ color: #fff;
 transform: scale(1.05);
 }
  */
+ .btnCategory{
+    text-decoration: none;
+    color: #e93d3d;
+ }
  .btnShop {
     position: relative;
     display: flex;

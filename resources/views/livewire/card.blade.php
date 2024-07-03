@@ -1,5 +1,5 @@
 <div>
-    <div class="card-container">
+    <div class="card-container d-flex flex-wrap ">
         @forelse ($articles as $article)
             <x-card :article="$article" />
         @empty

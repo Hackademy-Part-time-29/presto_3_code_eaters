@@ -26,8 +26,8 @@
                 </div>
             @endif            
         @endauth
-        <div class="container">
-            {{ $slot }}
+        <div class="container mt-3" style="max-width:100%">
+                {{ $slot }}
         </div>    
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
     </body>
