@@ -55,7 +55,6 @@
                     </div>
                 </div>
             </div>
-            
         @endif
         <div class="d-flex justify-content-center">
             <button type="submit" class="btn btn-primary form--submit mt-5 footer_bottom">{{__('ui.creaarticolobtn')}}</button>
