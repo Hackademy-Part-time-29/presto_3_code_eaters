@@ -58,16 +58,14 @@ class Article extends Component{
             foreach ($this->images as $image) {
                 $this->article->images()->create(['path' => $image->store('images', 'public')]);
             }
-        }
             File::deleteDirectory(storage_path('/app/livewire-tmp'));
+        }
+        session()->flash('success','Articolo creato con successo');
+        $this->cleanForm();
 
-            session()->flash('success','Articolo creato con successo');
-            $this->cleanForm();
-
-            return redirect('/')->with([
-                'success'=>'articolo creato con successo',
-            ]);
-        };
+        return redirect('/')->with([
+            'success'=>'articolo creato con successo',
+        ]);
     }
 
     public function mount(){
