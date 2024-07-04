@@ -6,6 +6,8 @@ let isHoveringMenuItem2 = false;
 let lastHoveredMenuItem = null; 
 let menuItem2Elements = [];
 
+
+
 document.addEventListener('DOMContentLoaded', () => {
 
     function handleMouseOver(event) {
@@ -117,3 +119,21 @@ document.addEventListener('DOMContentLoaded', () => {
     menuItem2.addEventListener('mouseover', handleMouseOverMenuItem2);
     menuItem2.addEventListener('mouseout', handleMouseOutMenuItem2);
 });
+
+/* navbar scroll */
+
+
+let navbar = document.querySelector("#navbar");
+let navbarContent = document.querySelector("#navbarSupportedContent")
+
+window.addEventListener('scroll', function() {
+    let scrollTop = window.scrollY;
+
+    if (scrollTop > 0) {        
+        navbarContent.classList.add('hiddenProva');
+        navbar.classList.add('navbarScrollProva');
+    } else {
+        navbarContent.classList.remove('hiddenProva');
+        navbar.classList.remove('navbarScrollProva');
+    }
+})
