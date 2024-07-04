@@ -53,7 +53,14 @@ return [
   'ifreviewer' => 'Se vuoi accettare la sua richiesta clicca qui:',
   'clicklink' => 'Rendi Revisore',
   //login e registrati
-
+  'login' => 'Accedi',
+  'email' => 'Email:',
+  'Hi' => 'Ciao:',
+  'insert' => "Inserisci i tuoi dati personali ed inizia l'avventura insieme a noi",
+  'register' => 'registrati',
+  'welcome' => 'Benvenuto!',
+  'continue' => 'Per continuare ad essere connessi con noi perfavore esegui il login con i tuoi dati personali',
+  'createaccount' => 'Crea un account',
 
 
 
@@ -62,5 +69,6 @@ return [
   'articlecategory' => 'Articoli della categoria',
   'noarticlecategory' => 'Non sono ancora stati creati articoli per questa categoria!',
   'creaarticolobtn' => 'CREA ARTICOLO',
+
 
 ];
