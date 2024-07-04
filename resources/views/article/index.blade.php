@@ -2,7 +2,7 @@
 <div class="container-fluid">
     <div class="row">
         <x-filtri/>
-        <div class="col-9">
+        <div class="col-sm-12 col-md-9 ">
             <div class="opzioneArticoli">
                 <div class="btn-group dropstart">
                     <span data-bs-toggle="dropdown">
