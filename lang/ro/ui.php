@@ -33,6 +33,8 @@ return
                 'description' => 'DESCRIERE',
                 'creaarticolobtn' => 'CREATE AD',
                 'category' => 'Alege o categorie',
+                'choosefile'  => 'Scegli file Rumeno maledetto',
+                'photopreview' => 'Previzualizați imaginile',
                 //pulsante diventa revisore
                 'revisor1' => 'Vrei să devii recenzent?',
                 'revisorp' => 'Făcând clic pe butonul de mai jos, veți face o cerere administratorului nostru',
@@ -54,6 +56,11 @@ return
                 'ifreviewer' => 'Dacă doriți să acceptați cererea dvs. faceți clic aici:',
                 'clicklink' => 'Faceți recenzent',
 
+                // categorie e macro
+                'articlemacrocategory' => 'Articole din categoria macro',
+                'articlecategory' => 'Articole din categorie',
+                'noarticlecategory' => 'Încă nu au fost create articole pentru această categorie!',
+                'creaarticolobtn' => 'CREATE AD',
 
 
 
