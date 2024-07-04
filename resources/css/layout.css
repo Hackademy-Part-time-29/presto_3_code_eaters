@@ -1,8 +1,72 @@
 /* bottone per aggiungere annuncio una volta loggati */
 
+body{
+    margin-top: 100px;
+    background: rgb(255, 255, 255);
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.518) 44%, rgba(255, 133, 2, 0.244) 100%);
 body {
     background-color: #f1f1f1;
     position: relative;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(circle, #e1e4f8 1px, transparent 1px);
+    background-size: 10px 10px;
+    z-index: -1; 
+    animation: sparkle 5s infinite ease-in-out;
+}
+
+@keyframes sparkle {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+}
+
+@keyframes sparkle-random {
+    0%, 100% {
+        opacity: 1;
+    }
+    25% {
+        opacity: 0.7;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    75% {
+        opacity: 0.3;
+    }
+}
+
+body::before {
+    animation: sparkle-random 2s infinite ease-in-out;
+}
+
+body::before:nth-child(1) {
+    animation-delay: 0s;
+}
+body::before:nth-child(2) {
+    animation-delay: 0.2s;
+}
+body::before:nth-child(3) {
+    animation-delay: 0.4s;
+}
+body::before:nth-child(4) {
+    animation-delay: 0.6s;
+}
+body::before:nth-child(5) {
+    animation-delay: 0.8s;
+}
+body::before:nth-child(6) {
+    animation-delay: 1s;
 }
 
 body::before {
