@@ -343,4 +343,28 @@ a {
         font-size: 12px;
         width: 70%;
     }
+
+    .lang-container {
+        margin-left: 16px;
+        
+    }
+    
+    .custom-search {
+        margin-left: 16px;
+    }
+
+    .custom-login {
+        margin-left: 16px;
+    }
+
+    .custom-register {
+        margin-left: 12px;
+    }
+
+    .elemento1 {
+        margin-left: 12px;
+    }
+    .navbar-toggler {
+        margin-right: 12px;
+    }
 }
