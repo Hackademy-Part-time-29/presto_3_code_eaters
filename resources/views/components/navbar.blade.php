@@ -1,4 +1,4 @@
-<div class="navbar navbar-expand-lg bg-body-tertiary">
+<div class="navbar navbar-expand-lg bg-body-tertiary fixed-top" id="navbar">
   <div class="container-fluid">
     <a class="navbar-brand" href="/">
       <img src="{{ asset('/storage/img/logo60px.png') }}" alt="logo">
@@ -103,6 +103,7 @@
             </div>
           </a>
         @endauth
+
     </div>  
     
         

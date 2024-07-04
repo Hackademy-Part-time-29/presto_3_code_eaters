@@ -322,6 +322,23 @@ a {
     width: 60px;
 }
 
+.hiddenProva {
+    position: absolute;
+    top: -10000px;
+}
+
+.navbarScrollProva {
+    margin: 2vh;
+    width: 15%;
+    border-radius: 15px;
+    transition: 1s;
+
+}
+
+#navbar {
+    transition: 1s;
+}
+
 @media (max-width: 991px) {
     .collapse {
         display: flex;
