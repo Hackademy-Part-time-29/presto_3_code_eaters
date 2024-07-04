@@ -26,12 +26,14 @@
                 </div>
             @endif            
         @endauth
-        <div class="container mt-3" style="max-width:100%">
+        <div class="container mt-3" style="max-width:90%">
                 {{ $slot }}
         </div>    
+    
+        <x-footer/>
+
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
     </body>
-    <x-footer/>
 </x-h-t-m-l>
 
 
