@@ -1,68 +1,17 @@
-    
-    
-    header{
-        color: white;
-        
-        padding: 20px;
-        border-radius: 18px;
-        text-align: center;
-            /* Allineamento del testo */
-    }
-
-
-    /* .headerbg{
-        background: radial-gradient(circle, rgb(181, 2, 2), rgb(245, 54, 54));
-    } */
-
-
-
-
-        .rounded-header {
-            position: relative;
-            padding: 40px;
-            text-align: center;
-            color: rgb(255, 255, 255);
-            border-radius: 10px;
-            overflow: hidden;
-            /* Assicura che il background non esca dai bordi arrotondati */
-            box-shadow: 0 10px 8px rgba(0, 0, 0, 0.3);
-            /* Effetto di ombra per dare profondità */
-        }
-    
-        .rounded-header::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: radial-gradient(circle, rgb(181, 2, 2), rgb(170, 10, 10));
-            /* Gradiente dal rosso al rosso scuro */
-            filter: blur(5px);
-            /* Applica l'effetto blur */
-            z-index: -1;
-            /* Mantiene il background dietro il contenuto del header */
-        }
-    
-        .h1header {
-            position: relative;
-            text-shadow: 0px 10px 10px rgba(0, 0, 0, 0.9);
-                font-weight: 700;
-                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-                text-transform: uppercase;
-            font-size: 3em;
-            
-            /* Effetto di ombra per il testo 3D */
-            margin: 0;
-        }
-    
-        .pheader {
-            text-shadow: 0px 10px 10px rgba(0, 0, 0, 0.9);
-            font-weight: 300;
-            text-transform: uppercase;
-            position: relative;
-            font-size: 1.2em;
-        
-            /* Effetto di ombra per il testo 3D */
-            margin: 10px 0 0;
-        }
+header {
+    color: white;
+    background-color: #e93d3d;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 25vh;
+}
+header h1{
+    font-weight: 700;
+    font-size: 70px; 
+}
+header p{
+    font-weight: 700;
+    font-size: 20px; 
+}
