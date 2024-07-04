@@ -25,15 +25,19 @@
                 <span class="small text-danger">{{$message}}</span>
             @enderror
         </div>
-        <select class="custom-form-select" wire:model="Categoria">
-            <option value="" selected disabled>{{__('ui.category')}}</option>
-            @foreach ($Categories as $Category)
-                <option value="{{ $Category->id }}">{{$Category->name}}</option>
-            @endforeach           
-        </select>
+        <div class="custom-form-group">
+            <label class="custom-form-label">{{__('ui.category')}}</label>
+            <select class="custom-form-select" wire:model="Categoria">
+                <option value="" selected disabled>{{__('ui.category')}}</option>
+                @foreach ($Categories as $Category)
+                    <option value="{{ $Category->id }}">{{$Category->name}}</option>
+                @endforeach           
+            </select>
+        </div>
 
         <div class="custom-form-group">
-            <input type="file" wire:model.live="temporary_images" multiple class="custom-form-control shadow @error('temporary_images.*') is-invalid @enderror" placeholder="Img/">
+            <input type="file" id="actual-btn" wire:model.live="temporary_images" multiple hidden/>
+            <label class="select-file"  for="actual-btn">Choose File</label>
             @error('temporary_images.*')
                 <p class="fst-italic text-danger">{{$message}}</p>
             @enderror
@@ -43,7 +47,7 @@
         </div>
         @if(!empty($images))
             <div class="custom-image-preview-container">
-                <p>Photo prewiew:</p>
+                <p>Photo preview:</p>
                 <div class="custom-image-preview-grid">
                     @foreach ($images as $key => $image)
                         <div class="custom-image-preview-item">
