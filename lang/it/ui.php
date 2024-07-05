@@ -82,5 +82,8 @@ return [
   'price:' => 'Prezzo:',
   'detail' => 'Dettaglio',
 
+  //in merito alla ricerca dalla navbar
+  'nosearch' => 'Nessun articolo corrisponde alla tua ricerca',
+
 
 ];

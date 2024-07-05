@@ -82,5 +82,7 @@ return
     'noadd' => 'No articles have been created yet',
     'price:' => 'Price:',
     'detail' => 'Detail',
+    //in merito alla ricerca dalla navbar
+    'nosearch' => 'No articles match your search',
 
   ];

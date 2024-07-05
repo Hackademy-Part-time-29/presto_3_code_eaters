@@ -83,6 +83,9 @@ return
                 'price:' => 'Preț:',
                 'detail' => 'Detaliu',
 
+                //in merito alla ricerca dalla navbar
+                'nosearch' => 'Niciun articol nu corespunde căutării dvs',
+
 
 
 
