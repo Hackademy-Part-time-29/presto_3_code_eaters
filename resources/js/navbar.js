@@ -124,18 +124,23 @@ document.addEventListener('DOMContentLoaded', () => {
 let navbar = document.querySelector("#navbar");
 let navbarContent = document.querySelector("#navbarSupportedContent")
 let iconaAggiungiArticoloNavbar = document.querySelector(".iconaAggiungiArticoloNavbar")
+let mediaQuery = window.matchMedia('(max-width: 991px)');
 
-window.addEventListener('scroll', function() {
-    let scrollTop = window.scrollY;
 
-    if (scrollTop > 0) {    
-        navbarContent.classList.add('hiddenProva');
-        navbar.classList.add('navbarScrollProva'); 
-        iconaAggiungiArticoloNavbar.classList.remove('hiddenProva');
-    } else {
-        navbarContent.classList.remove('hiddenProva');
-        navbar.classList.remove('navbarScrollProva');
-        iconaAggiungiArticoloNavbar.classList.add('hiddenProva');
-    }
-})
+if (!mediaQuery.matches){
+    window.addEventListener('scroll', function() {
+        let scrollTop = window.scrollY;
+    
+        if (scrollTop > 0) {    
+            navbarContent.classList.add('hiddenProva'); 
+            navbar.classList.add('navbarScrollProva');
+            iconaAggiungiArticoloNavbar.classList.remove('hiddenProva2');
+        } else {
+            navbarContent.classList.remove('hiddenProva');
+            navbar.classList.remove('navbarScrollProva');
+            iconaAggiungiArticoloNavbar.classList.add('hiddenProva2');
+        }
+    })
+}
+
 
