@@ -26,7 +26,7 @@
                 </div>
             @endif            
         @endauth
-        <div class="container mt-3" style="max-width:90%">
+        <div class="container  mt-3" style="max-width:90%">
                 {{ $slot }}
         </div>    
     

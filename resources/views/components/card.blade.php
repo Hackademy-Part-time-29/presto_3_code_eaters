@@ -1,4 +1,4 @@
-<div  id="container">	
+<div class="articleCard" id="container">	
     <div class="product-details">
       <a href="{{route('article.show',compact('article'))}}"><h1>{{Str::limit($article->title, 30, '...')}}</h1></a>
       <span class="price">{{$article->price}}€</span>
