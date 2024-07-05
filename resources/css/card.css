@@ -71,7 +71,7 @@
 #container img {width: 100%;height: 100%;}
 
 .info {
-    background: rgba(27, 26, 26, 0.9);
+    background: rgba(149, 142, 142, 0.7);
     transition: all 0.3s ease-out;
     transform: translateX(-100%);
     position: absolute;
@@ -101,10 +101,13 @@
 .price{
 	font-weight: bold;
 }
+.information{
+	color: #7d7d7d;
+}
 .buttonBuy {
-	--width: 100px;
+	--width: 70px;
 	--height: 35px;
-	--button-color: #FF4B2B;
+	--button-color: rgb(149, 142, 142);
 	width: var(--width);
 	height: var(--height);
 	background: var(--button-color);
