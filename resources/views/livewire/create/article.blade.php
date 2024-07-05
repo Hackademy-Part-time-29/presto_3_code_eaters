@@ -37,7 +37,7 @@
 
         <div class="custom-form-group">
             <input type="file" id="actual-btn" wire:model.live="temporary_images" multiple hidden/>
-            <label class="select-file"  for="actual-btn">Choose File</label>
+            <label class="select-file"  for="actual-btn">{{__('ui.choosefile')}}</label>
             @error('temporary_images.*')
                 <p class="fst-italic text-danger">{{$message}}</p>
             @enderror
@@ -47,7 +47,7 @@
         </div>
         @if(!empty($images))
             <div class="custom-image-preview-container">
-                <p>Photo preview:</p>
+                <p>{{__('ui.photopreview')}}</p>
                 <div class="custom-image-preview-grid">
                     @foreach ($images as $key => $image)
                         <div class="custom-image-preview-item">
