@@ -9,7 +9,7 @@ return
     'login' => 'login',
     'logout' => 'logout',
     'create' => 'create new ad',
-    'search' => 'search',
+    'search' => 'Search',
     'revisor' => 'INSPECTION AREA',
     //zona welcome
     'headerp' => 'COMPULSIVE PURCHASES WITHOUT ANY SENSE',
@@ -80,5 +80,7 @@ return
     'creaarticolobtn' => 'CREATE SECTION',
     // card.blade
     'noadd' => 'No articles have been created yet',
+    'price:' => 'Price:',
+    'detail' => 'Detail',
 
   ];

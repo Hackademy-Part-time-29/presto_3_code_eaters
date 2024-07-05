@@ -7,7 +7,7 @@ return [
   'login' => 'Accedi',
   'logout' => 'Esci',
   'create' => 'crea nuovo annuncio',
-  'search' => 'cerca',
+  'search' => 'Cerca',
   'revisor' => 'ZONA REVISORE',
   //zona welcome
 
@@ -79,6 +79,8 @@ return [
 
   // card.blade
   'noadd' => 'Non sono ancora stati creati articoli',
+  'price:' => 'Prezzo:',
+  'detail' => 'Dettaglio',
 
 
 ];

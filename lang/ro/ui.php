@@ -80,6 +80,8 @@ return
                 'creaarticolobtn' => 'CREATE AD',
                 // card.blade
                 'noadd' => 'Nu au fost create articole încă',
+                'price:' => 'Preț:',
+                'detail' => 'Detaliu',
 
 
 
