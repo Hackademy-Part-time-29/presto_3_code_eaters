@@ -16,7 +16,7 @@
             @empty
                 <div class="col-12">
                     <h3 class="text-center">
-                        Nessun articolo corrisponde alla tua ricerca
+                        {{__('ui.nosearch')}}
                     </h3>
                 </div>
             @endforelse 

@@ -7,7 +7,7 @@ return [
   'login' => 'Accedi',
   'logout' => 'Esci',
   'create' => 'crea nuovo annuncio',
-  'search' => 'cerca',
+  'search' => 'Cerca',
   'revisor' => 'ZONA REVISORE',
   //zona welcome
 
@@ -55,12 +55,19 @@ return [
   //login e registrati
   'login' => 'Accedi',
   'email' => 'Email:',
-  'Hi' => 'Ciao:',
+  'hi' => 'Ciao!',
   'insert' => "Inserisci i tuoi dati personali ed inizia l'avventura insieme a noi",
   'register' => 'registrati',
   'welcome' => 'Benvenuto!',
   'continue' => 'Per continuare ad essere connessi con noi perfavore esegui il login con i tuoi dati personali',
   'createaccount' => 'Crea un account',
+  'name' => 'Nome',
+  'surname' => 'Cognome',
+  'age' => 'Età',
+  'pass' => 'Password',
+  'confirmpass' => 'Conferma Password',
+  'emailno' => 'Email',
+
 
 
 
@@ -69,6 +76,14 @@ return [
   'articlecategory' => 'Articoli della categoria',
   'noarticlecategory' => 'Non sono ancora stati creati articoli per questa categoria!',
   'creaarticolobtn' => 'CREA ARTICOLO',
+
+  // card.blade
+  'noadd' => 'Non sono ancora stati creati articoli',
+  'price:' => 'Prezzo:',
+  'detail' => 'Dettaglio',
+
+  //in merito alla ricerca dalla navbar
+  'nosearch' => 'Nessun articolo corrisponde alla tua ricerca',
 
 
 ];

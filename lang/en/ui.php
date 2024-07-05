@@ -9,7 +9,7 @@ return
     'login' => 'login',
     'logout' => 'logout',
     'create' => 'create new ad',
-    'search' => 'search',
+    'search' => 'Search',
     'revisor' => 'INSPECTION AREA',
     //zona welcome
     'headerp' => 'COMPULSIVE PURCHASES WITHOUT ANY SENSE',
@@ -54,6 +54,22 @@ return
     'email' => 'Email:',
     'ifreviewer' => 'If you want to accept your request click here:',
     'clicklink' => 'Make Reviewer',
+    //login e registrati
+    'login' => 'Login',
+    'email' => 'Email:',
+    'hi' => 'Hi!',
+    'insert' => "Enter your personal data and start the adventure with us",
+    'register' => 'Register',
+    'welcome' => 'Welcome!',
+    'continue' => 'To continue to be connected to us please log in with your personal details',
+    'createaccount' => 'Create an account',
+    'name' => 'Name',
+    'surname' => 'Surname',
+    'age' => 'Age',
+    'pass' => 'Password',
+    'confirmpass' => 'Confirm Password',
+    'emailno' => 'Email',
+
 
 
 
@@ -62,5 +78,11 @@ return
     'articlecategory' => 'Items in the category',
     'noarticlecategory' => 'No articles have been created for this category yet!',
     'creaarticolobtn' => 'CREATE SECTION',
+    // card.blade
+    'noadd' => 'No articles have been created yet',
+    'price:' => 'Price:',
+    'detail' => 'Detail',
+    //in merito alla ricerca dalla navbar
+    'nosearch' => 'No articles match your search',
 
   ];
