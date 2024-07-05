@@ -1,5 +1,5 @@
 <x-layout>
-    {{-- <div class="container">
+    <div class="container">
         <div class="row height-custom justify-content-center align-items-center text-center">
             <div class="col-12">
                 <h1 class="display-4">Dettaglio dell'articolo: {{$article->title}}</h1>
@@ -33,7 +33,7 @@
                 <p>{{$article->description}}</p>
             </div>
         </div>
-    </div> --}}
+    </div>
     <div class="col-12 col-md-6 mb-3">
         @if ($article->images->count() > 0)
             <div id="carouselExample" class="carousel slide">

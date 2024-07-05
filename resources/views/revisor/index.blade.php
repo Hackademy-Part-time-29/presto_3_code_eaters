@@ -55,6 +55,9 @@
                             @method('PATCH')
                             <button class="btn btn-success py-2 px-5 fw-bold">{{ __('ui.accept') }}</button>
                         </form>
+                       
+                    </div>
+                    <div class="mb-5 ms-5">
                         <form action="{{ route('recover') }}" method="POST">
                             @csrf
                             @method('PATCH')

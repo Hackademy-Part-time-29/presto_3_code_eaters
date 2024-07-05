@@ -176,11 +176,17 @@
 	
 	#container{
 		display: flex;
+		justify-content: center;
+		align-items: center;
 		flex-direction:column-reverse;
+		margin-left: 70px ;
 		height: 600px;
 		width: 100%;
 	}
 	.product-details{
+		display: flex;
+		justify-content: start;
+		align-items: start;
 		width: 100%;
 		height: 300px;
 	}
@@ -192,7 +198,12 @@
 
 @media(min-width:700px) and (max-width:1000px){
 	#container{
+		max-width: 100%;
+		width: 500px;
 		height: 300px;
+	}
+	.cardLayout{
+		display: inline;
 	}
 }
 
@@ -224,8 +235,10 @@
 	transform:perspective(800px)       rotateY(0deg);
 	opacity:1;
 	z-index: 99;
-
   }
+  
+ 
+  
   
 
 
