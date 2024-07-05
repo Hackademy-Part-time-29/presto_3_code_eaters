@@ -323,11 +323,11 @@ a {
     margin: 2vh;
     right: 85vw;
     border-radius: 15px;
-    transition: 0.5s;
+    transition: 0.08s;
 }
 
 #navbar {
-    transition: 0.5s;
+    transition: 0.08s;
 }
 
 @media (max-width: 991px) {
