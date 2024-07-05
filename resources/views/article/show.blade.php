@@ -1,5 +1,5 @@
 <x-layout>
-    <div class="container">
+    {{-- <div class="container">
         <div class="row height-custom justify-content-center align-items-center text-center">
             <div class="col-12">
                 <h1 class="display-4">Dettaglio dell'articolo: {{$article->title}}</h1>
@@ -33,11 +33,11 @@
                 <p>{{$article->description}}</p>
             </div>
         </div>
-    </div>
-    <div class="col-12 col-md-6 mb-3">
+    </div> --}}
+    <div class="col-12 col-md-6 mb-3 w-100">
         @if ($article->images->count() > 0)
-            <div id="carouselExample" class="carousel slide">
-                <div class="carousel-inner">
+            <div id="carouselExample" class="carousel slide d-flex justify-content-around">
+                <div class="carousel-inner w-25">
                     @foreach ($article->images as $key => $image)
                         <div class="carousel-item @if ($loop->first) active @endif">
                             <img src="{{ $image->getUrl(300,300)}}" alt="Immagine {{$key+1}} dell'articolo {{$article->title}}" class="d-block w-100 rounded shadow">
@@ -54,10 +54,48 @@
                         <span class="visually-hidden">Next</span>
                     </button>
                 @endif
+                <div class="col-12 col-md-4 mb-3 height-custom text-center">
+                    <h2 class="display-5">
+                        <span class="fw-bold">
+                            Titolo: 
+                        </span>
+                        {{$article->title}}
+                    </h2>
+                    <div class="d-flex flex-column justify-content-center h-50 ">
+                        <h4 class="fw-bold">
+                            Prezzo {{$article->price}} €
+                        </h4>
+                        <h5>
+                            Descrizione:
+                        </h5>
+                        <p>{{$article->description}}</p>
+                    </div>
+                </div>
             </div>
         @else
-           {{--  <img src="https://picsum.photos/300" alt="Nessuna foto inserita dall'utente"> --}}
-        @endif
-            
+            <div class="d-flex justify-content-around">
+                <div class="w-25">
+                    <img src="https://picsum.photos/300" alt="Nessuna foto inserita dall'utente">
+                </div>
+                
+                <div class="col-12 col-md-4 mb-3 height-custom text-center">
+                    <h2 class="display-5">
+                        <span class="fw-bold">
+                            Titolo: 
+                        </span>
+                        {{$article->title}}
+                    </h2>
+                    <div class="d-flex flex-column justify-content-center h-50 ">
+                        <h4 class="fw-bold">
+                            Prezzo {{$article->price}} €
+                        </h4>
+                        <h5>
+                            Descrizione:
+                        </h5>
+                        <p>{{$article->description}}</p>
+                    </div>
+                </div>
+            </div>
+        @endif            
     </div>
 </x-layout>
