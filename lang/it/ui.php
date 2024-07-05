@@ -77,5 +77,8 @@ return [
   'noarticlecategory' => 'Non sono ancora stati creati articoli per questa categoria!',
   'creaarticolobtn' => 'CREA ARTICOLO',
 
+  // card.blade
+  'noadd' => 'Non sono ancora stati creati articoli',
+
 
 ];

@@ -78,5 +78,7 @@ return
     'articlecategory' => 'Items in the category',
     'noarticlecategory' => 'No articles have been created for this category yet!',
     'creaarticolobtn' => 'CREATE SECTION',
+    // card.blade
+    'noadd' => 'No articles have been created yet',
 
   ];
