@@ -170,6 +170,7 @@ body::before:nth-child(10) {
 .logoPlus{
         width: 50%;
         height: 50%;
+        fill: white;
 }
 
 .svgContainer {
