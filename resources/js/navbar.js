@@ -128,13 +128,20 @@ let iconaAggiungiArticoloNavbar = document.querySelector(".iconaAggiungiArticolo
 window.addEventListener('scroll', function() {
     let scrollTop = window.scrollY;
 
-    if (scrollTop > 0) {        
-        navbarContent.classList.add('hiddenProva');
-        iconaAggiungiArticoloNavbar.classList.remove('hiddenProva');
-        navbar.classList.add('navbarScrollProva');
+    if (scrollTop > 0) {   
+        console.log("A");     
+        navbarContent.classList.add('hiddenProva'); 
+        console.log("B"); 
+        navbar.classList.add('navbarScrollProva'); 
+        console.log("C");         
+        iconaAggiungiArticoloNavbar.classList.remove('hiddenProva2');
     } else {
         navbarContent.classList.remove('hiddenProva');
-        iconaAggiungiArticoloNavbar.classList.add('hiddenProva');
+        console.log("A1");   
         navbar.classList.remove('navbarScrollProva');
+        console.log("A3");   
+        iconaAggiungiArticoloNavbar.classList.add('hiddenProva2');
+        console.log("A2");   
     }
 })
+

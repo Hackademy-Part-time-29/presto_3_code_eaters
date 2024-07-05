@@ -103,7 +103,6 @@
     animation: boldAnimation 2s forwards;
 }
 
-
 /* bottoni login e registrati */
 .cssbuttons-io-button {
     background: whitesmoke;
@@ -163,7 +162,6 @@
 a {
     text-decoration: none;
 }
-
 
 .elemento1 {
     margin-right: 10px;
@@ -267,10 +265,7 @@ a {
     width: 250px;
 }
 
-
-
 /* search parte 2  */
-
 
 .search {
     display: inline-block;
@@ -320,6 +315,10 @@ a {
     top: -10000px;
 }
 
+.hiddenProva2 {
+    position: absolute;
+}
+
 .navbarScrollProva {
     margin: 2vh;
     right: 85vw;
@@ -332,6 +331,7 @@ a {
 }
 
 @media (max-width: 991px) {
+
     .collapse {
         display: flex;
         flex-direction: column;
@@ -339,11 +339,11 @@ a {
         gap: 12px;
         padding: 12px;
     }
+
     .navbar-brand{
         padding-left: 6px;
     }
 
-    
     .custom-dropdown-content .menu {
         display: flex;
         flex-wrap: nowrap;
