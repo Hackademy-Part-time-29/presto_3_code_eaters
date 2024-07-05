@@ -5,7 +5,7 @@
 .custom-dropdown .custom-dropdown-content {
     display: none;
     position: absolute;
-    background-color: white;
+    background-color: whitesmoke;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 10px 0 ;
     z-index: 1000;
@@ -23,7 +23,7 @@
     height: 0;
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
-    border-bottom: 10px solid white;
+    border-bottom: 10px solid whitesmoke;
     position: absolute;
     top: -8px;
     left: 20px;
@@ -87,9 +87,6 @@
     color: gray;
 }
 
-
-
-
 /* scritte su navbar */
 
 @keyframes boldAnimation {
@@ -109,7 +106,7 @@
 
 /* bottoni login e registrati */
 .cssbuttons-io-button {
-    background: #ffffff;
+    background: whitesmoke;
     color: rgb(0, 0, 0);
     font-family: inherit;
     text-transform: uppercase;
@@ -131,7 +128,7 @@
 }
 
 .cssbuttons-io-button .icon {
-    background: white;
+    background: whitesmoke;
     margin-left: 1em;
     position: absolute;
     display: flex;
@@ -176,10 +173,6 @@ a {
     margin-right: 20px;
     /* Aggiunge spazio a destra di elemento2 */
 }
-
-
-
-
 
 /* tasto logout */
 .buttonLog {
@@ -244,7 +237,7 @@ a {
     padding: 5px 10px;
     border-radius: 50%;
     background: rgb(255, 55, 55);
-    color: rgb(255, 255, 255);
+    color: whitesmoke;
 }
 
 /* searching input */
@@ -295,7 +288,7 @@ a {
 .search button[type="submit"] {
     
     border: none;
-    color: #fff;
+    color: whitesmoke;
     cursor: pointer;
     padding: 7px 9px;
     border-radius: 20px;
@@ -329,10 +322,9 @@ a {
 
 .navbarScrollProva {
     margin: 2vh;
-    width: 15%;
+    right: 85vw;
     border-radius: 15px;
-    transition: 1s;
-
+    transition: 0.5s;
 }
 
 #navbar {
