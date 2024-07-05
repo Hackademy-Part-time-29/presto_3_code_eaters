@@ -56,7 +56,7 @@
                 @endif
             </div>
         @else
-            <img src="https://picsum.photos/300" alt="Nessuna foto inserita dall'utente">
+           {{--  <img src="https://picsum.photos/300" alt="Nessuna foto inserita dall'utente"> --}}
         @endif
             
     </div>
