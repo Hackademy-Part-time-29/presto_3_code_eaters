@@ -55,12 +55,19 @@ return [
   //login e registrati
   'login' => 'Accedi',
   'email' => 'Email:',
-  'Hi' => 'Ciao:',
+  'hi' => 'Ciao!',
   'insert' => "Inserisci i tuoi dati personali ed inizia l'avventura insieme a noi",
   'register' => 'registrati',
   'welcome' => 'Benvenuto!',
   'continue' => 'Per continuare ad essere connessi con noi perfavore esegui il login con i tuoi dati personali',
   'createaccount' => 'Crea un account',
+  'name' => 'Nome',
+  'surname' => 'Cognome',
+  'age' => 'Età',
+  'pass' => 'Password',
+  'confirmpass' => 'Conferma Password',
+  'emailno' => 'Email',
+
 
 
 

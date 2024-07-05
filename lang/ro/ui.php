@@ -55,6 +55,22 @@ return
                 'email' => 'E-mail:',
                 'ifreviewer' => 'Dacă doriți să acceptați cererea dvs. faceți clic aici:',
                 'clicklink' => 'Faceți recenzent',
+                //login e registrati
+                'login' => 'Log in',
+                'email' => 'Email:',
+                'hi' => 'BUNĂ!',
+                'insert' => "Introduceți datele dumneavoastră personale și începeți aventura cu noi",
+                'register' => 'conectare',
+                'welcome' => 'Bine ati venit!',
+                'continue' => 'Pentru a continua să fiți conectat la noi, vă rugăm să vă conectați cu datele dumneavoastră personale',
+                'createaccount' => 'Creați un cont',
+                'name' => 'Nume',
+                'surname' => 'Nume de familie',
+                'age' => 'Vârstă',
+                'pass' => 'Parola',
+                'confirmpass' => 'Confirmă Parola',
+                'emailno' => 'E-mail',
+
 
                 // categorie e macro
                 'articlemacrocategory' => 'Articole din categoria macro',

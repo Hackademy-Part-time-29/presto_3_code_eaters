@@ -54,6 +54,22 @@ return
     'email' => 'Email:',
     'ifreviewer' => 'If you want to accept your request click here:',
     'clicklink' => 'Make Reviewer',
+    //login e registrati
+    'login' => 'Login',
+    'email' => 'Email:',
+    'hi' => 'Hi!',
+    'insert' => "Enter your personal data and start the adventure with us",
+    'register' => 'Register',
+    'welcome' => 'Welcome!',
+    'continue' => 'To continue to be connected to us please log in with your personal details',
+    'createaccount' => 'Create an account',
+    'name' => 'Name',
+    'surname' => 'Surname',
+    'age' => 'Age',
+    'pass' => 'Password',
+    'confirmpass' => 'Confirm Password',
+    'emailno' => 'Email',
+
 
 
 
