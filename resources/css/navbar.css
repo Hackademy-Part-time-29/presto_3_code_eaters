@@ -328,7 +328,7 @@ a {
 }
 
 #navbar {
-    transition: 1s;
+    transition: 0.5s;
 }
 
 @media (max-width: 991px) {
