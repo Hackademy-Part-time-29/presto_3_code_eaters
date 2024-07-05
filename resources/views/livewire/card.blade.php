@@ -5,7 +5,7 @@
         @empty
             <div class="col-12">
                 <h3 class="text-center">
-                    Non sono ancora stati creati articoli
+                    {{__('ui.noadd')}}
                 </h3>
             </div>
         @endforelse

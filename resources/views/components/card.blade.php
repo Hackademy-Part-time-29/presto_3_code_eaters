@@ -2,7 +2,7 @@
   <div class="product-details">
     <a href="{{route('article.show',compact('article'))}}"><h1>{{Str::limit($article->title, 25, '...')}}</h1></a>
     <p>{{Str::limit($article->description,50,'...')}}</p>
-    <span class="price">Prezzo: {{$article->price}}€</span>
+    <span class="price">{{__('ui.price:')}} @formatPrice($article->price) €</span>
     <div>
       <a href="{{route('byCategory', ['category' => $article->category])}}" class="information">{{Str::limit($article->category->name, 20, '...')}}</a>
     </div>
