@@ -6,8 +6,6 @@ let isHoveringMenuItem2 = false;
 let lastHoveredMenuItem = null; 
 let menuItem2Elements = [];
 
-
-
 document.addEventListener('DOMContentLoaded', () => {
 
     function handleMouseOver(event) {
@@ -125,15 +123,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
 let navbar = document.querySelector("#navbar");
 let navbarContent = document.querySelector("#navbarSupportedContent")
+let iconaAggiungiArticoloNavbar = document.querySelector(".iconaAggiungiArticoloNavbar")
 
 window.addEventListener('scroll', function() {
     let scrollTop = window.scrollY;
 
     if (scrollTop > 0) {        
         navbarContent.classList.add('hiddenProva');
+        iconaAggiungiArticoloNavbar.classList.remove('hiddenProva');
         navbar.classList.add('navbarScrollProva');
     } else {
         navbarContent.classList.remove('hiddenProva');
+        iconaAggiungiArticoloNavbar.classList.add('hiddenProva');
         navbar.classList.remove('navbarScrollProva');
     }
 })
