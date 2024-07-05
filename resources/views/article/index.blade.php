@@ -1,8 +1,8 @@
 <x-layout>
-<div class="container-fluid">
-    <div class="row">
+<div class="container-fluid ">
+    <div class="row position-relative">
         <x-filtri/>
-        <div class="col-12 col-md-9 ">
+        <div class="col-12 col-md-8 mw-100">
             <div class="opzioneArticoli">
                 <div class="btn-group dropstart">
                     <span data-bs-toggle="dropdown">

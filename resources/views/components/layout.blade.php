@@ -17,8 +17,10 @@
                 {{session('success')}}
             </div>
         @endsession
-        <div class="container">
-            {{ $slot }}
+        <div class="container mt-5 mw-100">
+            <div class="row">
+                {{ $slot }}
+            </div>
         </div>    
     
         <x-footer/>
