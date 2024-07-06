@@ -49,6 +49,7 @@ return
                 'recover' => 'Recuperează elementul anterior',
                 'norevarticle' => 'Nu există articole prezente',
                 'homepage' => 'Înapoi la pagina de start',
+                'revisorzone' => 'Zona rezervata auditorilor',
                 //email che viene mandata ad admin
                 'subject' => "Faceți utilizatorul numit recenzent:",
                 'text' => 'Un utilizator a cerut să lucreze cu noi',
@@ -93,6 +94,11 @@ return
                 'categoryrequired' => 'Categoria este obligatorie',
                 'descriptionrequired' => 'Descrierea este obligatorie',
                 'successarticle' => 'Articol creat cu succes!',
+                //revisor controller
+                'previewmod' => "Ați anulat ultima modificare făcută",
+                'congratulation' => 'Felicitări, ați aplicat pentru a deveni recenzent!',
+                'rejectedarticle' => "Ați respins articolul:",
+                'acceptedarticle' => "Ai acceptat articolul:",
 
 
 

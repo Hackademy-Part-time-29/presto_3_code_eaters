@@ -13,10 +13,9 @@ class IsRevisor
 
     public function handle(Request $request, Closure $next): Response
     {
-        if(Auth::check() && Auth::user()->is_revisor) {
+        if (Auth::check() && Auth::user()->is_revisor) {
             return $next($request);
         }
-        return redirect()->route('welcome')->with('errorMessage', 'Zona riservata ai revisori');
-        
+        return redirect()->route('welcome')->with('errorMessage', __('ui.revisorzone'));
     }
 }

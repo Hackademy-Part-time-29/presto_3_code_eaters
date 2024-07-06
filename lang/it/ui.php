@@ -45,6 +45,7 @@ return [
   'recover' => 'Recupera articolo precedente',
   'norevarticle' => 'Nessun articolo presente',
   'homepage' => 'Torna alla Homepage',
+  'revisorzone' => 'Zona riservata ai revisori',
   //email che viene mandata ad admin
   'subject' => "Rendi revisore l'utente di nome:",
   'text' => 'Un utente ha chiesto di lavorare con noi',
@@ -92,6 +93,11 @@ return [
   'categoryrequired' => 'La categoria è richiesta',
   'descriptionrequired' => 'La descrizione è richiesta',
   'successarticle' => 'Articolo creato con successo!',
+  //revisor controller
+  'previewmod' => "Hai annullato l'ultima modifica effettuata",
+  'congratulation' => 'Complimenti, hai richiesto di diventare revisor!',
+  'rejectedarticle' => "Hai rifiutato l'articolo:",
+  'acceptedarticle' => "Hai accettato l'articolo:",
 
 
 

@@ -15,46 +15,50 @@ class RevisorController extends Controller
     public function index()
     {
         $article_to_check = Article::where('is_accepted', null)->first();
-       
-        return view('revisor.index',compact('article_to_check'));
-    } 
 
-    public function accept(Article $article){
+        return view('revisor.index', compact('article_to_check'));
+    }
+
+    public function accept(Article $article)
+    {
 
         $article->setAccepted(true);
         return redirect()
             ->back()
-            ->with('message', "Hai accettato l'articolo $article->title");
+            ->with('message', __('ui.acceptedarticle') . $article->title);
     }
 
-    public function reject(Article $article){
+    public function reject(Article $article)
+    {
 
         $article->setAccepted(false);
         return redirect()
             ->back()
-            ->with('message', "Hai rifiutato l'articolo $article->title");
+            ->with('message', __('ui.rejectedarticle') . $article->title);
     }
-    public function becomeRevisor(){
+    public function becomeRevisor()
+    {
         Mail::to('admin@presto.it')->send(new BecomeRevisor(Auth::user()));
-        return redirect()->route('welcome')->with('message', 'Complimenti, hai richiesto di diventare revisor');
+        return redirect()->route('welcome')->with('message', __('ui.congratulation'));
     }
-    public function makeRevisor(User $user){
-        Artisan::call('app:make-user-revisor', ['email'=> $user->email]);
+    public function makeRevisor(User $user)
+    {
+        Artisan::call('app:make-user-revisor', ['email' => $user->email]);
         return redirect()->back();
     }
 
-    public function recover(){
-        
+    public function recover()
+    {
+
         $article_to_recover = Article::whereNotNull('is_accepted')->latest()->first();
-        
+
         if ($article_to_recover) {
             $article_to_recover->is_accepted = null;
             $article_to_recover->save();
         };
-        
+
         return redirect()
             ->back()
-            ->with('message', "Hai annullato l'ultima modifica effettuata");
+            ->with('message', __('ui.previewmod'));
     }
-    
 }

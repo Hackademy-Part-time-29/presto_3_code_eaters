@@ -243,16 +243,23 @@ a {
 /* zona revisore */
 .notification {
     background-color: #d7d7d7;
+    
     color: rgb(0, 0, 0);
     text-decoration: none;
     padding: 8px 20px;
     position: relative;
     display: inline-block;
     border-radius: 7px;
+    font-weight: bold;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
 .notification:hover {
-    background: rgb(160, 157, 157);
+    background: rgb(255, 254, 254);
+    text-decoration: none;
+    color: rgb(158, 152, 152);
+    font-weight: bold;
+    
 }
 
 .notification .badge {

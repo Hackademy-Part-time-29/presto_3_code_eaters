@@ -56,7 +56,7 @@
 }
 
 .wrapper .icon:hover .tooltip {
-    top: -45px;
+    top: -55px;
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
