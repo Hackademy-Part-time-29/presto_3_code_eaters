@@ -62,25 +62,52 @@
 .nomeMacroCategoria {
     padding: 0 10px;
     margin: 0;
+    font-weight: bold;
 }
 
 .hovered {
-    color: #3c59fc; 
-    border-bottom: 1px solid #ccc;
+    color: #be3838; 
+    border-bottom: 1px solid #858585;
+    /* box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); */
+    transition: box-shadow 0.3s ease;
+    
 }
 
 .menu-item-2 div {
-    padding: 2px 10px;
+    padding: 2px 25px;
+    transition: transform 0.1s ease, opacity 0.2s ease;
+    /* Transizione per ingrandimento e opacità */
 }
 
 .menu-item-2-element {
-    cursor: pointer;
-    text-decoration: none;   
-    color: rgba(0,0 , 0, 0.6);
+    
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.6);
+    transition: color 0.3s ease;
+    /* Transizione per il colore */
 }
 
 .menu-item-2-element:hover {
-    color: #3c59fc; 
+    color: #434242;
+    text-decoration: none;
+}
+
+.menu-item-2 div:hover {
+    transform: scale(1.1);
+    /* Ingrandisce l'elemento */
+    z-index: 1;
+    /* Porta l'elemento in primo piano */
+    font-weight: bold;
+}
+
+.menu-item-2:hover div {
+    opacity: 0.5;
+    /* Riduce l'opacità degli elementi non attivi */
+}
+
+.menu-item-2 div:hover {
+    opacity: 0.8;
+    /* Mantiene l'opacità piena dell'elemento attivo */
 }
 
 .filtroGenerale::placeholder {
