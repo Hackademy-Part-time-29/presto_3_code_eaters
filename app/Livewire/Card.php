@@ -11,7 +11,7 @@ class Card extends Component
 {
     use WithPagination;
 
-    public $orderBy = 'createDESC';
+    public $orderBy = 'createASC';
 
     public function render()
     {
@@ -23,6 +23,9 @@ class Card extends Component
                 break;
             case 'priceASC':
                 $query->orderBy('price', 'asc');
+                break;
+            case 'createASC':
+                $query->orderBy('created_at', 'asc');
                 break;
             case 'createDESC':
             default:

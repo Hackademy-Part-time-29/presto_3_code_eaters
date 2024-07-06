@@ -7,7 +7,7 @@ use Livewire\Component;
 
 class Order extends Component
 {
-    public $orderBy = 'createDESC';
+    public $orderBy = 'createASC';
 
     public function render()
     {        
@@ -19,6 +19,9 @@ class Order extends Component
                 break;
             case 'priceASC':
                 $query->orderBy('price', 'asc');
+                break;
+            case 'createASC':
+                $query->orderBy('created_at', 'asc');
                 break;
             case 'createDESC':
             default:
