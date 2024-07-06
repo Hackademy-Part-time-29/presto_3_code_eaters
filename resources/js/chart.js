@@ -14,7 +14,6 @@ document.addEventListener('DOMContentLoaded', () => {
         const numLabels = Math.min(articles.length, 10);
         const interval = price / numLabels;
 
-        
         myData = new Array(numLabels).fill(0);
 
         articles.forEach(article => {
@@ -30,19 +29,17 @@ document.addEventListener('DOMContentLoaded', () => {
            
         });
 
+        const formatPrice = (value) => {
+            return new Intl.NumberFormat('it-IT', { minimumFractionDigits: 2, maximumFractionDigits: 2 }).format(value);
+        };
+
         myLabels = myData
-            .map((count, i) => (count > 0 ? `prezzo${i + 1}` : null))
+            .map((count, i) => (count > 0 ? `< ${formatPrice((i + 1) * interval)} €` : null))
             .filter(label => label !== null);
         myData = myData.filter(count => count > 0);
-        // console.log(`Intervallo: ${interval}`);
-        // console.log(`myLabels: ${myLabels}`);
-        // console.log(`myData: ${myData}`);
     } else {
         
     }
-    
-    // let myLabels = ["prezzo1", "prezzo2", "prezzo3", "prezzo4", "prezzo5", "prezzo6", "prezzo6", "prezzo6", "prezzo6", "prezzo6"];
-    // let myData = [1, 1, 1, 1, 1, 1, 3, 4, 5, 7];
 
     const myChart = new Chart(ctx, {
         type: 'bar',
@@ -60,6 +57,14 @@ document.addEventListener('DOMContentLoaded', () => {
             plugins: {
                 legend: {
                     display: false
+                },
+                tooltip: {
+                    callbacks: {
+                        label: function(context) {
+                            // Mostra solo l'etichetta e il valore, rimuovendo il quadratino del colore
+                            return `${context.label}: ${context.raw}`;
+                        }
+                    }
                 }
             },
             scales: {
