@@ -41,7 +41,14 @@
 }
 
 .contenitoreFiltroPerPrezzo {
-    border: 2px solid gray;
+    margin-top: 15px;
+}
+
+.contenitoreFiltroPerPrezzoDettaglio {
+    border: 1px solid gray;
+    margin-top: 4px;
+    padding: 14px;
+    border-radius: 8px;
 }
 
 .img-preview {
