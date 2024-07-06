@@ -59,5 +59,23 @@
     width: 120px;
 }
 
+.recapFiltri {
+    position: fixed;
+    bottom: 24px;
+    width: 320px;
+}
 
+.contenitoreFiltriRecap {
+    border: 1px solid gray;
+    background-color: whitesmoke;
+    border-radius: 12px;
+}
+
+.contenitoreFiltriRecap .bi-trash3 {
+    font-size: 20px;
+}
+
+.contenitoreFiltriRecap div h5 {
+    font-weight: 800;
+}
 
