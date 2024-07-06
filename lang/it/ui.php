@@ -45,6 +45,7 @@ return [
   'recover' => 'Recupera articolo precedente',
   'norevarticle' => 'Nessun articolo presente',
   'homepage' => 'Torna alla Homepage',
+  'revisorzone' => 'Zona riservata ai revisori',
   //email che viene mandata ad admin
   'subject' => "Rendi revisore l'utente di nome:",
   'text' => 'Un utente ha chiesto di lavorare con noi',
@@ -68,6 +69,17 @@ return [
   'pass' => 'Password',
   'confirmpass' => 'Conferma Password',
   'emailno' => 'Email',
+  //
+  'namerequired' => 'Il nome è obbligatorio.',
+  'surnamerequired' => 'Il cognome è obbligatorio.',
+  'agerequired' =>  "L'età è obbligatoria.",
+  'ageinteger' => 'L\'età deve essere un numero intero.',
+  'emailrequired' => 'L\'email è obbligatoria.',
+  'emailemail' => 'L\'email deve essere un indirizzo email valido.',
+  'emailunique' => 'L\'email è già stata presa.',
+  'passwordrequired' => 'La password è obbligatoria.',
+  'passwordmin' => 'La password deve essere lunga almeno 8 caratteri.',
+  'passwordconfirmed' => 'La conferma della password non corrisponde.',
 
 
 
@@ -92,6 +104,11 @@ return [
   'categoryrequired' => 'La categoria è richiesta',
   'descriptionrequired' => 'La descrizione è richiesta',
   'successarticle' => 'Articolo creato con successo!',
+  //revisor controller
+  'previewmod' => "Hai annullato l'ultima modifica effettuata",
+  'congratulation' => 'Complimenti, hai richiesto di diventare revisor!',
+  'rejectedarticle' => "Hai rifiutato l'articolo:",
+  'acceptedarticle' => "Hai accettato l'articolo:",
 
 
 

@@ -47,6 +47,7 @@ return
     'recover' => 'Recovers previous item',
     'norevarticle' => 'No items present',
     'homepage' => 'Back to home Page',
+    'revisorzone' => 'Area reserved for auditors',
     //email che viene mandata ad admin
     'subject' => "Make the named user a reviewer:",
     'text' => 'A user asked to work with us',
@@ -70,6 +71,17 @@ return
     'pass' => 'Password',
     'confirmpass' => 'Confirm Password',
     'emailno' => 'Email',
+    //
+    'namerequired' => 'The name is required.',
+    'surnamerequired' => 'The surname is required.',
+    'agerequired' => 'Age is required.',
+    'ageinteger' => 'Age must be an integer.',
+    'emailrequired' => 'Email is required.',
+    'emailemail' => 'Email must be a valid email address.',
+    'emailunique' => 'Email has already been taken.',
+    'passwordrequired' => 'Password is required.',
+    'passwordmin' => 'Password must be at least 8 characters long.',
+    'passwordconfirmed' => 'Password confirmation does not match.',
 
 
 
@@ -92,5 +104,9 @@ return
     'categoryrequired' => 'The category is required',
     'descriptionrequired' => 'The description is required',
     'successarticle' => 'Article created successfully!',
-
+    //revisor controller
+    'previewmod' => "You have undone the last change you made",
+    'congratulation' => 'Congratulations, you have requested to become a reviewer!',
+    'rejectedarticle' => 'You have rejected the article:',
+    'acceptedarticle' => 'You have accepted the article:',
   ];

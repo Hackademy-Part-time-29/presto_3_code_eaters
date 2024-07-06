@@ -49,6 +49,7 @@ return
                 'recover' => 'Recuperează elementul anterior',
                 'norevarticle' => 'Nu există articole prezente',
                 'homepage' => 'Înapoi la pagina de start',
+                'revisorzone' => 'Zona rezervata auditorilor',
                 //email che viene mandata ad admin
                 'subject' => "Faceți utilizatorul numit recenzent:",
                 'text' => 'Un utilizator a cerut să lucreze cu noi',
@@ -72,6 +73,17 @@ return
                 'pass' => 'Parola',
                 'confirmpass' => 'Confirmă Parola',
                 'emailno' => 'E-mail',
+                //
+                'namerequired' => 'Numele este obligatoriu.',
+                'surnamerequired' => 'Prenumele este obligatoriu.',
+                'agerequired' => 'Vârsta este obligatorie.',
+                'ageinteger' => 'Vârsta trebuie să fie un număr întreg.',
+                'emailrequired' => 'Emailul este obligatoriu.',
+                'emailemail' => 'Emailul trebuie să fie o adresă de email validă.',
+                'emailunique' => 'Emailul este deja folosit.',
+                'passwordrequired' => 'Parola este obligatorie.',
+                'passwordmin' => 'Parola trebuie să aibă cel puțin 8 caractere.',
+                'passwordconfirmed' => 'Confirmarea parolei nu corespunde.',
 
 
                 // categorie e macro
@@ -93,6 +105,11 @@ return
                 'categoryrequired' => 'Categoria este obligatorie',
                 'descriptionrequired' => 'Descrierea este obligatorie',
                 'successarticle' => 'Articol creat cu succes!',
+                //revisor controller
+                'previewmod' => "Ați anulat ultima modificare făcută",
+                'congratulation' => 'Felicitări, ați aplicat pentru a deveni recenzent!',
+                'rejectedarticle' => "Ați respins articolul:",
+                'acceptedarticle' => "Ai acceptat articolul:",
 
 
 
