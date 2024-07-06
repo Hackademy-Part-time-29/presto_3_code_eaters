@@ -23,8 +23,7 @@ class Price extends Component
         $this->articles = $this->getFilteredArticles();
     }
 
-    public function getFilteredArticles()
-    {
+    public function getFilteredArticles(){
         $query = Article::where('is_accepted', true);
         if ($this->price) {
             $query->where('price', '<=', $this->price);
