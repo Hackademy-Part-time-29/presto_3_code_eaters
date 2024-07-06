@@ -22,6 +22,7 @@
 
         {{-- slide prezzo --}}
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/14.6.3/nouislider.min.css">
+        <link rel="icon" href="{{ asset('favicon.ico') }}" type="image/x-icon">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/14.6.3/nouislider.min.js"></script>
         
 
