@@ -71,6 +71,17 @@ return
     'pass' => 'Password',
     'confirmpass' => 'Confirm Password',
     'emailno' => 'Email',
+    //
+    'namerequired' => 'The name is required.',
+    'surnamerequired' => 'The surname is required.',
+    'agerequired' => 'Age is required.',
+    'ageinteger' => 'Age must be an integer.',
+    'emailrequired' => 'Email is required.',
+    'emailemail' => 'Email must be a valid email address.',
+    'emailunique' => 'Email has already been taken.',
+    'passwordrequired' => 'Password is required.',
+    'passwordmin' => 'Password must be at least 8 characters long.',
+    'passwordconfirmed' => 'Password confirmation does not match.',
 
 
 

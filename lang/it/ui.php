@@ -69,6 +69,17 @@ return [
   'pass' => 'Password',
   'confirmpass' => 'Conferma Password',
   'emailno' => 'Email',
+  //
+  'namerequired' => 'Il nome è obbligatorio.',
+  'surnamerequired' => 'Il cognome è obbligatorio.',
+  'agerequired' =>  "L'età è obbligatoria.",
+  'ageinteger' => 'L\'età deve essere un numero intero.',
+  'emailrequired' => 'L\'email è obbligatoria.',
+  'emailemail' => 'L\'email deve essere un indirizzo email valido.',
+  'emailunique' => 'L\'email è già stata presa.',
+  'passwordrequired' => 'La password è obbligatoria.',
+  'passwordmin' => 'La password deve essere lunga almeno 8 caratteri.',
+  'passwordconfirmed' => 'La conferma della password non corrisponde.',
 
 
 

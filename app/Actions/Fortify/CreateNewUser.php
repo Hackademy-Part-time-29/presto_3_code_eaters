@@ -28,20 +28,20 @@ class CreateNewUser implements CreatesNewUsers
                 'max:255',
                 Rule::unique(User::class),
             ],
-            'surname' => ['required','string','max:255'],
-            'age'=>['required','integer'], 
+            'surname' => ['required', 'string', 'max:255'],
+            'age' => ['required', 'integer'],
             'password' => $this->passwordRules(),
-        ],[
-            'name.required' => 'Il nome è obbligatorio.',
-            'surname.required' => 'Il cognome è obbligatorio.',
-            'age.required' => 'L\'età è obbligatoria.',
-            'age.integer' => 'L\'età deve essere un numero intero.',
-            'email.required' => 'L\'email è obbligatoria.',
-            'email.email' => 'L\'email deve essere un indirizzo email valido.',
-            'email.unique' => 'L\'email è già stata presa.',
-            'password.required' => 'La password è obbligatoria.',
-            'password.min' => 'La password deve essere lunga almeno 8 caratteri.',
-            'password.confirmed' => 'La conferma della password non corrisponde.',
+        ], [
+            'name.required' => __('ui.namerequired'),
+            'surname.required' => __('ui.surnamerequired'),
+            'age.required' =>  __('ui.agerequired'),
+            'age.integer' => __('ui.agerequired'),
+            'email.required' => __('ui.emailrequired'),
+            'email.email' => __('ui.emailemail'),
+            'email.unique' => __('ui.emailunique'),
+            'password.required' => __('ui.passwordrequired'),
+            'password.min' => __('ui.passwordmin'),
+            'password.confirmed' => __('ui.passwordconfirmed'),
         ])->validate();
 
         return User::create([
