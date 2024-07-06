@@ -46,6 +46,7 @@ return [
   'norevarticle' => 'Nessun articolo presente',
   'homepage' => 'Torna alla Homepage',
   //email che viene mandata ad admin
+  'subject' => "Rendi revisore l'utente di nome:",
   'text' => 'Un utente ha chiesto di lavorare con noi',
   'userinfo' => 'Ecco i suoi dati:',
   'name' => 'Nome:',
@@ -84,6 +85,14 @@ return [
 
   //in merito alla ricerca dalla navbar
   'nosearch' => 'Nessun articolo corrisponde alla tua ricerca',
+
+  //article.php model
+  'titlerequired' => 'Il titolo è richiesto',
+  'shorttitle' => 'Il titolo è troppo corto',
+  'categoryrequired' => 'La categoria è richiesta',
+  'descriptionrequired' => 'La descrizione è richiesta',
+  'successarticle' => 'Articolo creato con successo!',
+
 
 
 ];
