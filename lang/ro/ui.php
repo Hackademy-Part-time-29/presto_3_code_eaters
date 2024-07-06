@@ -50,6 +50,7 @@ return
                 'norevarticle' => 'Nu există articole prezente',
                 'homepage' => 'Înapoi la pagina de start',
                 //email che viene mandata ad admin
+                'subject' => "Faceți utilizatorul numit recenzent:",
                 'text' => 'Un utilizator a cerut să lucreze cu noi',
                 'userinfo' => 'Iată detaliile lui:',
                 'name' => 'Nume:',
@@ -85,6 +86,13 @@ return
 
                 //in merito alla ricerca dalla navbar
                 'nosearch' => 'Niciun articol nu corespunde căutării dvs',
+
+                //article.php model
+                'titlerequired' => 'Titlul este obligatoriu',
+                'shorttitle' => 'Titlul este prea scurt',
+                'categoryrequired' => 'Categoria este obligatorie',
+                'descriptionrequired' => 'Descrierea este obligatorie',
+                'successarticle' => 'Articol creat cu succes!',
 
 
 

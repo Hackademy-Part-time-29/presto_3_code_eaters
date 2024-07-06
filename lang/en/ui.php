@@ -48,6 +48,7 @@ return
     'norevarticle' => 'No items present',
     'homepage' => 'Back to home Page',
     //email che viene mandata ad admin
+    'subject' => "Make the named user a reviewer:",
     'text' => 'A user asked to work with us',
     'userinfo' => 'Here are his details:',
     'name' => 'Name:',
@@ -84,5 +85,12 @@ return
     'detail' => 'Detail',
     //in merito alla ricerca dalla navbar
     'nosearch' => 'No articles match your search',
+
+    //article.php model
+    'titlerequired' => 'The title is required',
+    'shorttitle' => 'The title is too short',
+    'categoryrequired' => 'The category is required',
+    'descriptionrequired' => 'The description is required',
+    'successarticle' => 'Article created successfully!',
 
   ];

@@ -2,7 +2,6 @@
 
 namespace App\Livewire;
 
-
 use Livewire\Component;
 use App\Models\Category;
 use App\Jobs\ResizeImage;
@@ -12,46 +11,44 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\File;
 use App\Models\Article as ModelsArticle;
 
-
-class Article extends Component{
-
+class Article extends Component
+{
     use WithFileUploads;
 
     public $images = [];
     public $temporary_images;
-
-    #[Validate('required',message:"Il titolo è richiesto")]
-    #[Validate('min:3',message:"Il titolo è troppo corto")]
-    public $title;
-
     public $Categories;
-    
-    #[Validate('required',message:"Il categoria è richiesta")]
-    public $Categoria;
-
     public $price;
-
-    #[Validate('required',message:"Il descrizione è richiesta")]
-    public $description;
-
-    // #[Validate('required',message:"Il categoria è richiesta")]
-    public $category;  
-
     public $article;
 
-    public function render(){
+    #[Validate('required', message: 'ui.titlerequired')]
+    #[Validate('min:3', message: 'ui.shorttitle')]
+    public $title;
+
+    #[Validate('required', message: 'ui.categoryrequired')]
+    public $Categoria;
+
+    #[Validate('required', message: 'ui.descriptionrequired')]
+    public $description;
+
+    public function render()
+    {
         $this->Categories = Category::all();
-        return view('livewire.create.article');
+        return view('livewire.create.article', [
+            'Categories' => $this->Categories,
+        ]);
     }
 
-    public function store(){
+    public function store()
+    {
         $this->validate();
+
         $this->article = ModelsArticle::create([
-            'title'=>$this->title,
-            'price'=>$this->price,
-            'description'=>$this->description,
-            'category_id'=>$this->Categoria,
-            'user_id'=>Auth::id(),
+            'title' => $this->title,
+            'price' => $this->price,
+            'description' => $this->description,
+            'category_id' => $this->Categoria,
+            'user_id' => Auth::id(),
         ]);
 
         if (count($this->images) > 0) {
@@ -60,42 +57,43 @@ class Article extends Component{
             }
             File::deleteDirectory(storage_path('/app/livewire-tmp'));
         }
-        session()->flash('success','Articolo creato con successo');
+
+        session()->flash('success', __('ui.successarticle'));
         $this->cleanForm();
 
-        return redirect('/')->with([
-            'success'=>'articolo creato con successo',
-        ]);
+        return redirect('/')->with('success', __('ui.successarticle'));
     }
 
-    public function mount(){
-        return view('livewire.create.article',[
-            'Categories'=>$this->Categories,
-        ]);
+    public function mount()
+    {
+        $this->Categories = Category::all();
     }
 
-    public function updatedTemporaryImages(){
-        if ($this->validate([
+    public function updatedTemporaryImages()
+    {
+        $this->validate([
             'temporary_images.*' => 'image|max:1024',
             'temporary_images' => 'max:6'
-        ])){
-            foreach ($this->temporary_images as $image){
-                $this->images[] = $image;
-            }
+        ]);
+
+        foreach ($this->temporary_images as $image) {
+            $this->images[] = $image;
         }
     }
 
-    public function removeImage($key){
-        if (in_array($key, array_keys($this->images)))  {
+    public function removeImage($key)
+    {
+        if (isset($this->images[$key])) {
             unset($this->images[$key]);
         }
     }
 
-    protected function cleanForm(){
-        $this->title ='';
+    protected function cleanForm()
+    {
+        $this->title = '';
         $this->description = '';
-        $this->Categoria ='';
-        $this->price ='';
+        $this->Categoria = '';
+        $this->price = '';
         $this->images = [];
     }
 }
