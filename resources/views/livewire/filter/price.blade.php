@@ -5,7 +5,7 @@
             <canvas class="graficoFiltroPerPrezzo" id="myChart" width="900" height="500"></canvas>
             <input type="range" class="form-range" id="customRange1" value="{{$price}}" min="0" max="{{ $maxPrice }}" wire:model.change="price">
             <div class="text-end">
-                <span>max : {{$price}}</span>
+                <span>max : {{$maxPrice}}</span>
             </div>
         </div>
         <select class="form-select mt-1">
@@ -14,6 +14,7 @@
         </select>    
     </div>   
     <script>
-        const data = @json(['price' => $price, 'articles' => $articles]);
+        // Conversione dei dati PHP in JSON per l'uso in JavaScript
+        const data = {!! json_encode(['price' => $price, 'articles' => $articles, 'maxPrice' => $maxPrice]) !!};
     </script>
 </div>

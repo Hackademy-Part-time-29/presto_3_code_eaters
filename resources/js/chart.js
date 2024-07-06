@@ -2,19 +2,22 @@ import { Chart, registerables } from 'chart.js';
 
 Chart.register(...registerables);
 
-document.addEventListener('DOMContentLoaded', () => {
-    
-    const { price, articles } = data;
-    const ctx = document.getElementById('myChart').getContext('2d');
+let myChart = null; // Variabile per tenere traccia dell'istanza del grafico
 
+function updateChart() {
+    const ctx = document.getElementById('myChart').getContext('2d');
+    const { price, articles, maxPrice } = data;
     let myLabels = [];
     let myData = [];
-    
-    if (articles.length>0) {
+    let interval;
+    let intervalMins = [];
+
+    if (articles.length > 0) {
         const numLabels = Math.min(articles.length, 10);
-        const interval = price / numLabels;
+        interval = maxPrice / numLabels;
 
         myData = new Array(numLabels).fill(0);
+        intervalMins = new Array(numLabels).fill(0).map((_, i) => i * interval);
 
         articles.forEach(article => {
             for (let i = 0; i < numLabels; i++) {
@@ -26,7 +29,6 @@ document.addEventListener('DOMContentLoaded', () => {
                     break;
                 }
             }
-           
         });
 
         const formatPrice = (value) => {
@@ -37,47 +39,63 @@ document.addEventListener('DOMContentLoaded', () => {
             .map((count, i) => (count > 0 ? `< ${formatPrice((i + 1) * interval)} €` : null))
             .filter(label => label !== null);
         myData = myData.filter(count => count > 0);
-    } else {
-        
     }
 
-    const myChart = new Chart(ctx, {
-        type: 'bar',
-        data: {
-            labels: myLabels,
-            datasets: [{
-                data: myData,
-                backgroundColor: '#e6e6e6',
-                borderColor: '#737373',
-                borderWidth: 1,
-                label: '',
-            }]
-        },
-        options: {
-            plugins: {
-                legend: {
-                    display: false
+    if (myChart) {
+        const colors = intervalMins.map(min => ({
+            backgroundColor: min > price ? '#f2f2f2' : '#e6e6e6',
+            borderColor: min > price ? '#e6e6e6' : '#737373'
+        }));
+    
+        myChart.data.datasets[0].backgroundColor = colors.map(color => color.backgroundColor);
+        myChart.data.datasets[0].borderColor = colors.map(color => color.borderColor);
+        myChart.update();
+    } else {
+        // Crea il nuovo grafico
+        myChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: myLabels,
+                datasets: [{
+                    data: myData,
+                    backgroundColor: '#e6e6e6',
+                    borderColor: '#737373',
+                    borderWidth: 1,
+                    label: '',
+                }]
+            },
+            options: {
+                plugins: {
+                    legend: {
+                        display: false
+                    }
                 },
-                tooltip: {
-                    callbacks: {
-                        label: function(context) {
-                            // Mostra solo l'etichetta e il valore, rimuovendo il quadratino del colore
-                            return `${context.label}: ${context.raw}`;
-                        }
+                scales: {
+                    y: {
+                        display: false,
+                        beginAtZero: true
+                    },
+                    x: {
+                        display: false
                     }
                 }
-            },
-            scales: {
-                y: {
-                    display: false,
-                    beginAtZero: true
-                },
-                x: {
-                    display: false
-                }
             }
-        }
-    });
+        })
+    };
+
     // console.log(price);
-    // console.log(articles);
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    updateChart();
+
+    Livewire.on('priceUpdated', (newPrice) => {
+        // data.price = newPrice;
+        updateChart();
+    });
+
+    Livewire.on('filterPrice', (newPrice) => {
+        data.price = newPrice;
+        updateChart();
+    });
 });

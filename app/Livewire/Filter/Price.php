@@ -9,29 +9,32 @@ class Price extends Component
 {
     public $price;
     public $maxPrice;
+    public $articles;
 
-    public function updatedPrice($value) {
-        $this->price = $value;
+    public function updatedPrice($newPrice) {
+        $this->price = $newPrice;
         $this->dispatch('filterPrice', $this->price);
+        $this->dispatch('priceUpdated', $this->price);
     }
 
     public function mount(){
         $this->maxPrice = Article::where('is_accepted', true)->max('price');
         $this->price = $this->maxPrice;
+        $this->articles = $this->getFilteredArticles();
     }
-    
-    public function render()
+
+    public function getFilteredArticles()
     {
         $query = Article::where('is_accepted', true);
         if ($this->price) {
             $query->where('price', '<=', $this->price);
         }
 
-        $articles = $query->get();
-
-        return view('livewire.filter.price', [
-            'articles' => $articles,
-            'maxPrice' => $this->maxPrice,
-        ]);
+        return $query->get();
+    }
+    
+    public function render()
+    {
+        return view('livewire.filter.price');
     }
 }
