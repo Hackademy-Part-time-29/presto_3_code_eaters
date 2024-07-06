@@ -8,20 +8,30 @@ use Livewire\Component;
 class Price extends Component
 {
     public $price;
+    public $maxPrice;
 
     public function updatedPrice($value) {
         $this->price = $value;
+        $this->dispatch('filterPrice', $this->price);
+    }
+
+    public function mount(){
+        $this->maxPrice = Article::where('is_accepted', true)->max('price');
+        $this->price = $this->maxPrice;
     }
     
     public function render()
     {
         $query = Article::where('is_accepted', true);
-        $this->price = $query->orderBy('price', 'desc')->first();
-
         if ($this->price) {
             $query->where('price', '<=', $this->price);
         }
-        
-        return view('livewire.filter.price');
+
+        $articles = $query->get();
+
+        return view('livewire.filter.price', [
+            'articles' => $articles,
+            'maxPrice' => $this->maxPrice,
+        ]);
     }
 }

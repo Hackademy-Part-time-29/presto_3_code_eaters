@@ -12,10 +12,15 @@ class Card extends Component
     use WithPagination;
 
     public $orderBy = 'createASC';
+    public $price;
 
     public function render()
     {
         $query = Article::where('is_accepted', true);
+
+        if ($this->price) {
+            $query->where('price', '<=', $this->price);
+        }
 
         switch ($this->orderBy) {
             case 'priceDESC':
@@ -39,8 +44,13 @@ class Card extends Component
     }
 
     #[On('orderByChanged')]
-    public function updateOrderBy($orderBy)
-    {
+    public function updateOrderBy($orderBy){
         $this->orderBy = $orderBy;
+    }
+
+    #[On('filterPrice')]
+    public function filterByPrice($price){
+        $this->price = $price;
+        $this->resetPage();
     }
 }
