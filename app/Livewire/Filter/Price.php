@@ -4,6 +4,7 @@ namespace App\Livewire\Filter;
 
 use App\Models\Article;
 use Livewire\Component;
+use Livewire\Attributes\On;
 
 class Price extends Component
 {
@@ -31,9 +32,21 @@ class Price extends Component
 
         return $query->get();
     }
-    
+
+    public function getFilteredArticlesAll (){
+        $query = Article::where('is_accepted', true);
+        return $query->get();
+    }
+
     public function render()
     {
+        $this->dispatch('filtroAttivoPrezzo', $this->price, $this->maxPrice);
         return view('livewire.filter.price');
     }
+
+    // #[On('DeleteFiltroPrezzo')]
+    // public function deleteFiltroPrezzi (){
+    //     $this->price = $this->maxPrice;
+    //     $this->articles = $this->getFilteredArticlesAll();        
+    // }
 }

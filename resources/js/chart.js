@@ -2,7 +2,7 @@ import { Chart, registerables } from 'chart.js';
 
 Chart.register(...registerables);
 
-let myChart = null; // Variabile per tenere traccia dell'istanza del grafico
+let myChart = null;
 
 function updateChart() {
     const ctx = document.getElementById('myChart').getContext('2d');
@@ -51,7 +51,6 @@ function updateChart() {
         myChart.data.datasets[0].borderColor = colors.map(color => color.borderColor);
         myChart.update();
     } else {
-        // Crea il nuovo grafico
         myChart = new Chart(ctx, {
             type: 'bar',
             data: {
@@ -82,15 +81,12 @@ function updateChart() {
             }
         })
     };
-
-    // console.log(price);
 }
 
 document.addEventListener('DOMContentLoaded', () => {
     updateChart();
 
     Livewire.on('priceUpdated', (newPrice) => {
-        // data.price = newPrice;
         updateChart();
     });
 
@@ -98,4 +94,8 @@ document.addEventListener('DOMContentLoaded', () => {
         data.price = newPrice;
         updateChart();
     });
+
+    // Livewire.on('deleteFiltri', (newPrice) => {
+    //     updateChart();
+    // });
 });
