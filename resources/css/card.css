@@ -3,7 +3,7 @@
 	text-align: center;
 	border-radius: 5px;
 	overflow: hidden;
-	margin: 2em ;
+	margin: 2em auto;
 	height: 250px;
 	width: 500px;
 }
@@ -13,16 +13,14 @@
 }
 
 .product-details {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-evenly;
 	position: relative;
-	text-align: right;
+	text-align: left;
 	overflow: hidden;
 	padding: 20px;
 	height: 100%;
-	float: right;
+	float: left;
 	width: 50%;
+
 }
 
 #container .product-details h1{
@@ -75,7 +73,7 @@
 .info {
     background: rgba(149, 142, 142, 0.7);
     transition: all 0.3s ease-out;
-    transform: translateX(100%);
+    transform: translateX(-100%);
     position: absolute;
     line-height: 1.8;
     text-align: left;
@@ -113,9 +111,8 @@
 	width: var(--width);
 	height: var(--height);
 	background: var(--button-color);
-	position: relative;
-	top: 5%;
-	left: 70%;
+	position: absolute;
+	top: 80%;
 	text-align: center;
 	border-radius: 0.45em;
 	transition: background 0.3s;
@@ -176,17 +173,11 @@
 	
 	#container{
 		display: flex;
-		justify-content: center;
-		align-items: center;
 		flex-direction:column-reverse;
-		margin-left: 70px ;
 		height: 600px;
 		width: 100%;
 	}
 	.product-details{
-		display: flex;
-		justify-content: start;
-		align-items: start;
 		width: 100%;
 		height: 300px;
 	}
@@ -195,52 +186,12 @@
 		height: 400px;
 	}
 }
-
-@media(min-width:700px) and (max-width:1000px){
+@media(min-width:1200px) and (max-width:1500px){
 	#container{
-		max-width: 100%;
-		width: 500px;
-		height: 300px;
-	}
-	.cardLayout{
-		display: inline;
+		height: 200px;
+		width: 400px;
 	}
 }
-
-  
-.cardCarousel {
-	width: 30%;
-	height: 100%;
-	object-fit:cover;
-	-webkit-box-reflect:below 2px linear-gradient(transparent, transparent, #0004);
-	transform-origin:center;
-	transform:perspective(800px) rotateY(25deg);
-	transition:0.5s;
-  }
-  .containerCarousel {
-	margin-right: 300px;
-	max-width:600px;
-	max-height:350px;
-	display:flex;
-	justify-content:center;
-	align-items:center;
-	gap:40px;
-	
-  }
-  .containerCarousel:hover .cardCarousel {
-	opacity:0.1;
-	
-  }
-  .containerCarousel .cardCarousel:hover {
-	transform:perspective(800px)       rotateY(0deg);
-	opacity:1;
-	z-index: 99;
-  }
-  
- 
-  
-  
-
 
 
 
