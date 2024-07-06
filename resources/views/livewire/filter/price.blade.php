@@ -1,8 +1,8 @@
 <div class="contenitoreOrdinamentoFiltri">
     <div class="contenitoreFiltroPerPrezzo">
         <div class="contenitoreFiltroPerPrezzoDettaglio">
-            <div><span>Prezzo</span></div>
-            <canvas class="graficoFiltroPerPrezzo" id="myChart" width="900" height="500"></canvas>
+            <div class="mb-2"><span>Prezzo</span></div>
+            <canvas class="graficoFiltroPerPrezzo" id="myChart" width="900" height="300"></canvas>
             <input type="range" class="form-range" id="customRange1" value="{{$price}}" min="0" max="{{ $maxPrice }}" wire:model.change="price">
             <div class="text-end">
                 <span>max : {{$maxPrice}}</span>
