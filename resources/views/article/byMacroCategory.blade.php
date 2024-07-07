@@ -15,9 +15,7 @@
             <div class="col-12 col-md-8 mw-100 p-0">
                 <div class="d-flex flex-wrap">
                     @forelse ($articles as $article)
-                        <div class="col-12 col-md-4">
-                            <x-card :article="$article" />
-                        </div>
+                        <x-card :article="$article" />                        
                     @empty
                         <div class="col-12 text-center">
                             <h3>{{__('ui.noarticlecategory')}}</h3>
