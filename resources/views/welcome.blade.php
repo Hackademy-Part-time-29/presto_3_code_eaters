@@ -1,29 +1,28 @@
 <x-layout>
     @if (session()->has('errorMessage'))
-    <div class="alert alert-danger text-center shadow rounded w-50">
-        {{session('errorMessage')}}
-    </div>
+        <div class="alert alert-danger text-center shadow rounded w-50">
+            {{session('errorMessage')}}
+        </div>
     @endif
     @if(session()->has('message'))
-    <div class="alert alert-success text-center shadow rounded w-50">
-        {{session('message')}}
-    </div>
-    @endif
-    
+        <div class="alert alert-success text-center shadow rounded w-50">
+            {{session('message')}}
+        </div>
+    @endif    
     <div class="height-custom justify-content-center align-items-center py-5 d-flex">
-            <div class="containerCarousel">
-                @forelse ($articles as $article)
+        <div class="containerCarousel">
+            @forelse ($articles as $article)
                 <div class="cardCarousel">
                     <x-card :article="$article"/>
                 </div>
-                @empty
+            @empty
                 <div class="col-12">
                     <h3 class="text-center">
                         {{__('ui.noarticle')}}
                     </h3>
                 </div>
-                @endforelse
-            </div>
+            @endforelse
+        </div>
     </div>
     <section class="py-5">
         <div class="container">
@@ -51,12 +50,4 @@
             </div>
         </div>
     </section>
-
-
-    
-    
-    
-    
-    
-    
 </x-layout>
