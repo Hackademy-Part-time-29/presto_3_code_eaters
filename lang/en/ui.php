@@ -126,4 +126,11 @@ return
     //
     'lastname' => 'Last Name',
     'firstname' => 'First Name',
+    'workwithus' => 'WORK WITH US',
+
+
+
+
+
+
   ] + include __DIR__ . '/cat.php';

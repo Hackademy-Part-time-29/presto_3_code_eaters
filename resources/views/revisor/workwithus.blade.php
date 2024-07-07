@@ -1,6 +1,9 @@
 <x-layout>
 <div>
 <form class="custom-form mb-5 form-article" method="POST" action="{{ route('workwithus.submit') }}">
+    <div class="custom-form-header">
+            <span class="signup">{{__('ui.workwithus')}}</span>
+        </div>   
     @csrf
     <div class="custom-form-group">
         <label for="name">{{ __('ui.firstname') }}</label>
