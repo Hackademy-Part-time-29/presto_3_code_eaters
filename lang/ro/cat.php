@@ -1,7 +1,6 @@
 <?php
 
-
-return [
+$translations = [
             
             'Smartphone e Accessori' => 'Smartphone și accesorii',
             'Computer e Laptop' => 'Calculatoare și laptopuri',
@@ -64,3 +63,5 @@ return [
             'Guide di Viaggio' => 'Ghiduri de călătorie',
             'Prodotti per il Campeggio' => 'Produse pentru camping',
 ];
+
+return $translations;

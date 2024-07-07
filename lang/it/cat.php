@@ -1,6 +1,6 @@
  <?php
 
-    return [
+    $translations = [
         'Smartphone e Accessori' => 'cacca',
         'Computer e Laptop' => 'Computer e Laptop',
         'Televisori e Home Theater' => 'Televisori e Home Theater',
@@ -62,3 +62,5 @@
         'Guide di Viaggio' => 'Guide di Viaggio',
         'Prodotti per il Campeggio' => 'Prodotti per il Campeggio',
     ];
+
+    return $translations;

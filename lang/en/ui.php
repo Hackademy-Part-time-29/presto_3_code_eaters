@@ -126,4 +126,4 @@ return
     //
     'lastname' => 'Last Name',
     'firstname' => 'First Name',
-  ];
+  ] + include __DIR__ . '/cat.php';

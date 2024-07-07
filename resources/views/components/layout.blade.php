@@ -2,10 +2,8 @@
     <body>
         <x-navbar/>
         <header>
-
-                <h1>Claim.it</h1>
-                <p> {{__('ui.headerp')}}</p>
-
+            <h1>Claim.it</h1>
+            <p> {{__('ui.headerp')}}</p>
         </header>
         @if(Route::is('welcome'))
             
@@ -21,12 +19,9 @@
             <div class="row justify-content-center">
                 {{ $slot }}
             </div>
-        </div>    
-    
+        </div>  
         <x-footer/>
-
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
-        
     </body>
 </x-h-t-m-l>
 
