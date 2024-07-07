@@ -13,7 +13,7 @@
             <x-breadcrumb/>
         @endif        
         @session('success')
-            <div class="alert alert-success" rule="alert">
+            <div class="alert alert-success text-center" rule="alert">
                 {{session('success')}}
             </div>
         @endsession

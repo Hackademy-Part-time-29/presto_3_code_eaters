@@ -13,7 +13,7 @@
 
         <div class="custom-form-group">
             <label class="custom-form-label">{{__('ui.price')}}</label>
-            <input type="text" class="custom-form-control form--input" wire:model.blur="price">
+            <input type="number" class="custom-form-control form--input" wire:model.blur="price">
             @error('price')
                 <span class="small text-danger">{{$message}}</span>
             @enderror

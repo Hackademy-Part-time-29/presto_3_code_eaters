@@ -5,6 +5,7 @@ use App\Http\Controllers\PageController;
 
 use App\Http\Controllers\ArticleController;
 use App\Http\Controllers\RevisorController;
+use App\Http\Controllers\WorkWithUsController;
 
 
 Route::get('/', [PageController::class, 'welcomeView'])->name('welcome');
@@ -26,3 +27,9 @@ Route::patch('/recover', [RevisorController::class, 'recover'])->name('recover')
 
 Route::get('/search/article', [PageController::class, 'searchArticles'])->name('article.search');
 Route::post('/lingua/{lang}', [PageController::class, 'setLanguage'])->name('setLocale');
+
+
+// rotta per il work with us
+
+Route::middleware('guest')->get('/work-with-us', [WorkWithUsController::class, 'showForm'])->name('workwithus');
+Route::post('/work-with-us', [WorkWithUsController::class, 'submitForm'])->name('workwithus.submit');
