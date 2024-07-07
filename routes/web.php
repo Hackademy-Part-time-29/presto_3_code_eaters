@@ -31,5 +31,8 @@ Route::post('/lingua/{lang}', [PageController::class, 'setLanguage'])->name('set
 
 // rotta per il work with us
 
+// Rotta per visualizzare il form, accessibile solo agli utenti non loggati
 Route::middleware('guest')->get('/work-with-us', [WorkWithUsController::class, 'showForm'])->name('workwithus');
-Route::post('/work-with-us', [WorkWithUsController::class, 'submitForm'])->name('workwithus.submit');
+
+// Rotta per inviare il form, accessibile solo agli utenti non loggati
+Route::middleware('guest')->post('/work-with-us', [WorkWithUsController::class, 'submitForm'])->name('workwithus.submit');

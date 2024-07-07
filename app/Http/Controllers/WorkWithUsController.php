@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Validator;
 
 class WorkWithUsController extends Controller
@@ -26,8 +27,12 @@ class WorkWithUsController extends Controller
             return redirect()->back()->withErrors($validator)->withInput();
         }
 
-        // Process the data (e.g., save to database, send email, etc.)
+        // Invio email all'admin
+        Mail::send('mail.workwithus', ['data' => $request->all()], function ($message) {
+            $message->to('admin@presto.it')
+                ->subject('Richiesta per diventare revisore');
+        });
 
-        return redirect()->back()->with('success', 'Form submitted successfully!');
+        return redirect()->route('welcome')->with('success', __('ui.congratulation'));
     }
 }
