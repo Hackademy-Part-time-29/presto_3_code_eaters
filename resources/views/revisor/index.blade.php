@@ -9,7 +9,7 @@
     <div class="container-fluid pt-5">
         <div class="d-flex justify-content-center align-items-center">
             <div class="col-3">
-                <div class="rounded shodow bg-body-secondary">
+                <div class="{{--rounded shadow bg-body-secondary--}} container-transparent">
                     <h1 class="display-5 text-center pb-2">
                         {{ __('ui.revisordashboard') }}
                     </h1>

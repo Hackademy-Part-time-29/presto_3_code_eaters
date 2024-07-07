@@ -58,7 +58,7 @@
         </div>
     </div>
        @guest
-            <a href="{{ route('workwithus') }}" class="buttonWorkWithUs">Work With Us</a>
+            <a href="{{ route('workwithus') }}" class="buttonWorkWithUs">{{__('ui.workwithus')}}</a>
         @endguest
     <div class="footer_bottom">
         <div class="container">
