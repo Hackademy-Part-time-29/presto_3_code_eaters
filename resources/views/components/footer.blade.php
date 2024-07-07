@@ -22,6 +22,7 @@
                         <div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.6s" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInLeft;">
                             <h3 class="f-title f_600 t_color f_size_18">About us</h3>
                             <ul class="list-unstyled f_list">
+                                
                                 <p><a class="a_form" href="#">FAQ</a></p>
                                 <li><a class="a_form" href="#">Term &amp; conditions</a></li>
                                 <li><a class="a_form" href="#">Reporting</a></li>
@@ -56,6 +57,9 @@
             <div class="footer_bg_two"></div>            
         </div>
     </div>
+       @guest
+            <a href="{{ route('workwithus') }}" class="btn btn-primary">Work With Us</a>
+        @endguest
     <div class="footer_bottom">
         <div class="container">
             <div class="row align-items-center">
