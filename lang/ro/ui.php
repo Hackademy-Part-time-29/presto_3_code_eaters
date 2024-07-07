@@ -128,6 +128,7 @@ return
                 //
                 'lastname' => 'Nume De Famille',
                 'firstname' => 'Nume',
+                'workwithus' => 'LUCREAZA CU NOI',
 
 
 
