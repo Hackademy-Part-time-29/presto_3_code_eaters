@@ -113,5 +113,17 @@ return
     'author' => 'Author:',
     //pagina di form revisor no log
     'coverletter' => 'Cover Letter',
-    'submit' => 'SEND INQUIRY'
+    'submit' => 'SEND INQUIRY',
+    //errori su form revisor no log
+    'namerequired' => 'The "First Name" field is required',
+    'surnamerequired' => 'The "Last Name" field is required.',
+    'agerequired' => 'The "Age" field is required.',
+    'ageinteger' => "The age must be an integer.",
+    'agemin' => "The age must be greater than 18.",
+    'emailrequired' => 'The "Email" field is required.',
+    'emailemail' => "The email is not correctly formatted.",
+    'coverletterrequired' => 'The "Cover Letter" field is required.',
+    //
+    'lastname' => 'Last Name',
+    'firstname' => 'First Name',
   ];

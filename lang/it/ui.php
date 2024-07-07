@@ -113,7 +113,19 @@ return [
   'author' => 'Autore:',
   //pagina di form revisor no log
   'coverletter' => 'Lettera di presentazione',
-  'submit' => 'INVIA RICHIESTA'
+  'submit' => 'INVIA RICHIESTA',
+  //errori su form revisor no log
+  'namerequired' => 'Il campo "Nome" è obbligatorio',
+  'surnamerequired' => 'Il campo "Cognome" è obbligatorio.',
+  'agerequired' => 'Il campo "Età" è obbligatorio.',
+  'ageinteger' => "L'età deve essere un numero intero.",
+  'agemin' => "L'età deve essere superiore a 18.",
+  'emailrequired' => 'Il campo "Email" è obbligatorio.',
+  'emailemail' => "L'email non è scritta nel modo corretto.",
+  'coverletterrequired' => 'Il campo "Lettera di presentazione" è obbligatorio.',
+  //
+  'lastname' => 'Cognome',
+  'firstname' => 'Nome',
 
 
 

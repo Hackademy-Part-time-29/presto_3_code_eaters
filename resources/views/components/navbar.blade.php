@@ -128,18 +128,19 @@
   </div>
 </nav>
 
-{{-- @php
+@php
     $translatedCategories = $categories->map(function($category) {
-        return [
-            'id' => $category->id,
-            'macroCategory_id' => $category->macroCategory_id,
-            'name' => __("ui.{$category->name}")
-        ];
-    });
-@endphp --}}
-{{-- let categoriesData = @json($translatedCategories);  DA INSERIRE SOTTO NELLO SCRIPT AL POSTO DI let categoriesData --}}
+    return [
+        'id' => $category->id,
+        'macroCategory_id' => $category->macroCategory_id,
+        'name' => __("ui.cat.{$category->name}")
+    ];
+});
+@endphp 
+{{-- let categoriesData = @json($translatedCategories);  --}}
+ {{-- DA INSERIRE SOTTO NELLO SCRIPT AL POSTO DI let categoriesData --}}
 <script>
   let baseUrl = "{{ url('/') }}";
   
-  let categoriesData = @json($categories);
+  let categoriesData = @json($translatedCategories);
 </script>
