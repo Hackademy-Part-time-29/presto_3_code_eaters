@@ -1,5 +1,5 @@
 <x-layout>
-<div class="container-fluid   cardLayout">
+<div class="container-fluid cardLayout">
     <div class="row">
         <x-filtri/>
         <div class="col-12 col-md-8 mw-100 p-0">

@@ -1,4 +1,4 @@
-<div class="card-container ms-2">
+<div class="card-container">
     <div class="d-flex flex-wrap">
         @forelse ($articles as $article)
             <x-card :article="$article" />
@@ -9,8 +9,7 @@
                 </h3>
             </div>
         @endforelse
-    </div>
-        
+    </div>        
     <div class="d-flex justify-content-center">
         <div>
             {{$articles->links()}}
