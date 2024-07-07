@@ -10,7 +10,8 @@ use Livewire\WithPagination;
 class Card extends Component
 {
     use WithPagination;
-
+    protected $paginationTheme = 'bootstrap';
+    
     public $orderBy = 'createASC';
     public $price;
 
