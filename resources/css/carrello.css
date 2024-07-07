@@ -1,0 +1,23 @@
+.carrello {
+    font-size: 30px;
+    padding: 0 10px;
+    cursor: pointer;
+}
+
+.carrelloPozione {
+    position: fixed;
+    right: 50px;
+}
+
+.contenutoCarrello {
+    cursor: default;
+    width: 250px;
+    border-radius: 12px;
+    padding: 10px;
+    background-color: rgb(232, 232, 232);
+    height: 200px;
+}
+
+.contenutoCarrello p {
+    font-size: 16px;
+}

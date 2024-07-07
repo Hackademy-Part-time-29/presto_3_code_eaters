@@ -11,7 +11,7 @@
       <div class="pb-4">
       </div>
     @endif     
-    <div class="buttonBuy">
+    <div class="buttonBuy buttonBuyClick" data-price="{{ $article->price }}">
       <div class="buttonBuy-wrapper">
         <span class="iconBuy">
           <svg viewBox="0 0 16 16" class="bi bi-cart2" fill="currentColor" height="16" width="16" xmlns="http://www.w3.org/2000/svg">
@@ -37,5 +37,18 @@
       </ul>
     </div>
   </div>
+
+  <script>
+    function handleClick(event) {
+      const articlePrice = event.currentTarget.getAttribute('data-price');
+      Livewire.dispatch('addArticleToCart', {
+        articlePrice: articlePrice
+      });
+    }
+    document.querySelectorAll('.buttonBuyClick').forEach(button => {
+      button.removeEventListener('click', handleClick);
+      button.addEventListener('click', handleClick);
+    });
+  </script>
 </div>
 
