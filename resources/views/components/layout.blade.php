@@ -18,7 +18,7 @@
             </div>
         @endsession
         <div class="container mt-5 mw-100">
-            <div class="row">
+            <div class="row justify-content-center ml-1">
                 {{ $slot }}
             </div>
         </div>    

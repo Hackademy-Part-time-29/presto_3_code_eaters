@@ -34,7 +34,7 @@
     <section class="bg-light py-5">
         <div class="container">
             <h2 class="mb-4">{{__('ui.servizi')}}</h2>
-            <div class="row">
+            <div class="row ">
                 <div class="col-md-4">
                     <h3>{{__('ui.servizio1')}}</h3>
                     <p>{{__('ui.servizio1description')}}
