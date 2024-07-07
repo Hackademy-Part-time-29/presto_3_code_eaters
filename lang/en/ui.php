@@ -114,4 +114,4 @@ return
     //pagina di form revisor no log
     'coverletter' => 'Cover Letter',
     'submit' => 'SEND INQUIRY'
-  ];
+  ] + include __DIR__ . '/cat.php';

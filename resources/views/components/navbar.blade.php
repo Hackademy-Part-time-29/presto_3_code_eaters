@@ -129,17 +129,77 @@
 </nav>
 
 {{-- @php
-    $translatedCategories = $categories->map(function($category) {
-        return [
-            'id' => $category->id,
-            'macroCategory_id' => $category->macroCategory_id,
-            'name' => __("ui.{$category->name}")
-        ];
-    });
-@endphp --}}
-{{-- let categoriesData = @json($translatedCategories);  DA INSERIRE SOTTO NELLO SCRIPT AL POSTO DI let categoriesData --}}
+    $categories = [
+        'Smartphone e Accessori',
+        'Computer e Laptop',
+        'Televisori e Home Theater',
+        'Fotocamere e Videocamere',
+        'Elettrodomestici',
+        'Abbigliamento Uomo',
+        'Abbigliamento Donna',
+        'Abbigliamento Bambini',
+        'Scarpe',
+        'Accessori Moda (borse, gioielli, orologi)',
+        'Arredamento',
+        'Decorazioni',
+        'Elettrodomestici per la Casa',
+        'Giardinaggio',
+        'Articoli per la Cucina',
+        'Prodotti per la Cura della Pelle',
+        'Trucco e Cosmetici',
+        'Profumi',
+        'Integratori e Vitamine',
+        'Strumenti e Accessori per la Cura Personale',
+        'Abbigliamento Sportivo',
+        'Attrezzature per il Fitness',
+        'Accessori per Sport Specifici',
+        'Articoli per il Campeggio e Outdoor',
+        'Giochi e Giocattoli',
+        'Cibi Freschi',
+        'Alimenti Conservati',
+        'Bevande Alcoliche',
+        'Bevande Analcoliche',
+        'Prodotti Biologici e Vegan',
+        'Libri',
+        'Film e Serie TV',
+        'Musica e CD',
+        'eBook e Audiolibri',
+        'Strumenti Musicali',
+        'Accessori per Auto',
+        'Accessori per Moto',
+        'Ricambi',
+        'Elettronica per Veicoli',
+        'Prodotti per la Manutenzione',
+        'Gioielli Uomo',
+        'Gioielli Donna',
+        'Orologi Uomo',
+        'Orologi Donna',
+        'Gioielli per Occasioni Speciali',
+        'Giocattoli Educativi',
+        'Peluche',
+        'Articoli per la Prima Infanzia',
+        'Passeggini e Seggiolini Auto',
+        'Prodotti per la Cura del Bambino',
+        'Forniture per Ufficio',
+        'Mobili per Ufficio',
+        'Elettronica da Ufficio',
+        'Carta e Cancelleria',
+        'Accessori per la Scrivania',
+        'Valigie e Borse da Viaggio',
+        'Zaini',
+        'Accessori per il Viaggio',
+        'Guide di Viaggio',
+        'Prodotti per il Campeggio'
+    ];
+
+    $translatedCategories = [];
+    foreach ($categories as $category) {
+        $translatedCategories[] = trans('ui.' . $category);
+    } --}}
+{{-- @endphp --}}
+{{-- 
+@dd($translatedCategories) --}}
 <script>
-  let baseUrl = "{{ url('/') }}";
-  
+  let baseUrl = "{{ url('/') }}";  
   let categoriesData = @json($categories);
 </script>
