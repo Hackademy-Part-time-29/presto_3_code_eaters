@@ -1,8 +1,8 @@
 <x-layout>
     <div class="container">
-        <div class="row py-5 justify-content-center align-items-center text-center">
-            <div class="col-12 pt-5">
-                <h1 class="display-2">
+        <div class="row justify-content-center align-items-center text-center">
+            <div class="col-12">
+                <h1 class="display-5">
                     {{__('ui.articlemacrocategory')}}
                     <span class="fst-italic.fw-bold">
                         {{$macroCategory->name}}
@@ -10,19 +10,24 @@
                 </h1>
             </div>
         </div>
-        <div class="row height-custom justify-content-center align-items-center py-5">
-            @forelse ($articles as $article)
-                <div class="col-12 col-md-4">
-                    <x-card :article="$article" />
-                </div>
-            @empty
-                <div class="col-12 text-center">
-                    <h3>{{__('ui.noarticlecategory')}}</h3>
-                    @auth
-                        <a href="{{ route('create.article') }}" class="btn btn-dark my-5">{{__('ui.creaarticolobtn')}}</a>
-                    @endauth
-                </div>
-            @endforelse
+        <div class="row">
+            <x-filtri/>
+            <div class="col-12 col-md-8 mw-100 p-0">
+                <div class="d-flex flex-wrap">
+                    @forelse ($articles as $article)
+                        <div class="col-12 col-md-4">
+                            <x-card :article="$article" />
+                        </div>
+                    @empty
+                        <div class="col-12 text-center">
+                            <h3>{{__('ui.noarticlecategory')}}</h3>
+                            @auth
+                                <a href="{{ route('create.article') }}" class="btn btn-dark my-5">{{__('ui.creaarticolobtn')}}</a>
+                            @endauth
+                        </div>
+                    @endforelse
+                </div>           
+            </div>
         </div>
     </div>
 </x-layout>
