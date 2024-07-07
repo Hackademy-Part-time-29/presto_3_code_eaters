@@ -1,11 +1,16 @@
-<div  id="container">	
+<div class="containerCard">	
   <div class="product-details">
     <a href="{{route('article.show',compact('article'))}}"><h1>{{Str::limit($article->title, 25, '...')}}</h1></a>
     <p>{{Str::limit($article->description,50,'...')}}</p>
     <span class="price">{{__('ui.price:')}} @formatPrice($article->price) €</span>
-    <div>
-      <a href="{{route('byCategory', ['category' => $article->category])}}" class="information">{{Str::limit($article->category->name, 20, '...')}}</a>
-    </div>
+    @if (Route::currentRouteName() != 'byCategory')
+      <div>
+        <a href="{{route('byCategory', ['category' => $article->category])}}" class="information">{{Str::limit($article->category->name, 20, '...')}}</a>
+      </div>
+    @else 
+      <div class="pb-4">
+      </div>
+    @endif     
     <div class="buttonBuy">
       <div class="buttonBuy-wrapper">
         <span class="iconBuy">
