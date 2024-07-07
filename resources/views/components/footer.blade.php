@@ -58,7 +58,7 @@
         </div>
     </div>
        @guest
-            <a href="{{ route('workwithus') }}" class="btn btn-primary">Work With Us</a>
+            <a href="{{ route('workwithus') }}" class="buttonWorkWithUs">Work With Us</a>
         @endguest
     <div class="footer_bottom">
         <div class="container">
