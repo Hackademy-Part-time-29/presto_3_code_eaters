@@ -110,6 +110,8 @@ return
                 'congratulation' => 'Felicitări, ați aplicat pentru a deveni recenzent!',
                 'rejectedarticle' => "Ați respins articolul:",
                 'acceptedarticle' => "Ai acceptat articolul:",
+                //revisor.index
+                'author' => 'Autor:',
 
 
 

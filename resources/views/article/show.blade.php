@@ -57,16 +57,16 @@
                 <div class="col-12 col-md-4 mb-3 height-custom text-center">
                     <h2 class="display-5">
                         <span class="fw-bold">
-                            Titolo: 
+                          {{__('ui.price')}}:
                         </span>
                         {{$article->title}}
                     </h2>
                     <div class="d-flex flex-column justify-content-center h-50 ">
                         <h4 class="fw-bold">
-                            Prezzo {{$article->price}} €
+                            {{__('ui.price')}}: {{$article->price}} €
                         </h4>
                         <h5>
-                            Descrizione:
+                            {{__('ui.description')}} :
                         </h5>
                         <p>{{$article->description}}</p>
                     </div>
@@ -81,16 +81,16 @@
                 <div class="col-12 col-md-4 mb-3 height-custom text-center">
                     <h2 class="display-5">
                         <span class="fw-bold">
-                            Titolo: 
+                            {{__('ui.title')}} :
                         </span>
                         {{$article->title}}
                     </h2>
                     <div class="d-flex flex-column justify-content-center h-50 ">
                         <h4 class="fw-bold">
-                            Prezzo {{$article->price}} €
+                            {{__('ui.price')}}: {{$article->price}} €
                         </h4>
                         <h5>
-                            Descrizione:
+                            {{__('ui.description')}}:
                         </h5>
                         <p>{{$article->description}}</p>
                     </div>

@@ -109,4 +109,6 @@ return
     'congratulation' => 'Congratulations, you have requested to become a reviewer!',
     'rejectedarticle' => 'You have rejected the article:',
     'acceptedarticle' => 'You have accepted the article:',
+    //revisor.index
+    'author' => 'Author:',
   ];
