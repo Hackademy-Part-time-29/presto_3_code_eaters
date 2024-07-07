@@ -111,6 +111,9 @@ return [
   'acceptedarticle' => "Hai accettato l'articolo:",
   //revisor.index
   'author' => 'Autore:',
+  //pagina di form revisor no log
+  'coverletter' => 'Lettera di presentazione',
+  'submit' => 'INVIA RICHIESTA'
 
 
 

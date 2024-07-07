@@ -112,6 +112,9 @@ return
                 'acceptedarticle' => "Ai acceptat articolul:",
                 //revisor.index
                 'author' => 'Autor:',
+                //pagina di form revisor no log
+                'coverletter' => 'Scrisoare de intenție',
+                'submit' => 'TRIMITE O ANCHETĂ'
 
 
 
