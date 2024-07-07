@@ -114,7 +114,20 @@ return
                 'author' => 'Autor:',
                 //pagina di form revisor no log
                 'coverletter' => 'Scrisoare de intenție',
-                'submit' => 'TRIMITE O ANCHETĂ'
+                'submit' => 'TRIMITE O ANCHETĂ',
+                //errori su form revisor no log
+                'namerequired' => 'Câmpul "Nume" este obligatoriu',
+                'surnamerequired' => 'Câmpul "Nume De Famille" este obligatoriu.',
+                'agerequired' => 'Câmpul "Vârstă" este obligatoriu.',
+                'ageinteger' => "Vârsta trebuie să fie un număr întreg.",
+                'agemin' => "Vârsta trebuie să fie mai mare de 18 ani.",
+                'emailrequired' => 'Câmpul "Email" este obligatoriu.',
+                'emailemail' => "Emailul nu este scris corect.",
+                'coverletterrequired' => 'Câmpul "Scrisoare de intenție" este obligatoriu.',
+                //
+                //
+                'lastname' => 'Nume De Famille',
+                'firstname' => 'Nume',
 
 
 

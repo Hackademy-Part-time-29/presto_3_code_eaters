@@ -200,6 +200,7 @@
 {{-- 
 @dd($translatedCategories) --}}
 <script>
-  let baseUrl = "{{ url('/') }}";  
+  let baseUrl = "{{ url('/') }}";
+  
   let categoriesData = @json($categories);
 </script>

@@ -29,7 +29,7 @@ class CreateNewUser implements CreatesNewUsers
                 Rule::unique(User::class),
             ],
             'surname' => ['required', 'string', 'max:255'],
-            'age' => ['required', 'integer'],
+            'age' => ['required', 'integer', 'min:18'],
             'password' => $this->passwordRules(),
         ], [
             'name.required' => __('ui.namerequired'),

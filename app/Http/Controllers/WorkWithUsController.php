@@ -22,14 +22,14 @@ class WorkWithUsController extends Controller
             'email' => 'required|email|max:255',
             'cover_letter' => 'required|string',
         ], [
-            'first_name.required' => __('ui.namerequired'),
-            'last_name.required' => 'Il campo Cognome è obbligatorio.',
-            'age.required' => 'Il campo Età è obbligatorio.',
-            'age.integer' => 'Il campo Età deve essere un numero intero.',
-            'age.min' => 'Devi avere almeno 18 anni per poter procedere.',
-            'email.required' => 'Il campo Email è obbligatorio.',
-            'email.email' => 'Inserisci un indirizzo email valido.',
-            'cover_letter.required' => 'Il campo Lettera di presentazione è obbligatorio.',
+            'first_name.required' =>  __('ui.namerequired'),
+            'last_name.required' => __('ui.surnamerequired'),
+            'age.required' => __('ui.agerequired'),
+            'age.integer' => __('ui.ageinteger'),
+            'age.min' => __('ui.agemin'),
+            'email.required' => __('ui.emailrequired'),
+            'email.email' => __('ui.emailemail'),
+            'cover_letter.required' => __('ui.coverletterrequired'),
         ]);
 
         if ($validator->fails()) {
