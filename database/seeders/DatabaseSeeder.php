@@ -26,6 +26,6 @@ class DatabaseSeeder extends Seeder
             CharacteristicsSeeder::class,
         ]);
 
-        Article::factory(400)->create();
+        /* Article::factory(400)->create(); */
     }
 }

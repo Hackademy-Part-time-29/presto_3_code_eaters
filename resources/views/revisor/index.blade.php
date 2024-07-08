@@ -29,6 +29,13 @@
                                 <div class="col-md-8 ps-3">
                                     <div class="card-body">
                                         <h5 class="">Ratings</h5>
+                                        @if ($image->labels)
+                                            @foreach($image->labels as $label)
+                                            #{{$label}}
+                                            @endforeach
+                                        @else
+                                            <p class="fst-italic">No labels</p>
+                                        @endif
                                         <div class="row justify-content-center">
                                             <div class="col-2">
                                                 <div class="text-center mx-auto {{ $image->adult }}">
