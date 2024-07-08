@@ -31,7 +31,7 @@ return
                 'title' => 'TITLU',
                 'price' => 'PREȚ',
                 'description' => 'DESCRIERE',
-                'creaarticolobtn' => 'CREATE AD',
+                'creaarticolobtn' => 'Crează',
                 'category' => 'Alege o categorie',
                 'choosefile'  => 'Alegeți fișierul
 ',
@@ -90,7 +90,7 @@ return
                 'articlemacrocategory' => 'Articole din categoria macro',
                 'articlecategory' => 'Articole din categorie',
                 'noarticlecategory' => 'Încă nu au fost create articole pentru această categorie!',
-                'creaarticolobtn' => 'CREATE AD',
+                'creaarticolobtn' => 'CREAZĂ',
                 // card.blade
                 'noadd' => 'Nu au fost create articole încă',
                 'price:' => 'Preț:',
