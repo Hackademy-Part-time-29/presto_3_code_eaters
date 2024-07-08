@@ -35,7 +35,7 @@
                 @foreach ($categories->unique('macroCategory_id') as $category)
                   <div class="menu-item" data-category-id="{{ $category->macroCategory->id }}">
                     <a href="{{route('byMacroCategory',['macroCategory' => $category->macroCategory])}}" class="dropdown-item">
-                      <p class="nomeMacroCategoria">{{$category->macroCategory->name}}</p>                    
+                      <p class="nomeMacroCategoria">{{__("ui." . $category->macroCategory->name)}}</p>                    
                     </a>                    
                   </div>
                 @endforeach            
@@ -128,7 +128,7 @@
 </nav>
 
 {{-- @php
-    $categories = [
+    $categories2 = [
         'Smartphone e Accessori',
         'Computer e Laptop',
         'Televisori e Home Theater',
@@ -192,14 +192,14 @@
     ];
 
     $translatedCategories = [];
-    foreach ($categories as $category) {
+    foreach ($categories2 as $category) {
         $translatedCategories[] = trans('ui.' . $category);
-    } --}}
-{{-- @endphp --}}
-{{-- 
-@dd($translatedCategories) --}}
+    } 
+@endphp  --}}
+
+{{-- @dd($translatedCategories) --}}
+{{-- @dd($categories) --}}
 <script>
   let baseUrl = "{{ url('/') }}";
-  
   let categoriesData = @json($categories);
 </script>

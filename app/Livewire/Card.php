@@ -17,6 +17,7 @@ class Card extends Component
 
     public function render()
     {
+        
         $query = Article::where('is_accepted', true);
 
         if ($this->price) {
