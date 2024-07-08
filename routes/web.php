@@ -1,11 +1,13 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\PageController;
+use App\Http\Controllers\ChatController;
 
+use App\Http\Controllers\PageController;
 use App\Http\Controllers\ArticleController;
 use App\Http\Controllers\RevisorController;
 use App\Http\Controllers\WorkWithUsController;
+use App\Http\Controllers\NotificationController;
 
 
 Route::get('/', [PageController::class, 'welcomeView'])->name('welcome');
@@ -36,3 +38,17 @@ Route::middleware('guest')->get('/work-with-us', [WorkWithUsController::class, '
 
 // Rotta per inviare il form, accessibile solo agli utenti non loggati
 Route::middleware('guest')->post('/work-with-us', [WorkWithUsController::class, 'submitForm'])->name('workwithus.submit');
+
+
+//rotta per le notifiche livechat NON TOCCARE, in fase di studio
+Route::get('/send-notification', [NotificationController::class, 'sendNotification']);
+
+
+//rotta per la gestione dei messaggi da livechat
+// Route per caricare la vista della live chat
+
+
+
+
+Route::get('/livechat', [ChatController::class, 'index']);
+Route::post('/send-message', [ChatController::class, 'sendMessage'])->name('send-message');
