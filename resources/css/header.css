@@ -7,6 +7,7 @@ header {
     align-items: center;
     height: 25vh;
     margin-top: 65px;
+    filter: drop-shadow(1px 1px 20px #e93d3d);
 }
 
 header h1{

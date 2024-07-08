@@ -133,6 +133,7 @@
     left: 30%;
     -webkit-animation: myfirst 22s linear infinite;
     animation: myfirst 22s linear infinite;
+    filter: drop-shadow(1px 1px 20px yellow);
 }
 
 .new_footer_top .footer_bg .footer_bg_two {
@@ -145,6 +146,7 @@
     position: absolute;
     -webkit-animation: myfirst 30s linear infinite;
     animation: myfirst 30s linear infinite;
+    filter: drop-shadow(1px 1px 20px rgb(255, 255, 0));
 }
 
 
