@@ -128,8 +128,8 @@ return
     'firstname' => 'First Name',
     'workwithus' => 'WORK WITH US',
 
-
-
+    'Moda' => 'fashion',
+    'Abbigliamento Sportivo' => 'OOOK'
 
 
 

@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function handleMouseOver(event) {
         let categoryId = event.currentTarget.dataset.categoryId;
         let specificCategories = categoriesData.filter(cat => cat.macroCategory_id == categoryId);
-    
+
         if (specificCategories.length > 0) {
             let htmlContent = '';
             specificCategories.forEach(category => {
