@@ -40,7 +40,6 @@ class Card extends Component
         }
 
         $articles = $query->paginate(10);
-
         return view('livewire.card', compact('articles'));
     }
 
