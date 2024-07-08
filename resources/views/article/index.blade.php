@@ -13,7 +13,10 @@
                     </ul>
                 </div>
             </div>
-            <livewire:card/>
+            <livewire:card/>       
+        </div>
+        <div class="col-md-2">
+            <livewire:buy.cart/>
         </div>        
     </div>
 </div>

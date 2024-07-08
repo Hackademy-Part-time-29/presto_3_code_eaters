@@ -232,5 +232,9 @@
 	z-index: 99;
   }
 
+  .buttonBuyClick {
+	cursor: pointer;
+  }
+
 
 
