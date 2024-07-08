@@ -127,6 +127,21 @@ return [
   'lastname' => 'Cognome',
   'firstname' => 'Nome',
   'workwithus' => 'LAVORA CON NOI',
+  //
+  'Moda' => 'Moda',
+  'Sport e Tempo libero' => 'Sport e Tempo libero',
+  'Auto e Moto' => 'Auto e Moto',
+  'Viaggi e Valigeria' => 'Viaggi e Valigeria',
+  'Ufficio e Cancelleria' => 'Ufficio e Cancelleria',
+  'Alimentari e Bevande' => 'Alimentari e Bevande',
+  'Casa e Giardino' => 'Casa e Giardino',
+  'Giocattoli e Prima Infanzia' => 'Giocattoli e Prima Infanzia',
+  'Elettronica' =>  'Elettronica',
+  'Libri, Film e Musica' => 'Libri, Film e Musica',
+  'Gioielli e Orologi' => 'Gioielli e Orologi',
+  'Salute e Bellezza' => 'Salute e Bellezza',
+
+
 
 
 

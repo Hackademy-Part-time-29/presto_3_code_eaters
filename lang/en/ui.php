@@ -128,8 +128,18 @@ return
     'firstname' => 'First Name',
     'workwithus' => 'WORK WITH US',
 
-    'Moda' => 'fashion',
-    'Abbigliamento Sportivo' => 'OOOK'
+    'Moda' => 'Fashion',
+    'Sport e Tempo libero' => 'Sports & Leisure',
+    'Auto e Moto' => 'Cars & Motorcycles',
+    'Viaggi e Valigeria' => 'Travel & Luggage',
+    'Ufficio e Cancelleria' => 'Office & Stationery',
+    'Alimentari e Bevande' => 'Food & Beverages',
+    'Casa e Giardino' => 'Home & Garden',
+    'Giocattoli e Prima Infanzia' => 'Toys & Baby',
+    'Elettronica' => 'Electronics',
+    'Libri, Film e Musica' => 'Books, Movies & Music',
+    'Gioielli e Orologi' => 'Jewelry & Watches',
+    'Salute e Bellezza' => 'Health & Beauty',
 
 
 

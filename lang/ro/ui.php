@@ -129,6 +129,19 @@ return
                 'lastname' => 'Nume De Famille',
                 'firstname' => 'Nume',
                 'workwithus' => 'LUCREAZA CU NOI',
+                //
+                'Moda' => 'Modă',
+                'Sport e Tempo libero' => 'Sport & Timp liber',
+                'Auto e Moto' => 'Mașini & Motociclete',
+                'Viaggi e Valigeria' => 'Călătorii & Bagaje',
+                'Ufficio e Cancelleria' => 'Birou & Papetărie',
+                'Alimentari e Bevande' => 'Alimente & Băuturi',
+                'Casa e Giardino' => 'Casă & Grădină',
+                'Giocattoli e Prima Infanzia' => 'Jucării & Copii mici',
+                'Elettronica' => 'Electronică',
+                'Libri, Film e Musica' => 'Cărți, Filme & Muzică',
+                'Gioielli e Orologi' => 'Bijuterii & Ceasuri',
+                'Salute e Bellezza' => 'Sănătate & Frumusețe',
 
 
 
