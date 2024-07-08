@@ -1,61 +1,33 @@
 <?php
-
 return [
 
-    /*
-    |--------------------------------------------------------------------------
-    | Default Broadcaster
-    |--------------------------------------------------------------------------
-    |
-    | This option controls the default broadcaster that will be used by the
-    | framework when an event needs to be broadcast. You may set this to
-    | any of the connections defined in the "connections" array below.
-    |
-    */
-
-    'default' => env('BROADCAST_DRIVER', 'pusher'),
-
-    /*
-    |--------------------------------------------------------------------------
-    | Broadcast Connections
-    |--------------------------------------------------------------------------
-    |
-    | Here you may define all of the broadcast connections that will be used
-    | to broadcast events to other systems or over websockets. Samples of
-    | each available type of connection are provided inside this array.
-    |
-    */
+    'default' => env('BROADCAST_DRIVER', 'pusher'), // Configura il driver di broadcasting predefinito come 'pusher'
 
     'connections' => [
 
-        'pusher' => [
+        'pusher' => [ // Definisce la connessione 'pusher'
             'driver' => 'pusher',
-            'key' => env('PUSHER_APP_KEY'),
-            'secret' => env('PUSHER_APP_SECRET'),
-            'app_id' => env('PUSHER_APP_ID'),
+            'key' => env('PUSHER_APP_KEY'), // Ottiene la chiave dell'app Pusher dal file .env
+            'secret' => env('PUSHER_APP_SECRET'), // Ottiene il segreto dell'app Pusher dal file .env
+            'app_id' => env('PUSHER_APP_ID'), // Ottiene l'ID dell'app Pusher dal file .env
             'options' => [
-                'cluster' => env('PUSHER_APP_CLUSTER'),
-                'useTLS' => true,
+                'cluster' => env('PUSHER_APP_CLUSTER'), // Ottiene il cluster Pusher dal file .env
+                'useTLS' => true, // Abilita TLS per una connessione sicura
             ],
         ],
 
-        /*
-        |--------------------------------------------------------------------------
-        | Redis Broadcaster
-        |--------------------------------------------------------------------------
-        |
-        | Redis broadcasting configuration is the recommended choice for most
-        | applications. This connection will be used to manage broadcast
-        | authentication and other broadcast capabilities.
-        |
-        */
+        // 'redis' => [ // Connessione per Redis (non necessaria in questo caso)
+        //     'driver' => 'redis',
+        //     'connection' => 'default',
+        // ],
 
-        'redis' => [
-            'driver' => 'redis',
-            'connection' => 'default',
-        ],
+        // 'log' => [ // Connessione per registrare eventi nei log (utile per il debug)
+        //     'driver' => 'log',
+        // ],
 
-        // Aggiungi qui altre configurazioni di broadcasting se necessario
+        // 'null' => [ // Connessione "null" che non esegue nulla (può essere usata per disabilitare temporaneamente il broadcasting)
+        //     'driver' => 'null',
+        // ],
 
     ],
 

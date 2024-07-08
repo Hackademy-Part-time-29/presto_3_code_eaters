@@ -50,5 +50,6 @@ Route::get('/send-notification', [NotificationController::class, 'sendNotificati
 
 
 
+
 Route::get('/livechat', [ChatController::class, 'index']);
 Route::post('/send-message', [ChatController::class, 'sendMessage'])->name('send-message');

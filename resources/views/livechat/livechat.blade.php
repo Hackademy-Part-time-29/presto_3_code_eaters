@@ -26,14 +26,13 @@
 
         function sendMessage() {
             var message = document.getElementById('message').value;
-            
-            // Esempio di utilizzo di Axios per inviare il messaggio
-            axios.post('/send-message', {
+
+            axios.post('{{ route("send-message") }}', {
                 message: message
             })
             .then(function (response) {
                 console.log(response);
-                document.getElementById('message').value = ''; // Pulisce il campo del messaggio
+                document.getElementById('message').value = '';
             })
             .catch(function (error) {
                 console.error(error);
