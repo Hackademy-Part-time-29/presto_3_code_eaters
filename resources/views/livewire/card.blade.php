@@ -1,5 +1,6 @@
 <div class="card-container">
     <div class="d-flex flex-wrap">
+        @dd($articles)
         @forelse ($articles as $article)
             <x-card :article="$article" />
         @empty

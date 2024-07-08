@@ -31,7 +31,6 @@ class Price extends Component
         if ($this->price) {
             $query->where('price', '<=', $this->price);
         }
-
         return $query->get();
     }
 

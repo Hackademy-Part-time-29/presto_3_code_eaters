@@ -2,6 +2,6 @@
     <livewire:order/>
     <livewire:filter.price/>
     <div class="recapFiltri">
-        <livewire:filter.recap/> 
-    </div>     
+        <livewire:filter.recap/>
+    </div>
 </div>
