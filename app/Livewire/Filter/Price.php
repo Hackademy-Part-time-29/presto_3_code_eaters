@@ -10,6 +10,7 @@ class Price extends Component
 {
     public $price;
     public $maxPrice;
+    public $maxPriceCategory;
     public $articles;
 
     public function updatedPrice($newPrice) {
@@ -20,6 +21,7 @@ class Price extends Component
 
     public function mount(){
         $this->maxPrice = Article::where('is_accepted', true)->max('price');
+        // $this->maxPriceCategory = Article::where('is_accepted', true)->max('price');
         $this->price = $this->maxPrice;
         $this->articles = $this->getFilteredArticles();
     }
