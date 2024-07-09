@@ -14,8 +14,7 @@ class GoogleVisionLabelImage implements ShouldQueue
 {
     use Dispatchable, InteractsWithQueue, Queueable, SerializesModels;
 
-    private $article_image_id;
-    
+    private $article_image_id;    
 
     public function __construct($article_image_id)
     {
