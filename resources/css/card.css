@@ -7,10 +7,14 @@
 	height: 250px;
 	width: 500px;
 }
+
+
 .cardRoute{
   width:200px ;
   height:200px;
+  
 }
+
 
 .product-details {
 	position: flex;
@@ -58,6 +62,8 @@
 	color: #7d7d7d;
 	
 }
+
+
 
 .product-image {
 	transition: all 0.3s ease-out;

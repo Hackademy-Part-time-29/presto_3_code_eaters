@@ -64,7 +64,7 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-12">
-                    <p class="mb-0 f_400">© {{env('APP_NAME')}}.it All rights reserved.</p>
+                    <p class="mb-0 f_400">© {{env('APP_NAME')}} All rights reserved.</p>
                 </div>
             </div>
         </div>
