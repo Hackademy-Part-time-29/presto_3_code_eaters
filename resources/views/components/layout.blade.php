@@ -1,5 +1,5 @@
 <x-h-t-m-l>
-    <body>
+    <body class="bg-light">
         <x-navbar/>
         <header>
             <h1>Claim.it</h1>
@@ -15,7 +15,7 @@
                 {{session('success')}}
             </div>
         @endsession
-        <div class="container mt-5 mw-100">
+        <div class="container-fluid mt-5 mw-100">
             <div class="row justify-content-center">
                 {{ $slot }}
             </div>
