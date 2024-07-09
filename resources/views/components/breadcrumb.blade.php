@@ -26,6 +26,9 @@
             <li class="breadcrumb-item"><a href="/">Home</a></li>
             <li class="breadcrumb-item"><a href="{{route('article.index')}}">{{__('ui.article')}}</a></li>
             <li class="breadcrumb-item"><span>{{__('ui.creaarticolo')}}</span></li>
+        @elseif (Route::is('login'))
+            <li class="breadcrumb-item mt-5 pt-4"><a href="/">Home</a></li>
+            <li class="breadcrumb-item mt-5 pt-4"><span>{{__('ui.login')}}</span></li>
         @endif
     </ol>    
 </nav>
