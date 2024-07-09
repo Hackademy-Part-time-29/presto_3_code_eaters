@@ -14,6 +14,8 @@ return new class extends Migration
         Schema::create('categories', function (Blueprint $table) {
             $table->unsignedTinyInteger('id')->autoIncrement()->primary();
             $table->string('name',150);
+            $table->string('en',150);
+            $table->string('ro',150);
             $table->unsignedTinyInteger('macroCategory_id');
             $table->foreign('macroCategory_id')->references('id')->on('macro_categories');
             $table->timestamps();
