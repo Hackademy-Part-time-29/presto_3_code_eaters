@@ -367,7 +367,7 @@ a {
 
 @media (max-width: 991px) {
 
-    .collapse {
+    .custom-collapse {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
@@ -375,11 +375,11 @@ a {
         padding: 12px;
     }
 
-    .navbar-brand{
+    .custom-navbar-brand{
         padding-left: 6px;
     }
 
-    .custom-dropdown-content .menu {
+    .responsive-dropdown .menu {
         display: flex;
         flex-wrap: nowrap;
         position: relative;
@@ -408,7 +408,10 @@ a {
     .elemento1 {
         margin-left: 12px;
     }
-    .navbar-toggler {
+    .custom-navbar-toggler {
         margin-right: 12px;
+    }
+    .custom-revisor{
+        margin-left: 16px; 
     }
 }
