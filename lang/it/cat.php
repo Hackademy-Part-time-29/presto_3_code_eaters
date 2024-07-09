@@ -1,7 +1,7 @@
  <?php
 
     $translations = [
-        'Smartphone e Accessori' => 'cacca',
+        'Smartphone e Accessori' => 'Smartphone e Accessori',
         'Computer e Laptop' => 'Computer e Laptop',
         'Televisori e Home Theater' => 'Televisori e Home Theater',
         'Fotocamere e Videocamere' => 'Fotocamere e Videocamere',
@@ -62,5 +62,3 @@
         'Guide di Viaggio' => 'Guide di Viaggio',
         'Prodotti per il Campeggio' => 'Prodotti per il Campeggio',
     ];
-
-    return $translations;

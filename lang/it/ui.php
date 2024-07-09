@@ -127,7 +127,7 @@ return [
   'lastname' => 'Cognome',
   'firstname' => 'Nome',
   'workwithus' => 'LAVORA CON NOI',
-  //
+  // macro
   'Moda' => 'Moda',
   'Sport e Tempo libero' => 'Sport e Tempo libero',
   'Auto e Moto' => 'Auto e Moto',
@@ -145,4 +145,4 @@ return [
 
 
 
-] + include __DIR__ . '/cat.php';
+];

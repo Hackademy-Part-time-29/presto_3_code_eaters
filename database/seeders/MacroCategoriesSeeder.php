@@ -11,7 +11,8 @@ class MacroCategoriesSeeder extends Seeder
     /**
      * Run the database seeds.
      */
-    public function run(): void{
+    public function run(): void
+    {
         $macroCategories = [
             ['name' => 'Elettronica'],
             ['name' => 'Moda'],
@@ -27,7 +28,7 @@ class MacroCategoriesSeeder extends Seeder
             ['name' => 'Viaggi e Valigeria'],
         ];
 
-        foreach($macroCategories as $macroCategory){
+        foreach ($macroCategories as $macroCategory) {
             MacroCategory::create([
                 'name' => $macroCategory['name'],
             ]);

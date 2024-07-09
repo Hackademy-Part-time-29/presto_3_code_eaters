@@ -62,5 +62,3 @@ $translations = [
     'Guide di Viaggio' => 'Travel Guides',
     'Prodotti per il Campeggio' => 'Camping Products',
 ];
-
-return $translations;
