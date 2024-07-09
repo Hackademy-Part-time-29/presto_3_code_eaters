@@ -141,8 +141,4 @@ return [
   'Gioielli e Orologi' => 'Gioielli e Orologi',
   'Salute e Bellezza' => 'Salute e Bellezza',
 
-
-
-
-
 ];
