@@ -216,7 +216,7 @@
 	margin-right: 300px;
 	max-width:600px;
 	max-height:350px;
-	display:flex;
+	display:flex;  /* questo bastardo mi manda in tilt la nav */
 	justify-content:center;
 	align-items:center;
 	gap:40px;

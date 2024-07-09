@@ -1,6 +1,6 @@
 <div class="navbar navbar-expand-lg bg-body-tertiary fixed-top" id="navbar">
   <div class="container-fluid">
-    <a class="navbar-brand" href="/">
+    <a class="navbar-brand custom-navbar-brand" href="/">
       <img src="{{ asset('/storage/img/logo60px.png') }}" alt="logo">
     </a>
     @auth
@@ -19,16 +19,16 @@
         </div>
       @endif            
     @endauth
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler custom-navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <div class="collapse navbar-collapse custom-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item ms-3 me-3 custom-dropdown">
           <span class="nav-link fs-5">
             <i class="bi bi-tags">{{__('ui.categories')}}</i>            
           </span>
-          <div class="custom-dropdown-content">
+          <div class="custom-dropdown-content responsive-dropdown">
             <div class="triangle"></div>
             <div class="menu">
               <div class="menu-column">
@@ -93,18 +93,21 @@
           </a>
         @endif
         @if (Auth::user()->is_revisor)
-          <a href="{{route('revisor.index')}}" class="notification elemento2 nav-item">
+        <div>
+
+        </div class="nav-item custom-revisor">
+          <a href="{{route('revisor.index')}}" class="notification elemento2 custom-revisor">
             <span>{{__('ui.revisor')}}</span>
             <span class="badge">{{\App\Models\Article::toBeRevisedCount()}}</span>
           </a>
         @endif
-        <div class="carrello">
+        {{-- <div class="carrello">
           <i class="bi bi-cart2"></i>
-          {{-- @if ('InserireLaVariabileDalDatabaseCheConteggiaGliArticoliNelCarrelloPerUtenteLoggato') --}}
+          @if ('InserireLaVariabileDalDatabaseCheConteggiaGliArticoliNelCarrelloPerUtenteLoggato')
             
-          {{-- @endif           --}}
+          @endif          
         </div>
-        <a href="#">Carrello</a>                  
+        <a href="#">Carrello</a> --}}                  
       @else
         <a href="{{ route('login') }}" class="cssbuttons-io-button elemento1 custom-login">{{__('ui.login')}}
           <div class="icon">
