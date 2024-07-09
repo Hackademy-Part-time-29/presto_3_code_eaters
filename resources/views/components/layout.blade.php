@@ -1,10 +1,12 @@
 <x-h-t-m-l>
     <body class="bg-light">
         <x-navbar/>
-        <header>
-            <h1>Claim.it</h1>
-            <p> {{__('ui.headerp')}}</p>
-        </header>
+        @if(!Route::is('login') && !Route::is('register'))
+            <header>
+                <h1>Claim.it</h1>
+                <p> {{__('ui.headerp')}}</p>
+            </header>
+        @endif
         @if(Route::is('welcome'))
             
         @else
