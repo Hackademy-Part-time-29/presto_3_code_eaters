@@ -57,7 +57,7 @@
                 <div class="col-12 col-md-4 mb-3 height-custom text-center">
                     <h2 class="display-5">
                         <span class="fw-bold">
-                          {{__('ui.price')}}:
+                          {{__('ui.title')}}:
                         </span>
                         {{$article->title}}
                     </h2>
