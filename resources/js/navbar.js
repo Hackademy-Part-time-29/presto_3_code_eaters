@@ -16,7 +16,13 @@ document.addEventListener('DOMContentLoaded', () => {
             let htmlContent = '';
             specificCategories.forEach(category => {
                 let link = `${baseUrl}/category/${category.id}`;
-                htmlContent += `<div><a href="${link}" class="menu-item-2-element">${category.name}</a></div>`;
+                if(locale == "it") {
+                    htmlContent += `<div><a href="${link}" class="menu-item-2-element">${category.name}</a></div>`;
+                }else if (locale == "en"){
+                    htmlContent += `<div><a href="${link}" class="menu-item-2-element">${category.en}</a></div>`;
+                }else {
+                    htmlContent += `<div><a href="${link}" class="menu-item-2-element">${category.ro}</a></div>`;
+                }
             });
             menuItem2.innerHTML = htmlContent;
 

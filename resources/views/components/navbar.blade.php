@@ -131,6 +131,7 @@
 </nav>
 
 <script>
+  let locale = "{{ App::currentLocale() }}"
   let baseUrl = "{{ url('/') }}";
   let categoriesData = @json($categories);
 </script>
