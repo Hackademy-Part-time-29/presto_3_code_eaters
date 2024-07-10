@@ -99,7 +99,7 @@ return [
   'decoration:' => 'Decorazione:',
   'material:' => 'Materiale:',
   'height2:' => '5 metri',
-  'color2: ' => 'Verde oliva',
+  'color2:' => 'Verde oliva',
   'decoration2:' => 'palline e campanelle',
   'material2:' => 'Ecologico',
   'buy' => 'Acquista',
@@ -149,6 +149,8 @@ return [
   'Libri, Film e Musica' => 'Libri, Film e Musica',
   'Gioielli e Orologi' => 'Gioielli e Orologi',
   'Salute e Bellezza' => 'Salute e Bellezza',
+
+  'home' => 'Home',
 
 
 ];

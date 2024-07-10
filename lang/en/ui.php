@@ -100,7 +100,7 @@ return
     'decoration:' => 'Decoration:',
     'material:' => 'Material:',
     'height2:' => '5 Ft',
-    'color2: ' => 'Green',
+    'color2:' => 'Green',
     'decoration2:' => 'Balls & Bells',
     'material2:' => 'Ecologic',
     'buy' => 'Buy',
@@ -149,7 +149,7 @@ return
     'Libri, Film e Musica' => 'Books, Movies & Music',
     'Gioielli e Orologi' => 'Jewelry & Watches',
     'Salute e Bellezza' => 'Health & Beauty',
-
+    'home' => 'Home',
 
 
 

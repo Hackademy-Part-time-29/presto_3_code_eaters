@@ -151,6 +151,7 @@ return
                 'Libri, Film e Musica' => 'Cărți, Filme & Muzică',
                 'Gioielli e Orologi' => 'Bijuterii & Ceasuri',
                 'Salute e Bellezza' => 'Sănătate & Frumusețe',
+                'home' => 'Acasă',
 
 
 
