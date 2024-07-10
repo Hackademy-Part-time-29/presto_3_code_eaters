@@ -27,13 +27,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* margin-left: 1.5rem; */
+    margin-left: 1.5rem;
     width: 25rem;
 }
 
-.contenitoreOrdinamentoFiltri {
+/* .contenitoreOrdinamentoFiltri {
     width: 90%;
-}
+} */
 
 .contenitoreOrdinamentoFiltri p {
     font-size: 14px;
@@ -83,3 +83,14 @@
     text-align: center;
 }
 
+@media (min-width:667px) and (max-width:767px)  {
+    .filter-container {
+        justify-content: center;
+    }
+}
+
+@media (min-width:760px) and (max-width:1000px)  {
+    .filter-container {
+        width: 64%;
+    }
+}

@@ -1,4 +1,4 @@
-<div class="containerCard">	
+<div class="containerCard m-4">	
   <div class="product-details">
     <a href="{{route('article.show',compact('article'))}}"><h1>{{Str::limit($article->title, 25, '...')}}</h1></a>
     <p>{{Str::limit($article->description,50,'...')}}</p>

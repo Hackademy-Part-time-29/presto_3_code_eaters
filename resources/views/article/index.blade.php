@@ -1,6 +1,6 @@
 <x-layout>
 <div class="container-fluid cardLayout">
-    <div class="row">
+    <div class="row justify-content-center">
         <x-filtri/>
         <div class="col-12 col-md-8 mw-100 p-0">
             <div class="opzioneArticoli">
@@ -15,9 +15,9 @@
             </div>
             <livewire:card/>       
         </div>
-        <div class="col-md-2">
+        {{-- <div class="col-md-2">
             <livewire:buy.cart/>
-        </div>        
+        </div> --}}        
     </div>
 </div>
 </x-layout>

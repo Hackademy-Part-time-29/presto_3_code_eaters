@@ -207,7 +207,16 @@
 	.cardLayout {
 		display: inline;
 	}
+	
 }
+
+@media (min-width: 660px) and (max-width: 770px) {
+	.custom-card{
+		justify-content: center;
+	}
+}
+
+@media(min-width:1000px){
 
 .cardCarousel {
 	width: 30%;
@@ -242,5 +251,10 @@
 	cursor: pointer;
   }
 
+}
 
-
+.custom-card {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+}
