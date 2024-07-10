@@ -151,6 +151,12 @@ return [
   'Salute e Bellezza' => 'Salute e Bellezza',
 
   'home' => 'Home',
+  // ordina per 
+  'ordina' => 'Ordina per:',
+  'piurecente' => 'Più recente',
+  'menorecente' => 'Meno recente',
+  'crescente' => 'Crescente',
+  'decrescente' => 'Decrescente',
 
 
 ];

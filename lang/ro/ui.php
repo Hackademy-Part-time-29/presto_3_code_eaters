@@ -152,6 +152,12 @@ return
                 'Gioielli e Orologi' => 'Bijuterii & Ceasuri',
                 'Salute e Bellezza' => 'Sănătate & Frumusețe',
                 'home' => 'Acasă',
+                //filtro
+                'ordina' => 'Sortează după:',
+                'piurecente' => 'Cele mai recente',
+                'menorecente' => 'Cele mai vechi',
+                'crescente' => 'Crescător',
+                'decrescente' => 'Descrescător',
 
 
 

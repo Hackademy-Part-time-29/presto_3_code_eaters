@@ -150,6 +150,14 @@ return
     'Gioielli e Orologi' => 'Jewelry & Watches',
     'Salute e Bellezza' => 'Health & Beauty',
     'home' => 'Home',
+    //filtro
+    // ordina per 
+    'ordina' => 'Sort by:',
+    'piurecente' => 'Most recent',
+    'menorecente' => 'Least recent',
+    'crescente' => 'Ascending',
+    'decrescente' => 'Descending',
+
 
 
 
