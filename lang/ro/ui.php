@@ -95,6 +95,14 @@ return
                 'noadd' => 'Nu au fost create articole încă',
                 'price:' => 'Preț:',
                 'detail' => 'Detaliu',
+                'height:' => 'Înălțime:',
+                'color:' => 'Culoare:',
+                'decoration:' => 'Decorațiune:',
+                'material:' => 'Material:',
+                'height2:' => '5 picioare',
+                'color2:' => 'Verde',
+                'decoration2:' => 'Bile și clopoței',
+                'material2:' => 'Ecologic',
 
                 //in merito alla ricerca dalla navbar
                 'nosearch' => 'Niciun articol nu corespunde căutării dvs',

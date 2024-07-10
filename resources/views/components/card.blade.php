@@ -30,10 +30,10 @@
       <h2> Description</h2>
       {{-- <h3 class="ps-2" style="font-size: 0.8rem">{{($article->description)}}</h3> --}}
       <ul>
-        <li><strong>Height : </strong>5 Ft </li>
-        <li><strong>Shade : </strong>Olive green</li>
-        <li><strong>Decoration: </strong>balls and bells</li>
-        <li><strong>Material: </strong>Eco-Friendly</li>
+        <li><strong>{{__('ui.height:')}}</strong>{{__('ui.height2:')}}</li>
+        <li><strong>{{__('ui.color:')}}</strong>{{__('ui.color2:')}}</li>
+        <li><strong>{{__('ui.decoration:')}}</strong>{{__('ui.decoration2:')}}</li>
+        <li><strong>{{__('ui.material:')}}</strong>{{__('ui.material2:')}}</li>
       </ul>
     </div>
   </div>

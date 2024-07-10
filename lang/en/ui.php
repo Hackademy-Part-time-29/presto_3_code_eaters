@@ -95,6 +95,14 @@ return
     'noadd' => 'No articles have been created yet',
     'price:' => 'Price:',
     'detail' => 'Detail',
+    'height:' => 'Height:',
+    'color:' => 'Color:',
+    'decoration:' => 'Decoration:',
+    'material:' => 'Material:',
+    'height2:' => '5 Ft',
+    'color2: ' => 'Green',
+    'decoration2:' => 'Balls & Bells',
+    'material2:' => 'Ecologic',
     //in merito alla ricerca dalla navbar
     'nosearch' => 'No articles match your search',
 
