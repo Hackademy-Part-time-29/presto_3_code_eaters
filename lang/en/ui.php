@@ -157,6 +157,8 @@ return
     'menorecente' => 'Least recent',
     'crescente' => 'Ascending',
     'decrescente' => 'Descending',
+    //v risultati per ricerca
+    'risultati' => 'Search Results',
 
 
 

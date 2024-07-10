@@ -3,7 +3,7 @@
         <div class="row py-5 justify-content-center align-items-center text-center">
             <div class="col-12">
                 <h1 class="dispaly-1">
-                    Risultati per la ricerca
+                    {{__('ui.risultati')}}
                     <span class="fst-italic">{{$query}}</span>
                 </h1>
             </div>        

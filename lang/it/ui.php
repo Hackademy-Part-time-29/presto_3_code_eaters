@@ -157,6 +157,8 @@ return [
   'menorecente' => 'Meno recente',
   'crescente' => 'Crescente',
   'decrescente' => 'Decrescente',
+  //risultati per ricerca
+  'risultati' => 'Risultati per la ricerca',
 
 
 ];
