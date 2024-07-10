@@ -27,7 +27,7 @@
   <div class="product-image">
     <img src="https://picsum.photos/id/{{$article->id}}/200/250" alt="Immagine dell'articolo {{$article->title}}" class="custom-card-img  w-100 imgCard">
     <div class="info">
-      <h2> Description</h2>
+      <h2> {{__('ui.description')}}</h2>
       {{-- <h3 class="ps-2" style="font-size: 0.8rem">{{($article->description)}}</h3> --}}
       <ul>
         <li><strong>{{__('ui.height:')}}</strong>{{__('ui.height2:')}}</li>
