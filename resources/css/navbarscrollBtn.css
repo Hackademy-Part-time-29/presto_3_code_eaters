@@ -12,11 +12,11 @@
     /* Ruota il box di 45 gradi */
     display: flex;
     align-items: center;
-    padding: 0.1px 10px;
-    text-decoration: none;
+    padding: 0.1px 7px;
+    text-decoration: transparent;
     font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-    font-size: 5px;
+    font-weight: 200;
+    font-size: 1px;
     color: var(--color-text);
     background: var(--color-background);
     transition: 1s;
@@ -47,7 +47,7 @@
 
 .icon-arrow {
     width: 20px;
-    margin-right: 10px;
+    margin-right: 9px;
         margin-bottom: 5px;
     position: relative;
     top: 6%;
