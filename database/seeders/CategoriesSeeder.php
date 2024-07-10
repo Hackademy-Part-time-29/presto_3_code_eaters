@@ -81,6 +81,8 @@ class CategoriesSeeder extends Seeder
             Category::create([
                 'name' => $Category['name'],
                 'macroCategory_id' => $Category['macroCategory_id'],
+                'en' =>$Category['en'],
+                'ro' =>$Category['ro'],
             ]);
         }
     }
