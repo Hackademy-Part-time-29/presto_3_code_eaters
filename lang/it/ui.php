@@ -102,6 +102,7 @@ return [
   'color2: ' => 'Verde oliva',
   'decoration2:' => 'palline e campanelle',
   'material2:' => 'Ecologico',
+  'buy' => 'Acquista',
 
   //in merito alla ricerca dalla navbar
   'nosearch' => 'Nessun articolo corrisponde alla tua ricerca',

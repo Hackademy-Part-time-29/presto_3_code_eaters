@@ -103,6 +103,7 @@ return
                 'color2:' => 'Verde',
                 'decoration2:' => 'Bile și clopoței',
                 'material2:' => 'Ecologic',
+                'buy' => 'Cumpără', // Rumeno
 
                 //in merito alla ricerca dalla navbar
                 'nosearch' => 'Niciun articol nu corespunde căutării dvs',

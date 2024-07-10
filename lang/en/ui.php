@@ -103,6 +103,7 @@ return
     'color2: ' => 'Green',
     'decoration2:' => 'Balls & Bells',
     'material2:' => 'Ecologic',
+    'buy' => 'Buy',
     //in merito alla ricerca dalla navbar
     'nosearch' => 'No articles match your search',
 
