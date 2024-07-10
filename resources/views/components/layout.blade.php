@@ -2,7 +2,7 @@
     <body class="bg-light">
         <x-navbar/>
         @if(!Route::is('login') && !Route::is('register'))
-            <header class="mb-5">
+            <header id="top" class="mb-5">
                 <h1>Claim.it</h1>
                 <p> {{__('ui.headerp')}}</p>
             </header>

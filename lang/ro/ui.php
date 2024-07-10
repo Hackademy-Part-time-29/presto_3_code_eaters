@@ -158,6 +158,8 @@ return
                 'menorecente' => 'Cele mai vechi',
                 'crescente' => 'Crescător',
                 'decrescente' => 'Descrescător',
+                //v risultati per ricerca
+                'risultati' => 'Rezultatele căutării',
 
 
 
