@@ -55,12 +55,6 @@
     width: 120px;
 }
 
-.recapFiltri {
-    position: fixed;
-    bottom: 24px;
-    width: 320px;
-}
-
 .contenitoreFiltriRecap {
     border: 1px solid gray;
     background-color: whitesmoke;
@@ -89,4 +83,10 @@
     .filter-container {
         width: 64%;
     }
+}
+
+.recapFiltri {
+    position: fixed;
+    bottom: 24px;
+    width: 320px;
 }
