@@ -11,7 +11,7 @@
       <div class="pb-4">
       </div>
     @endif     
-    <div class="buttonBuy buttonBuyClick" data-price="{{ $article->price }}">
+    {{-- <div class="buttonBuy buttonBuyClick" data-price="{{ $article->price }}">
       <div class="buttonBuy-wrapper">
         <span class="iconBuy">
           <svg viewBox="0 0 16 16" class="bi bi-cart2" fill="currentColor" height="16" width="16" xmlns="http://www.w3.org/2000/svg">
@@ -20,7 +20,7 @@
         </span>
         <div class="textBuy">{{__('ui.buy')}}</div>
       </div>
-    </div>    
+    </div>     --}}
   </div>  
   <div class="product-image">
     <img src="{{$article->images->isNotEmpty() ? $article->images->first()->getUrl(300,300) : 'https://picsum.photos/id/' . $article->id . '/200/250'}}" alt="Immagine dell'articolo {{$article->title}}" class="custom-card-img  w-100 img-fluid">
