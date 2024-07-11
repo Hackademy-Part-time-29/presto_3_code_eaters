@@ -23,10 +23,12 @@ class FilterOrder extends Component
     public $macroCategoryId;
     public $maxPriceMacroCategory;
     public $orderBy = 'createASC';
+    public $formattedPriceMax;
 
     public function mount(){
         
         $this->maxPrice = Article::where('is_accepted', true)->max('price');
+        $this->formattedPriceMax = number_format($this->maxPrice, 2, ',', '.') . ' €';
         $this->price = $this->maxPrice;
         if (strpos($this->uri, 'category/') === 0) {
             $categoryId = substr($this->uri, strlen('category/'));

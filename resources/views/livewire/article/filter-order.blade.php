@@ -16,7 +16,7 @@
                     <canvas class="graficoFiltroPerPrezzo" id="myChart" width="400" height="100"></canvas>
                     <input type="range" class="form-range" id="customRange1" value="{{$price}}" min="0" max="{{ $maxPrice }}" wire:model.change="price">
                     <div class="text-end">
-                        <span>max : {{$maxPrice}}</span>
+                        <span>max : {{$formattedPriceMax}}</span>
                     </div>
                 </div>
                 <select class="form-select mt-1">

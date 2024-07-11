@@ -155,8 +155,8 @@ return
                 'ordina' => 'Sortează după:',
                 'piurecente' => 'Cele mai recente',
                 'menorecente' => 'Cele mai vechi',
-                'crescente' => 'Crescător',
-                'decrescente' => 'Descrescător',
+                'crescente' => 'Preț crescător',
+                'decrescente' => 'Preț descrescător',
                 //v risultati per ricerca
                 'risultati' => 'Rezultatele căutării',
 
@@ -248,4 +248,8 @@ return
                 'Giocattoli e Prima Infanzia' => 'Jucării și primă copilărie',
                 'Ufficio e Cancelleria' => 'Birou și papetărie',
                 'Viaggi e Valigeria' => 'Călătorii și bagaje',
+                
+                // Recap filtri 
+                'Filtri attivi' => 'Filtri activi',
+                'Prezzo massimo di' => 'Prețul maxim de',
         ];

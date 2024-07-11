@@ -15,7 +15,7 @@
                 {{session('success')}}
             </div>
         @endsession
-        <div class="container-fluid mw-100">
+        <div class="container-fluid vh-75">
             <div class="row justify-content-center">
                 {{ $slot }}
             </div>

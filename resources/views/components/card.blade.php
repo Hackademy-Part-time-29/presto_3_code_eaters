@@ -23,7 +23,8 @@
     </div>    
   </div>  
   <div class="product-image">
-    <img src="https://picsum.photos/id/{{$article->id}}/200/250" alt="Immagine dell'articolo {{$article->title}}" class="custom-card-img  w-100 imgCard">
+    {{-- <img src="https://picsum.photos/id/{{$article->id}}/200/250" alt="Immagine dell'articolo {{$article->title}}" class="custom-card-img  w-100 imgCard"> --}}
+    <img src="{{$article->images->isNotEmpty() ? $article->images->first()->getUrl(300,300) : 'https://picsum.photos/200/250'}}" alt="Immagine dell'articolo {{$article->title}}" class="custom-card-img  w-100 imgCard">
     <div class="info">
       <h2> {{__('ui.description')}}</h2>
       <ul>

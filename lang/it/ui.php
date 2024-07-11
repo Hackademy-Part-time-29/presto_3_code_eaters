@@ -155,8 +155,8 @@ return [
   'ordina' => 'Ordina per:',
   'piurecente' => 'Più recente',
   'menorecente' => 'Meno recente',
-  'crescente' => 'Crescente',
-  'decrescente' => 'Decrescente',
+  'crescente' => 'Prezzo crescente',
+  'decrescente' => 'Prezzo decrescente',
   //risultati per ricerca
   'risultati' => 'Risultati per la ricerca',
 
@@ -248,4 +248,8 @@ return [
   'Giocattoli e Prima Infanzia' => 'Giocattoli e Prima Infanzia',
   'Ufficio e Cancelleria' => 'Ufficio e Cancelleria',
   'Viaggi e Valigeria' => 'Viaggi e Valigeria',
+
+  // Recap filtri 
+  'Filtri attivi' => 'Filtri attivi',
+  'Prezzo massimo di' => 'Prezzo massimo di',
 ];

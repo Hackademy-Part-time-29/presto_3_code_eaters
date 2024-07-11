@@ -155,8 +155,8 @@ return
     'ordina' => 'Sort by:',
     'piurecente' => 'Most recent',
     'menorecente' => 'Least recent',
-    'crescente' => 'Ascending',
-    'decrescente' => 'Descending',
+    'crescente' => 'Ascending price',
+    'decrescente' => 'Descending price',
     //v risultati per ricerca
     'risultati' => 'Search Results',
 
@@ -247,4 +247,8 @@ return
     'Giocattoli e Prima Infanzia' => 'Toys and Early Childhood',
     'Ufficio e Cancelleria' => 'Office and Stationery',
     'Viaggi e Valigeria' => 'Travel and Luggage',
+
+    // Recap filtri 
+    'Filtri attivi' => 'Active filters',
+    'Prezzo massimo di' => 'Maximum price of',
 ];
