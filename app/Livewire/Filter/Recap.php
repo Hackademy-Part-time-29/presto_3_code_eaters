@@ -29,9 +29,4 @@ class Recap extends Component
             $this->visible = false;
         }
     }
-
-    // public function deleteFiltri (){
-    //     $this->visible = false;
-    //     $this->dispatch('DeleteFiltroPrezzo');
-    // }
 }

@@ -15,9 +15,7 @@ class Card extends Component
     public $orderBy = 'createASC';
     public $price;
 
-    public function render()
-    {
-        
+    public function render(){  
         $query = Article::where('is_accepted', true);
 
         if ($this->price) {

@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use App\Models\Article;
 use App\Mail\BecomeRevisor;
-use Illuminate\Http\Request;
 use Illuminate\Foundation\Auth\User;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Mail;

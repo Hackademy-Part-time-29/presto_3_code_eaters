@@ -50,9 +50,9 @@
     position: absolute;
     top: 0;
     bottom: 0;
-    left: 50%; /* Posiziona il divisore al centro */
-    width: 1px; /* Larghezza del divisore */
-    background-color: #ccc; /* Colore del divisore */
+    left: 50%;
+    width: 1px;
+    background-color: #ccc;
 }
 
 .menu-item, .menu-item-2 {
@@ -68,23 +68,18 @@
 .hovered {
     color: #be3838; 
     border-bottom: 1px solid #858585;
-    /* box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); */
     transition: box-shadow 0.3s ease;
-    
 }
 
 .menu-item-2 div {
     padding: 2px 25px;
     transition: transform 0.1s ease, opacity 0.2s ease;
-    /* Transizione per ingrandimento e opacità */
 }
 
 .menu-item-2-element {
-    
     text-decoration: none;
     color: rgba(0, 0, 0, 0.6);
     transition: color 0.3s ease;
-    /* Transizione per il colore */
 }
 
 .menu-item-2-element:hover {
@@ -94,20 +89,16 @@
 
 .menu-item-2 div:hover {
     transform: scale(1.1);
-    /* Ingrandisce l'elemento */
     z-index: 1;
-    /* Porta l'elemento in primo piano */
     font-weight: bold;
 }
 
 .menu-item-2:hover div {
     opacity: 0.5;
-    /* Riduce l'opacità degli elementi non attivi */
 }
 
 .menu-item-2 div:hover {
     opacity: 0.8;
-    /* Mantiene l'opacità piena dell'elemento attivo */
 }
 
 .filtroGenerale::placeholder {
@@ -192,11 +183,9 @@ a {
 
 .elemento1 {
     margin-right: 10px;
-    /* Aggiunge spazio a destra di elemento1 */
 }
 .elemento2 {
     margin-right: 20px;
-    /* Aggiunge spazio a destra di elemento2 */
 }
 
 /* tasto logout */
@@ -243,7 +232,6 @@ a {
 /* zona revisore */
 .notification {
     background-color: #d7d7d7;
-    
     color: rgb(0, 0, 0);
     text-decoration: none;
     padding: 8px 20px;
@@ -259,7 +247,6 @@ a {
     text-decoration: none;
     color: rgb(158, 152, 152);
     font-weight: bold;
-    
 }
 
 .notification .badge {
@@ -315,7 +302,6 @@ a {
 }
 
 .search button[type="submit"] {
-    
     border: none;
     color: whitesmoke;
     cursor: pointer;
@@ -408,9 +394,11 @@ a {
     .elemento1 {
         margin-left: 12px;
     }
+
     .custom-navbar-toggler {
         margin-right: 12px;
     }
+    
     .custom-revisor{
         margin-left: 16px; 
     }

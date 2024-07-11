@@ -49,18 +49,23 @@ body::before {
 body::before:nth-child(1) {
     animation-delay: 0s;
 }
+
 body::before:nth-child(2) {
     animation-delay: 0.2s;
 }
+
 body::before:nth-child(3) {
     animation-delay: 0.4s;
 }
+
 body::before:nth-child(4) {
     animation-delay: 0.6s;
 }
+
 body::before:nth-child(5) {
     animation-delay: 0.8s;
 }
+
 body::before:nth-child(6) {
     animation-delay: 1s;
 }
@@ -109,34 +114,42 @@ body::before {
 body::before:nth-child(1) {
     animation-delay: 0s;
 }
+
 body::before:nth-child(2) {
     animation-delay: 0.2s;
 }
+
 body::before:nth-child(3) {
     animation-delay: 0.4s;
 }
+
 body::before:nth-child(4) {
     animation-delay: 0.6s;
 }
+
 body::before:nth-child(5) {
     animation-delay: 0.8s;
 }
+
 body::before:nth-child(6) {
     animation-delay: 1s;
 }
+
 body::before:nth-child(7) {
     animation-delay: 1.2s;
 }
+
 body::before:nth-child(8) {
     animation-delay: 1.4s;
 }
+
 body::before:nth-child(9) {
     animation-delay: 1.6s;
 }
+
 body::before:nth-child(10) {
     animation-delay: 1.8s;
 }
-
 
 .left {
     margin-left: 22px;
@@ -149,8 +162,6 @@ body::before:nth-child(10) {
     box-sizing: border-box;
 }
 
-
-
 .BtnLayoutAdd {
     width: 40px;
     height: 40px;
@@ -158,19 +169,17 @@ body::before:nth-child(10) {
     align-items: center;
     justify-content: center;
     border: none;
-    
     background-color: transparent;
     position: relative;
-    /* overflow: hidden; */
     border-radius: 7px;
     cursor: pointer;
     transition: all .3s;
 }
 
 .logoPlus{
-        width: 50%;
-        height: 50%;
-        fill: white;
+    width: 50%;
+    height: 50%;
+    fill: white;
 }
 
 .svgContainer {

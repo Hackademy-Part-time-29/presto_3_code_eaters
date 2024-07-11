@@ -126,7 +126,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 /* navbar scroll */
 
-
 let navbar = document.querySelector("#navbar");
 let navbarContent = document.querySelector("#navbarSupportedContent")
 let iconaAggiungiArticoloNavbar = document.querySelector(".iconaAggiungiArticoloNavbar")

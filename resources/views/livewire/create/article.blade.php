@@ -10,7 +10,6 @@
                 <span class="small text-danger">{{$message}}</span>
             @enderror
         </div>
-
         <div class="custom-form-group">
             <label class="custom-form-label">{{__('ui.price')}}</label>
             <input type="number" class="custom-form-control form--input" wire:model.blur="price">
@@ -34,7 +33,6 @@
                 @endforeach           
             </select>
         </div>
-
         <div class="custom-form-group">
             <input type="file" id="actual-btn" wire:model.live="temporary_images" multiple hidden/>
             <label class="select-file"  for="actual-btn">{{__('ui.choosefile')}}</label>

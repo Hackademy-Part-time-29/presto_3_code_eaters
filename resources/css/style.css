@@ -2,11 +2,9 @@ body {
   height: 100vh;
 }
 
-
 swiper-container {
   width: 60%;
   height: 50%;
-  
 }
 
 swiper-slide {

@@ -9,7 +9,7 @@
     <div class="container-fluid pt-5">
         <div class="d-flex justify-content-center align-items-center">
             <div class="col-3">
-                <div class="{{--rounded shadow bg-body-secondary--}} container-transparent">
+                <div class="container-transparent">
                     <h1 class="display-5 text-center pb-2">
                         {{ __('ui.revisordashboard') }}
                     </h1>
@@ -20,7 +20,7 @@
             <div class="row justify-content-center pt-5">
                 <div class="col-md-8">
                     <div class="row justify-content-center">
-                        {{-- @if ($article_to_check->images->count()) --}}
+                        @if ($article_to_check->images->count())
                             @foreach ($article_to_check->images as $key => $image)
                                 <div class="col-6 col-md-4 mb-4 text-center">
                                     <img src="{{$image->getUrl(300,300)}}" alt="Immagine {{$key + 1}} dell'articolo '{{$article_to_check->title}}" class="img-fluid rounded-start">
@@ -68,13 +68,13 @@
                                     </div>
                                 </div>                                
                             @endforeach
-                        {{-- @else
+                        @else
                             @for ($i = 0; $i < 6; $i++)
                                 <div class="col-6 col-md-4 mb-4 text-center">
                                     <img src="https://picsum.photos/300/300" alt="immagine segnaposto" class="img-fluid rounded shadow">
                                 </div>
                             @endfor
-                        @endif --}}
+                        @endif
                     </div>
                 </div>
                 <div class="col-md-4 ps-4 d-flex flex-column justify-content-between">

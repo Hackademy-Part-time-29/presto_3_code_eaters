@@ -8,7 +8,6 @@ use Illuminate\Mail\Mailable;
 use Illuminate\Mail\Mailables\Content;
 use Illuminate\Queue\SerializesModels;
 use Illuminate\Mail\Mailables\Envelope;
-use Illuminate\Contracts\Queue\ShouldQueue;
 
 class BecomeRevisor extends Mailable
 {
@@ -27,7 +26,6 @@ class BecomeRevisor extends Mailable
     {
         return new Envelope(
             subject: __('ui.subject') . ' ' . $this->user->name,
-            // qui la traduzione è facoltativa in quanto admin è sempre di una nazionalita
         );
     }
 

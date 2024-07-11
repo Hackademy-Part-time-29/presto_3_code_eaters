@@ -14,7 +14,6 @@
         </select>    
     </div>   
     <script>
-        // Conversione dei dati PHP in JSON per l'uso in JavaScript
         const data = {!! json_encode(['price' => $price, 'articles' => $articles, 'maxPrice' => $maxPrice]) !!};
     </script>
 </div>

@@ -33,12 +33,9 @@ class WorkWithUsController extends Controller
         ]);
 
         if ($validator->fails()) {
-            return redirect()->back()
-                ->withErrors($validator)  // Passa gli errori alla view
-                ->withInput();          // Mantiene i dati inseriti nel form
+            return redirect()->back()->withErrors($validator)->withInput();
         }
 
-        // Invio email all'admin
         Mail::send('mail.workwithus', ['data' => $request->all()], function ($message) {
             $message->to('admin@presto.it')
                 ->subject('Richiesta per diventare revisore');

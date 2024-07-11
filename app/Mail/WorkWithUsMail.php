@@ -19,7 +19,6 @@ class WorkWithUsMail extends Mailable
 
     public function build()
     {
-        return $this->view('emails.workwithus')
-            ->with('data', $this->data);
+        return $this->view('emails.workwithus')->with('data', $this->data);
     }
 }

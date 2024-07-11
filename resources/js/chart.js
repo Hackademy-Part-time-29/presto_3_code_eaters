@@ -95,8 +95,4 @@ document.addEventListener('DOMContentLoaded', () => {
         data.price = newPrice;
         updateChart();
     });
-
-    // Livewire.on('deleteFiltri', (newPrice) => {
-    //     updateChart();
-    // });
 });

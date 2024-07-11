@@ -42,7 +42,6 @@
                 <div class="w-25">
                     <img src="https://picsum.photos/300" alt="Nessuna foto inserita dall'utente">
                 </div>
-                
                 <div class="col-12 col-md-4 mb-3 height-custom text-center">
                     <h2 class="display-5">
                         <span class="fw-bold">

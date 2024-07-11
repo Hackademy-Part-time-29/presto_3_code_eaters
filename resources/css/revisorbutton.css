@@ -3,28 +3,21 @@
     list-style: none;
     height: 200px;
     width: 100%;
-    /* padding-top: 40px; */
-    /* font-family: "Poppins", sans-serif; */
     justify-content: center;
 }
-
 
 .wrapper .icon {
     position: relative;
     background: #ffffff;
     border-radius: 100px;
-    /* Angoli smussati */
     margin: 25px;
     width: 85px;
-    /* Larghezza dei bottoni */
     height: 55px;
-    /* Altezza dei bottoni */
     font-size: 18px;
     display: flex;
     justify-content: center;
     align-items: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    /* Ombreggiatura */
     cursor: pointer;
     transition: background-color 0.5s ease-in-out, transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 }
@@ -87,7 +80,6 @@
     background: #1da1f2;
     color: #fff;
 }
-
 
 .spunta-svg {
     width: 40px;
