@@ -20,15 +20,14 @@
                     </div>
                     <div class="col-lg-4 col-md-12 mb-5">
                         <div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.6s" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInLeft;">
-                            <h3 class="f-title f_600 t_color f_size_18">About us</h3>
+                            <h3 class="f-title f_600 t_color f_size_18">{{__('ui.About us')}}</h3>
                             <ul class="list-unstyled f_list">
-                                
-                                <p><a class="a_form" href="#">FAQ</a></p>
-                                <li><a class="a_form" href="#">Term &amp; conditions</a></li>
-                                <li><a class="a_form" href="#">Reporting</a></li>
-                                <li><a class="a_form" href="#">Documentation</a></li>
-                                <li><a class="a_form" href="#">Support Policy</a></li>
-                                <li><a class="a_form" href="#">Privacy</a></li>
+                                <li><a class="a_form" href="#">{{__('ui.FAQ')}}</a></li>
+                                <li><a class="a_form" href="#">{{__('ui.Term & conditions')}}</a></li>
+                                <li><a class="a_form" href="#">{{__('ui.Reporting')}}</a></li>
+                                <li><a class="a_form" href="#">{{__('ui.Documentation')}}</a></li>
+                                <li><a class="a_form" href="#">{{__('ui.Support Policy')}}</a></li>
+                                <li><a class="a_form" href="#">{{__('ui.Privacy')}}</a></li>
                             </ul>
                         </div>
                     </div>

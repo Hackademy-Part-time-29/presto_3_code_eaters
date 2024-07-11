@@ -5,7 +5,7 @@
     <span class="price">{{__('ui.price:')}} @formatPrice($article->price) €</span>
     @if (Route::currentRouteName() != 'byCategory')
       <div>
-        <a href="{{route('byCategory', ['category' => $article->category])}}" class="information">{{Str::limit($article->category->name, 20, '...')}}</a>
+        <a href="{{route('byCategory', ['category' => $article->category])}}" class="information">{{Str::limit(__("ui." . $article->category->name), 20, '...')}}</a>
       </div>
     @else 
       <div class="pb-4">
