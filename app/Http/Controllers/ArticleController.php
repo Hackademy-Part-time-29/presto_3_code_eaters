@@ -18,9 +18,10 @@ class ArticleController extends Controller
         return view('article.create');
     }
 
-    public function index()
+    public function index(Request $request)
     {
-        return view('article.index');
+        $uri = $request->path();
+        return view('article.index',compact('uri'));
     }
 
     public function show(Article $article)
