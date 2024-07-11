@@ -17,12 +17,12 @@ return [
   'info' => 'In una calda giornata estiva, in un piccolo ufficio senza finestre, cinque programmatori si ritrovarono con molto tempo libero e poca ispirazione. Luca, Marzio, Andrei, Michele ed Emanuele erano abituati a risolvere complessi problemi di codice, ma quella settimana i progetti scarseggiavano. Così, tra una pausa caffè e l’altra, decisero che era tempo di fare qualcosa di diverso, qualcosa di innovativo e divertente.',
   //zona i nostri servizi
   'servizi' => 'I nostri servizi:',
-  'servizio1' => 'Acquisti Personalizzati tramite AI',
-  'servizio2' => 'Programmi di Abbonamento e Servizi Continuativi',
-  'servizio3' => 'Assistenza Clienti 24/7 tramite Chatbot e Live Chat',
-  'servizio1description' => "Raccomandazioni Personalizzate: Prodotti suggeriti in base agli acquisti precedenti e agli interessi dell'utente offrendoti Promozioni Mirate ed esperienze di acquisto curate",
-  'servizio2description' => "Consegne Regolari di Prodotti: Abbonamenti per prodotti di uso quotidiano, come caffè, articoli per la casa, o prodotti di bellezza, con consegne automatiche a intervalli prestabiliti. Accesso a Contenuti Esclusivi: Contenuti premium, come tutorial, guide, e webinar, riservati agli abbonati per migliorare l'esperienza del prodotto. Sconti e Offerte Esclusive: Promozioni speciali, sconti e accesso anticipato ai nuovi lanci di prodotto riservati ai membri del programma di abbonamento.",
-  'servizio3description' => "Chatbot Avanzati: Utilizzo di chatbot alimentati dall'intelligenza artificiale per rispondere rapidamente alle domande frequenti, assistere nella navigazione del sito, e risolvere problemi comuni in qualsiasi momento del giorno o della notte. Live Chat con Operatori Umani: Accesso a rappresentanti del servizio clienti in tempo reale per risolvere problemi più complessi e fornire consigli personalizzati.",
+  'servizio1' => "Ridimensionamento automatico",
+  'servizio2' => 'Articoli selezionati e di qualità',
+  'servizio3' => 'Censura dei volti con IA',
+  'servizio1description' => "Il nostro servizio di ridimensionamento automatico delle immagini ottimizza e adatta le immagini dei tuoi articoli per garantire una visualizzazione perfetta su tutti i dispositivi. Con una tecnologia avanzata, le immagini vengono ridimensionate mantenendo alta la qualità e riducendo i tempi di caricamento, migliorando l'esperienza utente e la velocità del sito. Affidati al nostro servizio per rendere il tuo contenuto visivamente accattivante e performante.",
+  'servizio2description' => "Il nostro servizio di selezione degli articoli tramite revisori garantisce una qualità elevata per i tuoi contenuti. I revisori esperti esaminano attentamente ogni articolo per verificarne l'accuratezza, la pertinenza e il valore informativo. Grazie a questo processo, assicuriamo che solo gli articoli migliori e più affidabili siano pubblicati, offrendo ai lettori contenuti di alta qualità.",
+  'servizio3description' => "Il nostro servizio di censura dei volti utilizza l'intelligenza artificiale per proteggere la privacy e garantire la conformità con le normative sulla privacy. Grazie ad algoritmi avanzati, il sistema rileva automaticamente i volti nelle immagini e li oscura, preservando il contesto della foto. Questo processo veloce ed efficiente è ideale per aziende, media e organizzazioni che devono trattare immagini sensibili in modo responsabile.",
   //form di creazione articolo subito dopo registrato
   'creaarticolo' => 'CREA UN ARTICOLO',
   'title' => 'TITOLO',

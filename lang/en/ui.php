@@ -19,12 +19,12 @@ return
     'info' => 'On a hot summer day, in a small windowless office, five programmers found themselves with a lot of free time and little inspiration. Luca, Marzio, Andrei, Michele and Emanuele were used to solving complex coding problems, but that week there was a shortage of projects. So, between one coffee break and another, they decided it was time to do something different, something innovative and fun.',
     //zona i nostri servizi
     'servizi' => 'Our services:',
-    'servizio1' => 'Personalized Purchases via AI',
-    'servizio2' => 'Subscription Programs and Ongoing Services',
-    'servizio3' => '24/7 Customer Support via Chatbot and Live Chat',
-    'servizio1description' => 'Personalized Recommendations: Suggested products based on previous purchases and user interests, offering you targeted promotions and curated shopping experiences',
-    'servizio2description' => 'Regular Product Deliveries: Subscriptions for everyday products, such as coffee, household items, or beauty products, with automatic deliveries at set intervals. Access to Exclusive Content: Premium content, such as tutorials, guides, and webinars, reserved for subscribers to enhance the product experience. Discounts and Exclusive Offers: Special promotions, discounts and early access to new product launches reserved for membership program members.',
-    'servizio3description' => 'Advanced Chatbots: Using AI-powered chatbots to quickly answer frequently asked questions, assist with site navigation, and resolve common issues any time of day or night. Live Chat with Human Operators: Access real-time customer service representatives to resolve more complex issues and provide personalized advice.',
+    'servizio1' => "Automatic resizing",
+    'servizio2' => 'Selected and quality articles',
+    'servizio3' => 'AI-powered face censorship',
+    'servizio1description' => "Our automatic image resizing service optimizes and adjusts the images of your articles to ensure perfect display on all devices. Using advanced technology, images are resized while maintaining high quality and reducing loading times, enhancing user experience and site speed. Trust our service to make your content visually appealing and performant.",
+    'servizio2description' => "Our article selection service through reviewers ensures high-quality content for your needs. Expert reviewers carefully examine each article to check for accuracy, relevance, and informational value. Through this process, we ensure that only the best and most reliable articles are published, providing readers with top-notch content.",
+    'servizio3description' => "Our face censorship service uses artificial intelligence to protect privacy and ensure compliance with privacy regulations. Through advanced algorithms, the system automatically detects faces in images and blurs them, preserving the context of the photo. This fast and efficient process is ideal for businesses, media, and organizations that need to handle sensitive images responsibly.",
     //form di creazione articolo subito dopo registrato
     'creaarticolo' => 'PUT UP FOR SALE',
     'title' => 'TITLE',
