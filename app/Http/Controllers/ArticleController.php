@@ -29,25 +29,24 @@ class ArticleController extends Controller
         return view('article.show', compact('article'));
     }
 
-    public function byCategory(Category $category)
+    public function byCategory(Category $category, Request $request)
     {
+        $uri = $request->path();
         $articles = $category->articles->where('is_accepted', true);
-        return view('article.byCategory', compact('articles', 'category'));
+        return view('article.byCategory', compact('articles', 'category','uri'));
     }
 
-    public function byMacroCategory($macroCategoryId)
+    public function byMacroCategory($macroCategoryId, Request $request)
     {
-
+        $uri = $request->path();
         $macroCategory = MacroCategory::findOrFail($macroCategoryId);
-        // Trova tutte le categorie che appartengono a questa macrocategoria
         $categories = Category::where('macroCategory_id', $macroCategoryId)->get();
-
-        // Trova tutti gli articoli che appartengono a queste categorie
         $articles = Article::whereIn('category_id', $categories->pluck('id'))->where('is_accepted', true)->get();
 
         return view('article.byMacroCategory', [
             'macroCategory' => $macroCategory,
             'articles' => $articles,
+            'uri'=>$uri,
         ]);
     }
 }

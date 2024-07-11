@@ -12,14 +12,14 @@ function updateChart() {
     let interval;
     let intervalMins = [];
 
-    if (articles.length > 0) {
-        const numLabels = Math.min(articles.length, 10);
+    if (articles.data.length > 0) {
+        const numLabels = Math.min(articles.data.length, 10);
         interval = maxPrice / numLabels;
 
         myData = new Array(numLabels).fill(0);
         intervalMins = new Array(numLabels).fill(0).map((_, i) => i * interval);
 
-        articles.forEach(article => {
+        articles.data.forEach(article => {
             for (let i = 0; i < numLabels; i++) {
                 const min = i * interval;
                 const max = (i + 1) * interval;
@@ -43,8 +43,8 @@ function updateChart() {
 
     if (myChart) {
         const colors = intervalMins.map(min => ({
-            backgroundColor: min > price ? '#f2f2f2' : '#e6e6e6',
-            borderColor: min > price ? '#e6e6e6' : '#737373'
+            backgroundColor: min > price[0] ? '#f2f2f2' : '#e6e6e6',
+            borderColor: min > price[0] ? '#e6e6e6' : '#737373'
         }));
     
         myChart.data.datasets[0].backgroundColor = colors.map(color => color.backgroundColor);
@@ -86,7 +86,8 @@ function updateChart() {
 document.addEventListener('DOMContentLoaded', () => {
     updateChart();
 
-    Livewire.on('priceUpdated', (newPrice) => {
+    Livewire.on('priceUpdated', ({ price }) => {
+        data.price = price;
         updateChart();
     });
 

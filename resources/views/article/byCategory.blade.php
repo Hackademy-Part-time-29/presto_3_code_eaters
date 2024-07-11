@@ -1,29 +1,3 @@
 <x-layout>
-    <div class="container">
-        <div class="row justify-content-center align-items-center text-center">
-            <div class="col-12">
-                <h1 class="display-5">
-                    {{__('ui.articlecategory')}}
-                    <span class="fst-italic.fw-bold">
-                        {{$category->name}}
-                    </span>
-                </h1>
-            </div>
-        </div>
-        <div class="row">
-            <x-filtri/>
-            <div class="col-12 col-md-8 mw-100 p-0">
-                @if(count($articles) > 0)
-                    <livewire:card/>
-                @else
-                    <div class="col-12 text-center">
-                        <h3>{{__('ui.noarticlecategory')}}</h3>
-                        @auth
-                            <a href="{{route('create.article')}}" class="btn btn-dark my-5">{{__('ui.creaarticolobtn')}}</a>
-                        @endauth
-                    </div>
-                @endif
-            </div>
-        </div>
-    </div>
+    <livewire:article.filter-order :uri="$uri" :category="$category"/>
 </x-layout>
