@@ -15,7 +15,7 @@ class DatabaseSeeder extends Seeder
             'email' => 'qwerty@mail.it',
             'password' => '1234abcd',
             'is_admin' => true,
-            'is_revisor' => true,
+            'is_revisor' => false,
         ]);
 
         $this->call([

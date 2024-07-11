@@ -22,7 +22,7 @@ class ArticleFactory extends Factory
             'description'=>Str::limit(fake()->text(255), 255),
             'category_id'=>fake()->numberBetween(1, 60),
             'user_id'=>fake()->numberBetween(1, 1),
-            'is_accepted'=>fake()->numberBetween(1, 1),
+            'is_accepted'=>fake()->numberBetween(0, 1),
         ];
     }
 }
