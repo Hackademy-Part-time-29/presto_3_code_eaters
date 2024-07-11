@@ -33,5 +33,12 @@
             <li class="breadcrumb-item mt-5 pt-4"><a href="/">{{__('ui.home')}}</a></li>
             <li class="breadcrumb-item mt-5 pt-4"><span>{{__('ui.register')}}</span></li>
         @endif
-    </ol>    
+    </ol> 
+    <script type="text/javascript">
+        window.translations = {
+            home: "{{ __('ui.home') }}",
+            login: "{{ __('ui.login') }}",
+            register: "{{ __('ui.register') }}"
+        };
+    </script>   
 </nav>
