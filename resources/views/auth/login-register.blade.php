@@ -10,37 +10,37 @@
                         <a href="#" class="social auth-a bi bi-google"><i class="fab fa-google-plus-g"></i></a>
                         <a href="#" class="social auth-a bi bi-linkedin"><i class="fab fa-linkedin-in"></i></a> --}}
                     </div>
-                    <input class="auth-input" type="text" name="name" id="name" placeholder="{{__('ui.name')}}" value="{{ old('name') }}" required/>
+                    <input class="auth-input" type="text" name="name" id="name" placeholder="{{__('ui.name')}}" value="{{ old('name') }}" />
                         @error('name')
                             <div class="messaggioDiErroreLogin_Register" role="alert">
                                 {{$message}}
                             </div>
                         @enderror
-                    <input class="auth-input" type="text" name="surname" id="surname" placeholder="{{__('ui.surname')}}" value="{{ old('surname') }}" required/>
+                    <input class="auth-input" type="text" name="surname" id="surname" placeholder="{{__('ui.surname')}}" value="{{ old('surname') }}" />
                         @error('surname')
                             <div class="messaggioDiErroreLogin_Register" role="alert">
                                 {{$message}}
                             </div>
                         @enderror    
-                    <input class="auth-input" type="number" name="age" id="age" placeholder="{{__('ui.age')}}" value="{{ old('age') }}" required/>
+                    <input class="auth-input" type="number" name="age" id="age" placeholder="{{__('ui.age')}}" value="{{ old('age') }}" />
                         @error('age')
                             <div class="messaggioDiErroreLogin_Register" role="alert">
                                 {{$message}}
                             </div>
                         @enderror                    
-                    <input class="auth-input" type="email" name="email" id="email" placeholder="{{__('ui.emailno')}}" value="{{ old('email') }}" required/>
+                    <input class="auth-input" type="email" name="email" id="email" placeholder="{{__('ui.emailno')}}" value="{{ old('email') }}" />
                         @error('email')
                             <div class="messaggioDiErroreLogin_Register" role="alert">
                                 {{$message}}
                             </div>
                         @enderror    
-                    <input class="auth-input" type="password" name="password" id="{{__('ui.pass')}}" placeholder="Password" required/>
+                    <input class="auth-input" type="password" name="password" id="{{__('ui.pass')}}" placeholder="Password" />
                         @error('password')
                             <div class="messaggioDiErroreLogin_Register" role="alert">
                                 {{$message}}
                             </div>
                         @enderror    
-                    <input class="auth-input" type="password" name="password_confirmation" id="password_confirmation" placeholder="{{__('ui.confirmpass')}}" required/>
+                    <input class="auth-input" type="password" name="password_confirmation" id="password_confirmation" placeholder="{{__('ui.confirmpass')}}" />
                     <button class="auth-button">{{__('ui.register')}}</button>
                 </form>
             </div>
