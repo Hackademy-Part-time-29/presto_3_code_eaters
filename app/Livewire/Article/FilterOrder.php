@@ -28,18 +28,21 @@ class FilterOrder extends Component
     public function mount(){
         
         $this->maxPrice = Article::where('is_accepted', true)->max('price');
-        $this->formattedPriceMax = number_format($this->maxPrice, 2, ',', '.') . ' €';
         $this->price = $this->maxPrice;
         if (strpos($this->uri, 'category/') === 0) {
             $categoryId = substr($this->uri, strlen('category/'));
             $this->category = Category::findOrFail($categoryId);
             $this->maxPriceCategory = $this->category->articles()->max('price');
+            $this->maxPrice = $this->maxPriceCategory;
         } else if (strpos($this->uri, 'MacroCategory/') === 0){
             $this->macroCategoryId = substr($this->uri, strlen('MacroCategory/'));
             $this->macroCategory = MacroCategory::findOrFail($this->macroCategoryId);
             $categories = Category::where('macroCategory_id', $this->macroCategoryId)->get();
             $this->maxPriceCategory = Article::whereIn('category_id', $categories->pluck('id'))->max('price');
+            $this->maxPrice = $this->maxPriceCategory;
         }
+
+        $this->formattedPriceMax = number_format($this->maxPrice, 2, ',', '.') . ' €';
     }
 
     public function render()
