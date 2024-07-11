@@ -41,7 +41,7 @@ class CreateNewUser implements CreatesNewUsers
             'email.unique' => __('ui.emailunique'),
             'password.required' => __('ui.passwordrequired'),
             'password.min' => __('ui.passwordmin'),
-            'password.confirmed' => __('ui.passdiversa'),
+            'password.confirmed' => __('ui.passwordconfirmed'),
         ])->validate();
 
         return User::create([
