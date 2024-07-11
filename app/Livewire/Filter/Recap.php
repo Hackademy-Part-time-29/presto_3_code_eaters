@@ -17,7 +17,7 @@ class Recap extends Component
         return view('livewire.filter.recap');
     }
 
-    #[On('filtroAttivoPrezzo')]
+    #[On('filterPrice')]
     public function visible($price,$maxPrice){
         $this->price = $price;
         $this->maxPrice = $maxPrice;

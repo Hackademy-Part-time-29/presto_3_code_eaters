@@ -22,6 +22,7 @@ class FilterOrder extends Component
     public $macroCategory;
     public $macroCategoryId;
     public $maxPriceMacroCategory;
+    public $orderBy = 'createASC';
 
     public function mount(){
         
@@ -49,18 +50,38 @@ class FilterOrder extends Component
         }
 
         if ($this->category) {
-            $articles = $this->category->articles()->where('price', '<=', $this->price)->paginate(10);
-        } else if ($this->macroCategory){
+            $query->where('category_id', $this->category->id);
+        } else if ($this->macroCategory) {
             $this->categories = Category::where('macroCategory_id', $this->macroCategoryId)->get();
-            $articles = Article::whereIn('category_id', $this->categories->pluck('id'))->where('price', '<=', $this->price)->paginate(10);
-        } else {
-            $articles = $query->paginate(10);
+            $query->whereIn('category_id', $this->categories->pluck('id'));
         }
+
+        switch ($this->orderBy) {
+            case 'priceDESC':
+                $query->orderBy('price', 'desc');
+                break;
+            case 'priceASC':
+                $query->orderBy('price', 'asc');
+                break;
+            case 'createASC':
+                $query->orderBy('created_at', 'asc');
+                break;
+            case 'createDESC':
+            default:
+                $query->orderBy('created_at', 'desc');
+                break;
+        }
+
+        $articles = $query->paginate(10);
 
         return view('livewire.article.filter-order', compact('articles'));
     }    
 
     public function updatedPrice($value){
         $this->dispatch('priceUpdated', $value);
+    }
+
+    public function updatedOrderBy($value){
+        $this->dispatch('orderByChanged', $value);
     }
 }
