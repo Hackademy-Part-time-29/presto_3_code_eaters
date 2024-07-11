@@ -15,6 +15,6 @@ return [
 
     'previous' => '&laquo; Indietro',
     'next' => 'Avanti &raquo;',
-    'showing' => 'suca',
+
 
 ];
