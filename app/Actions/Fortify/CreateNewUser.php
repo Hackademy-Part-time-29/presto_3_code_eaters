@@ -35,13 +35,13 @@ class CreateNewUser implements CreatesNewUsers
             'name.required' => __('ui.namerequired'),
             'surname.required' => __('ui.surnamerequired'),
             'age.required' =>  __('ui.agerequired'),
-            'age.integer' => __('ui.agerequired'),
+            'age.integer' => __('ui.agemin'),
             'email.required' => __('ui.emailrequired'),
             'email.email' => __('ui.emailemail'),
             'email.unique' => __('ui.emailunique'),
             'password.required' => __('ui.passwordrequired'),
             'password.min' => __('ui.passwordmin'),
-            'password.confirmed' => __('ui.passwordconfirmed'),
+            'password.confirmed' => __('ui.passdiversa'),
         ])->validate();
 
         return User::create([

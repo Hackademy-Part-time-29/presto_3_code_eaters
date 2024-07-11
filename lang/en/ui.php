@@ -132,6 +132,7 @@ return
     'emailrequired' => 'The "Email" field is required.',
     'emailemail' => "The email is not correctly formatted.",
     'coverletterrequired' => 'The "Cover Letter" field is required.',
+    'passdiversa' => 'The provided password does not match your current password.',
     //
     'lastname' => 'Last Name',
     'firstname' => 'First Name',
@@ -251,4 +252,4 @@ return
     // Recap filtri 
     'Filtri attivi' => 'Active filters',
     'Prezzo massimo di' => 'Maximum price of',
-];
+  ];

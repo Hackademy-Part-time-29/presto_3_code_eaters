@@ -132,6 +132,7 @@ return
                 'emailrequired' => 'Câmpul "Email" este obligatoriu.',
                 'emailemail' => "Emailul nu este scris corect.",
                 'coverletterrequired' => 'Câmpul "Scrisoare de intenție" este obligatoriu.',
+                'passdiversa' => "Parola de acces furnizată nu corespunde cu parola curentă.",
                 //
                 //
                 'lastname' => 'Nume De Famille',
@@ -234,7 +235,7 @@ return
                 'Accessori per il Viaggio' => 'Accesorii de Călătorie',
                 'Guide di Viaggio' => 'Ghiduri de Călătorie',
                 'Prodotti per il Campeggio' => 'Produse pentru Camping',
-        
+
                 // Macro categorie 
                 'Elettronica' => 'Electronice',
                 'Moda' => 'Modă',
@@ -248,7 +249,7 @@ return
                 'Giocattoli e Prima Infanzia' => 'Jucării și primă copilărie',
                 'Ufficio e Cancelleria' => 'Birou și papetărie',
                 'Viaggi e Valigeria' => 'Călătorii și bagaje',
-                
+
                 // Recap filtri 
                 'Filtri attivi' => 'Filtri activi',
                 'Prezzo massimo di' => 'Prețul maxim de',

@@ -132,6 +132,7 @@ return [
   'emailrequired' => 'Il campo "Email" è obbligatorio.',
   'emailemail' => "L'email non è scritta nel modo corretto.",
   'coverletterrequired' => 'Il campo "Lettera di presentazione" è obbligatorio.',
+  'passdiversa' => 'La password digitata non corrisponde a quella corrente.',
   //
   'lastname' => 'Cognome',
   'firstname' => 'Nome',
@@ -235,12 +236,12 @@ return [
   'Prodotti per il Campeggio' => 'Prodotti per il Campeggio',
 
   // macroCategorie 
-  
+
   'Elettronica' => 'Elettronica',
   'Moda' => 'Moda',
   'Casa e Giardino' => 'Casa e Giardino',
   'Salute e Bellezza' => 'Salute e Bellezza',
-  'Sporto e Tempo libero' => 'Sporto e Tempo libero', 
+  'Sporto e Tempo libero' => 'Sporto e Tempo libero',
   'Alimentari e Bevande' => 'Alimentari e Bevande',
   'Libri, Film e Musica' => 'Libri, Film e Musica',
   'Auto e Moto' => 'Auto e Moto',

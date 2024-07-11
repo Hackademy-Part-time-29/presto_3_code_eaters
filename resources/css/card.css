@@ -67,6 +67,7 @@
 	float: left;
 	width: 45%;
 	display: inline-block;
+
 }
 
 .containerCard img {
@@ -273,3 +274,4 @@
 	flex-wrap: wrap;
 	width: 100%;
 }
+
