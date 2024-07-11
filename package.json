@@ -16,6 +16,8 @@
         "bootstrap-icons": "^1.11.3",
         "chart": "^0.1.2",
         "chart.js": "^4.4.3",
+        "jquery": "^3.7.1",
+        "popper.js": "^1.16.1",
         "swiper": "^11.1.4"
     }
 }

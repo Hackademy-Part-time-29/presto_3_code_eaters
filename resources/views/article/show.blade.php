@@ -1,11 +1,12 @@
 <x-layout>
-    <div class="col-12 col-md-6 mb-3 w-100">
+  <div class="row justify-content-center">
+    <div class="col-12 col-md-6 mb-3 w-25">
         @if ($article->images->count() > 0)
-            <div id="carouselExample" class="carousel slide d-flex justify-content-around">
-                <div class="carousel-inner w-25">
+            <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
                     @foreach ($article->images as $key => $image)
                         <div class="carousel-item @if ($loop->first) active @endif">
-                            <img src="{{ $image->getUrl(300,300)}}" alt="Immagine {{$key+1}} dell'articolo {{$article->title}}" class="d-block w-100 rounded shadow">
+                            <img src="{{ $image->getUrl(300,300) }}" alt="Immagine {{$key+1}} dell'articolo {{$article->title}}" class="d-block w-100 rounded shadow">
                         </div>
                     @endforeach                    
                 </div>
@@ -15,51 +16,30 @@
                         <span class="visually-hidden">Previous</span>
                     </button>
                     <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                        <span class="span carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Next</span>
                     </button>
                 @endif
-                <div class="col-12 col-md-4 mb-3 height-custom text-center">
-                    <h2 class="display-5">
-                        <span class="fw-bold">
-                          {{__('ui.title')}}:
-                        </span>
-                        {{$article->title}}
-                    </h2>
-                    <div class="d-flex flex-column justify-content-center h-50 ">
-                        <h4 class="fw-bold">
-                            {{__('ui.price')}}: {{$article->price}} €
-                        </h4>
-                        <h5>
-                            {{__('ui.description')}} :
-                        </h5>
-                        <p>{{$article->description}}</p>
-                    </div>
-                </div>
             </div>
         @else
-            <div class="d-flex justify-content-around">
-                <div class="w-25">
-                    <img src="https://picsum.photos/300" alt="Nessuna foto inserita dall'utente">
-                </div>
-                <div class="col-12 col-md-4 mb-3 height-custom text-center">
-                    <h2 class="display-5">
-                        <span class="fw-bold">
-                            {{__('ui.title')}} :
-                        </span>
-                        {{$article->title}}
-                    </h2>
-                    <div class="d-flex flex-column justify-content-center h-50 ">
-                        <h4 class="fw-bold">
-                            {{__('ui.price')}}: {{$article->price}} €
-                        </h4>
-                        <h5>
-                            {{__('ui.description')}}:
-                        </h5>
-                        <p>{{$article->description}}</p>
-                    </div>
-                </div>
+            <div class="w-100">
+                <img src="https://picsum.photos/300" alt="Nessuna foto inserita dall'utente" class="d-block w-100 rounded shadow">
             </div>
-        @endif            
+        @endif
     </div>
+
+    <div class="col-12 col-md-6 mb-3 d-flex flex-column justify-content-center">
+        <div class="text-center">
+            <h2 class="display-5">
+                <span class="fw-bold">{{ __('ui.title') }}:</span> {{ $article->title }}
+            </h2>
+            <h4 class="fw-bold">{{ __('ui.price') }}: {{ $article->price }} €</h4>
+            <h5>{{ __('ui.description') }}:</h5>
+            <p>{{ $article->description }}</p>
+            <h5>{{ __('ui.category') }}:</h5>
+            <p>{{ $article->category->name }}</p>
+        </div>
+    </div>
+</div>
+
 </x-layout>

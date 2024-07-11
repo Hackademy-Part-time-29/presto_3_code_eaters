@@ -9,6 +9,7 @@
 
 .btn-content {
     transform: rotate(-90deg);
+    /* Ruota il box di 45 gradi */
     display: flex;
     align-items: center;
     padding: 0.1px 7px;
@@ -46,7 +47,7 @@
 
 .icon-arrow {
     width: 20px;
-    margin-right: 9px;
+    margin-right: 10px;
         margin-bottom: 5px;
     position: relative;
     top: 6%;
