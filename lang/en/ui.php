@@ -160,8 +160,15 @@ return
     //v risultati per ricerca
     'risultati' => 'Search Results',
 
+    // footer
+    'FAQ' => 'FAQ',
+    'Term & conditions' => 'Term & conditions',
+    'Reporting' => 'Reporting',
+    'Documentation' => 'Documentation',
+    'Support Policy' => 'Support Policy',
+    'Privacy' => 'Privacy',
+    'About us' => 'About us',
 
-
-
-
+    // Articoli
+    'Prezzo' => 'Price',
   ];

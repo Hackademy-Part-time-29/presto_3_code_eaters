@@ -12,7 +12,7 @@
         <div class="contenitoreOrdinamentoFiltri">
             <div class="contenitoreFiltroPerPrezzo">
                 <div class="contenitoreFiltroPerPrezzoDettaglio" wire:ignore>
-                    <div class="mb-2"><span>Prezzo</span></div>
+                    <div class="mb-2"><span>{{__('ui.Prezzo')}}</span></div>
                     <canvas class="graficoFiltroPerPrezzo" id="myChart" width="400" height="100"></canvas>
                     <input type="range" class="form-range" id="customRange1" value="{{$price}}" min="0" max="{{ $maxPrice }}" wire:model.change="price">
                     <div class="text-end">

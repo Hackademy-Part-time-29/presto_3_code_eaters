@@ -33,8 +33,7 @@ return
                 'description' => 'DESCRIERE',
                 'creaarticolobtn' => 'Crează',
                 'category' => 'Alege o categorie',
-                'choosefile'  => 'Alegeți fișierul
-',
+                'choosefile'  => 'Alegeți fișierul',
                 'photopreview' => 'Previzualizați imaginile',
                 //pulsante diventa revisore
                 'revisor1' => 'Vrei să devii recenzent?',
@@ -161,9 +160,15 @@ return
                 //v risultati per ricerca
                 'risultati' => 'Rezultatele căutării',
 
+                // footer
+                'FAQ' => 'Întrebări frecvente',
+                'Term & conditions' => 'Termeni și condiții',
+                'Reporting' => 'Raportare',
+                'Documentation' => 'Documentație',
+                'Support Policy' => 'Politica de suport',
+                'Privacy' => 'Confidențialitate',
+                'About us' => 'Despre noi',
 
-
-
-
-
+                // Articoli
+                'Prezzo' => 'Preț',
         ];

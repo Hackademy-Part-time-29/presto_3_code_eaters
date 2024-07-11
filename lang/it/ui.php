@@ -160,5 +160,15 @@ return [
   //risultati per ricerca
   'risultati' => 'Risultati per la ricerca',
 
+  // footer
+  'FAQ' => 'Domande frequenti',
+  'Term & conditions' => 'Termini e condizioni',
+  'Reporting' => 'Segnalazioni',
+  'Documentation' => 'Documentazione',
+  'Support Policy' => 'Politica di supporto',
+  'Privacy' => 'Privacy',
+  'About us' => 'Chi siamo',
 
+  // Articoli
+  'Prezzo' => 'Prezzo',
 ];
