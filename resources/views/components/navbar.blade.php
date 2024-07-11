@@ -3,7 +3,7 @@
     <a class="navbar-brand custom-navbar-brand" href="/">
       <img src="{{ asset('/storage/img/logo60px.png') }}" alt="logo">
     </a>
-    <div class="btn-conteiner scrollToTopBtn">
+    <div class="btn-conteiner scrollToTopBtn" >
       <a class="btn-content" href="#">
         <span class="btn-title"></span>
         <span class="icon-arrow">
@@ -140,3 +140,24 @@
       });
   });  
 </script>
+{{-- <script>
+    $(document).ready(function() {
+        // Funzione per gestire lo scroll della finestra
+        $(window).scroll(function() {
+            // Controlla la posizione dello scroll rispetto al top della pagina
+            if ($(this).scrollTop() > 0) {
+                // Se lo scroll è inferiore a 0, mostra il pulsante
+                $('#topButton').fadeIn();
+            } else {
+                // Altrimenti, nascondi il pulsante
+                $('#topButton').fadeOut();
+            }
+        });
+
+        // Gestione del click sul pulsante per tornare in cima alla pagina
+        $('#topButton').click(function() {
+            $('html, body').animate({scrollTop: 0}, 500);
+            return false;
+        });
+    });
+</script> --}}

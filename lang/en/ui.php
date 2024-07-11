@@ -137,6 +137,7 @@ return
     'lastname' => 'Last Name',
     'firstname' => 'First Name',
     'workwithus' => 'WORK WITH US',
+    "requestrevisor" => "Request to become a reviewer",
 
     'Moda' => 'Fashion',
     'Sport e Tempo libero' => 'Sports & Leisure',

@@ -6,6 +6,8 @@
 	margin: 2em;
 	height: 250px;
 	width: 500px;
+	
+
 }
 
 .cardRoute{
@@ -23,6 +25,7 @@
 	height: 100%;
 	float: right;
 	width: 50%;
+	
 }
 
 .containerCard .product-details h1{
@@ -31,6 +34,7 @@
 	font-size: 1.5rem;
 	color: Black;
 	margin: 0;
+	
 }
 
 .containerCard .product-details h1:before{
@@ -48,12 +52,14 @@
 	color: white;
 	margin: 0;
 	animation: chan-sh 6s ease infinite;
+	
 }
 
 .containerCard .product-details > p {
 	text-align: center;
 	font-size: 0.8rem;
 	color: #7d7d7d;
+	
 }
 
 
@@ -67,6 +73,7 @@
 	float: left;
 	width: 45%;
 	display: inline-block;
+	
 
 }
 

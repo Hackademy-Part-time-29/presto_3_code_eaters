@@ -138,6 +138,7 @@ return
                 'lastname' => 'Nume De Famille',
                 'firstname' => 'Nume',
                 'workwithus' => 'LUCREAZA CU NOI',
+                'requestrevisor' => "Cerere de a deveni recenzor",
                 //
                 'Moda' => 'Modă',
                 'Sport e Tempo libero' => 'Sport & Timp liber',

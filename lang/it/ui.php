@@ -137,6 +137,7 @@ return [
   'lastname' => 'Cognome',
   'firstname' => 'Nome',
   'workwithus' => 'LAVORA CON NOI',
+  'requestrevisor' => 'Richiesta per diventare revisore',
   // macro
   'Moda' => 'Moda',
   'Sport e Tempo libero' => 'Sport e Tempo libero',

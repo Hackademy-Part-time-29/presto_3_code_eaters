@@ -38,7 +38,7 @@ class WorkWithUsController extends Controller
 
         Mail::send('mail.workwithus', ['data' => $request->all()], function ($message) {
             $message->to('admin@presto.it')
-                ->subject('Richiesta per diventare revisore');
+                ->subject(__('ui.requestrevisor'));
         });
 
         return redirect()->route('welcome')->with('success', __('ui.congratulation'));
