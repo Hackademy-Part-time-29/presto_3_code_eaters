@@ -26,6 +26,7 @@ class FilterOrder extends Component
 
     public function mount(){
         
+        // dd($this->uri);
         $this->maxPrice = Article::where('is_accepted', true)->max('price');
         $this->price = $this->maxPrice;
         if (strpos($this->uri, 'category/') === 0) {

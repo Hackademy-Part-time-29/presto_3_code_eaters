@@ -3,7 +3,7 @@
     <a href="{{route('article.show',compact('article'))}}"><h1>{{Str::limit($article->title, 25, '...')}}</h1></a>
     <p>{{Str::limit($article->description,50,'...')}}</p>
     <span class="price">{{__('ui.price:')}} @formatPrice($article->price) €</span>
-    @if (Route::currentRouteName() != 'byCategory')
+    @if (strpos($this->uri, 'category/') !== 0)
       <div>
         <a href="{{route('byCategory', ['category' => $article->category])}}" class="information">{{Str::limit(__("ui." . $article->category->name), 20, '...')}}</a>
       </div>
