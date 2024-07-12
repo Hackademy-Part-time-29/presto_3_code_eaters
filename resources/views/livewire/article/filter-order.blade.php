@@ -19,10 +19,10 @@
                         <span>max : {{$formattedPriceMax}}</span>
                     </div>
                 </div>
-                <select class="form-select mt-1">
+                {{-- <select class="form-select mt-1">
                     <option>EUR • €</option>
                     <option>USD • US$</option>
-                </select>    
+                </select>     --}}
             </div>   
         </div>
     </div>
