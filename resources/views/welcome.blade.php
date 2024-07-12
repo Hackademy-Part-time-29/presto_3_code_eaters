@@ -24,12 +24,12 @@
             @endforelse
         </div>
     </div>
-    <section class="py-5">
+    {{-- <section class="py-5">
         <div class="container">
             <h2 class="mb-4">{{__('ui.chisiamo')}}</h2>
             <p>{{__('ui.info')}}</p>
         </div>
-    </section>
+    </section> --}}
     <section class="bg-light py-5">
         <div class="container">
             <h2 class="mb-4">{{__('ui.servizi')}}</h2>
